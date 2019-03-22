@@ -1,0 +1,13 @@
+{
+    "appPageId": "62d9660c-ed5d-727f-505d-fcddff53ac84",
+    "appPageName": "logactivity",
+    "componentName": "logactivityComponent",
+    "selectorName": "bh-logactivity",
+    "htmlFileName": "logactivity.template.html",
+    "tsFileName": "logactivity.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

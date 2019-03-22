@@ -1,0 +1,32 @@
+{
+    "b1c5f4af-15fe-c86a-e713-ed634c0ef25c": {
+        "appPageName": "login",
+        "componentName": "loginComponent",
+        "isEntry": false
+    },
+    "c4581771-ca63-f41c-3097-bf95322621ac": {
+        "appPageName": "home",
+        "componentName": "homeComponent",
+        "isEntry": false
+    },
+    "dd3691d2-d623-8efe-ea01-b9543d360deb": {
+        "appPageName": "loader",
+        "componentName": "loaderComponent",
+        "isEntry": false
+    },
+    "edd1e545-39fa-cce4-2b06-99c5e28704aa": {
+        "appPageName": "splash",
+        "componentName": "splashComponent",
+        "isEntry": false
+    },
+    "4e764f2b-2b9d-f8e4-0cda-756504d16058": {
+        "appPageName": "feed",
+        "componentName": "feedComponent",
+        "isEntry": false
+    },
+    "62d9660c-ed5d-727f-505d-fcddff53ac84": {
+        "appPageName": "logactivity",
+        "componentName": "logactivityComponent",
+        "isEntry": false
+    }
+}

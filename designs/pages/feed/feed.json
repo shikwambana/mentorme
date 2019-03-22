@@ -1,0 +1,13 @@
+{
+    "appPageId": "4e764f2b-2b9d-f8e4-0cda-756504d16058",
+    "appPageName": "feed",
+    "componentName": "feedComponent",
+    "selectorName": "bh-feed",
+    "htmlFileName": "feed.template.html",
+    "tsFileName": "feed.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

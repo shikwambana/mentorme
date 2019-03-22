@@ -1,0 +1,131 @@
+{
+    "e336dc27-aa47-70a7-f8f2-fe2d34a40dd1": {
+        "paletteKey": "FlexLayoutRow",
+        "designerReference": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "20px",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "wrap",
+                "_value": "wrap",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "layoutAlign",
+                "_value": "space-evenly",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "pLayoutAlign",
+                "_value": "center",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "21f3f110-5763-f022-e813-8b6e2115aa72": {
+            "paletteKey": "NG-ProgressSpinner",
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "mode",
+                    "_value": "indeterminate",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "strokeWidth",
+                    "_value": "4",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "value",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "color",
+                    "_value": "primary",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "diameter",
+                    "_value": "40",
+                    "_type": "kv",
+                    "_attrDef": "c"
+                }
+            ]
+        },
+        "596bdf22-6f46-5c4e-c6b0-bd7589da5327": {
+            "paletteKey": "NG-H4",
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "H4 Text",
+                    "_value": "{{data.message}}",
+                    "_type": "a",
+                    "_attrDef": "p"
+                }
+            ]
+        }
+    }
+}

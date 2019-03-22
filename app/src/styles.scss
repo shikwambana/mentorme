@@ -1,0 +1,82 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "nDefaults.scss";
+
+// $primary : #cceafa;
+$primary : transparent;
+$secondary : #adc7d5;
+
+
+.login-card .mat-card-image:first-child {
+    margin-top:0 !important
+}
+
+.primary-btn {
+    background-color: $primary;
+    color: black;
+}
+
+// splash page animation
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.fade-in {
+   -webkit-animation: flickerAnimation 2s infinite;
+   -moz-animation: flickerAnimation 2s infinite;
+   -o-animation: flickerAnimation 2s infinite;
+    animation: flickerAnimation 2s infinite;
+}
+
+//header and footer 
+
+.nav {
+    height: 100px !important; 
+    background-color: $primary;
+}
+
+.nav .mat-icon {
+    font-size: 50px;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+}
+
+.nav .mat-icon:hover, .nav img:hover {
+    font-size: 60px;
+    color: teal;
+}
+
+.mat-menu-content {
+    background-color: $primary;
+}
+
+.btm {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.feed-card button {
+    background-color: $secondary;
+
+}
