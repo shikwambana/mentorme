@@ -1,0 +1,13 @@
+{
+    "appPageId": "7cdbe390-caab-8abf-bdc8-b65dfabc57bb",
+    "appPageName": "invite",
+    "componentName": "inviteComponent",
+    "selectorName": "bh-invite",
+    "htmlFileName": "invite.template.html",
+    "tsFileName": "invite.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

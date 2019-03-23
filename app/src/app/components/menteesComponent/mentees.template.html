@@ -1,0 +1,25 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let mentee of menteesList">
+    <mat-card [routerLink]="[&apos;../mentee&apos;]">
+      <mat-card-title>{{ mentee.name }}</mat-card-title>
+      <mat-card-subtitle>{{ mentee.LatestGoal }}</mat-card-subtitle>
+      <mat-card-content>
+        <p>{{ mentee.latestComment }}</p>
+      </mat-card-content>
+      <mat-card-footer>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+          <mat-card-actions><button mat-raised-button="">
+              <mat-icon>call</mat-icon>
+            </button><button mat-raised-button="">
+              <mat-icon>add_box</mat-icon>
+            </button></mat-card-actions>
+        </div>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>
+<div fxLayout="column wrap" class="fabBtn" fxFlex="20" fxLayoutAlign="space-evenly end" fxShow="true" fxHide="false"><button mat-fab="">
+    <mat-icon>person_add</mat-icon>
+  </button><button mat-fab="">
+    <mat-icon>mode_comment</mat-icon>
+  </button></div>

@@ -1,0 +1,13 @@
+{
+    "appPageId": "037c8617-7fb2-6eca-0d72-415014b30c14",
+    "appPageName": "mentees",
+    "componentName": "menteesComponent",
+    "selectorName": "bh-mentees",
+    "htmlFileName": "mentees.template.html",
+    "tsFileName": "mentees.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

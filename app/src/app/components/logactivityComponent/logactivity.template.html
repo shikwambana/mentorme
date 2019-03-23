@@ -31,7 +31,11 @@
           </div>
         </div>
       </mat-step>
-      <mat-step label="Additional comments"></mat-step>
+      <mat-step label="Additional comments">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+          <mat-form-field><input matInput="" placeholder="Additional Info" required></mat-form-field>
+        </div>
+      </mat-step>
     </mat-vertical-stepper>
   </form>
 </div>

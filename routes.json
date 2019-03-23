@@ -20,6 +20,20 @@
                 {
                     "path": "log",
                     "component": "logactivityComponent"
+                },
+                {
+                    "component": "menteesComponent",
+                    "path": "mentees",
+                    "children": [
+                        {
+                            "component": "menteeinfoComponent",
+                            "path": "mentee"
+                        }
+                    ]
+                },
+                {
+                    "path": "mentee",
+                    "component": "menteeinfoComponent"
                 }
             ]
         },
@@ -41,6 +55,10 @@
         {
             "path": "welcome",
             "component": "splashComponent"
+        },
+        {
+            "path": "invite",
+            "component": "inviteComponent"
         },
         {
             "path": "''",

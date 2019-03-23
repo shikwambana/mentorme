@@ -1,0 +1,13 @@
+{
+    "appPageId": "7becbcc5-13e0-3a32-afae-5a187bc78ab5",
+    "appPageName": "menteeInfo",
+    "componentName": "menteeinfoComponent",
+    "selectorName": "bh-menteeinfo",
+    "htmlFileName": "menteeinfo.template.html",
+    "tsFileName": "menteeinfo.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

@@ -12,6 +12,14 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-inviteComponent
+import { inviteComponent } from '../components/inviteComponent/invite.component';
+//CORE_REFERENCE_IMPORT-profileComponent
+import { profileComponent } from '../components/profileComponent/profile.component';
+//CORE_REFERENCE_IMPORT-menteeinfoComponent
+import { menteeinfoComponent } from '../components/menteeinfoComponent/menteeinfo.component';
+//CORE_REFERENCE_IMPORT-menteesComponent
+import { menteesComponent } from '../components/menteesComponent/mentees.component';
 //CORE_REFERENCE_IMPORT-metadataService
 import { metadataService } from '../services/metadata/metadata.service';
 //CORE_REFERENCE_IMPORT-logactivityComponent
@@ -62,6 +70,14 @@ export const appDeclarations = [
   PageNotFoundComponent,
   NMapComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-inviteComponent
+inviteComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-profileComponent
+profileComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-menteeinfoComponent
+menteeinfoComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-menteesComponent
+menteesComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-logactivityComponent
 logactivityComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-feedComponent
@@ -102,5 +118,6 @@ metadataService,
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [{path: 'home', component: homeComponent,
-children: [{path: 'load', component: splashComponent},{path: 'feed', component: feedComponent},{path: 'log', component: logactivityComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full', canActivate: [NAuthGuardService]},{path: 'welcome', component: splashComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: [{path: 'load', component: splashComponent},{path: 'feed', component: feedComponent},{path: 'log', component: logactivityComponent},{path: 'mentees', component: menteesComponent,
+children: [{path: 'mentee', component: menteeinfoComponent}]},{path: 'mentee', component: menteeinfoComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full', canActivate: [NAuthGuardService]},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

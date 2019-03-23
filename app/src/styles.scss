@@ -4,8 +4,9 @@
 @import "nDefaults.scss";
 
 // $primary : #cceafa;
-$primary : transparent;
-$secondary : #adc7d5;
+$primary : #00b8d4;
+$secondary : #62ebff;
+$dark : #0088a3;
 
 
 .login-card .mat-card-image:first-child {
@@ -50,7 +51,7 @@ $secondary : #adc7d5;
 
 .nav {
     height: 100px !important; 
-    background-color: $primary;
+    background-color: white;
 }
 
 .nav .mat-icon {
@@ -74,9 +75,40 @@ $secondary : #adc7d5;
     left: 0;
     position: fixed;
     width: 100%;
+    background-color: $primary;    
 }
 
-.feed-card button {
-    background-color: $secondary;
+.btm .mat-icon {
+        color: white;
+}
 
+.mat-card button {
+    background-color: $dark;
+    color: white;
+}
+
+// mat card design .btm
+
+.mat-card {
+    padding: 30px !important;
+    background-color: rgba(98, 235, 255, 0.16862745098039217);;
+    margin: 10px 0;
+}
+
+.mat-card-footer {
+    margin-left: 10px !important;
+}
+
+//fab buttons in mentee list
+.fabBtn {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    padding: 15px;
+    bottom: 100px;
+}
+
+.fabBtn .mat-fab {
+    margin: 5px;
+    background-color: $dark;
 }

@@ -236,7 +236,7 @@
                         },
                         {
                             "_key": "fxFlex",
-                            "_value": "75",
+                            "_value": "60",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -408,7 +408,7 @@
             "designerReference": [
                 {
                     "_key": "style",
-                    "_value": "    overflow-y: auto !important;",
+                    "_value": "    overflow-y: auto !important; margin-bottom: 80px;",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -640,7 +640,7 @@
                             },
                             {
                                 "_key": "IconName",
-                                "_value": "subject",
+                                "_value": "list",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -728,7 +728,7 @@
                             },
                             {
                                 "_key": "IconName",
-                                "_value": "add_circle",
+                                "_value": "add",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -816,9 +816,15 @@
                             },
                             {
                                 "_key": "IconName",
-                                "_value": "people",
+                                "_value": "people_outline",
                                 "_type": "a",
                                 "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[routerLink]",
+                                "_value": "['mentees']",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ]
                     }
