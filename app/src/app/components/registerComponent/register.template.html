@@ -1,4 +1,4 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+<div fxLayout="column wrap" style="margin: 0 20px;" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
   <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
     <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
       <mat-icon>arrow_back</mat-icon>
@@ -8,18 +8,16 @@
     </div>
   </div>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-    <form>
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-        <mat-form-field><input matInput="" placeholder="First Name" required></mat-form-field>
-        <mat-form-field><input matInput="" placeholder="Last Name" required></mat-form-field>
-        <mat-form-field><input matInput="" placeholder="Date of Birth" [matDatepicker]="picker">
-          <mat-datepicker-toggle matSuffix="" [for]="picker"></mat-datepicker-toggle>
-          <mat-datepicker #picker=""></mat-datepicker>
-        </mat-form-field>
-        <mat-form-field><input matInput="" placeholder="Email Address" required></mat-form-field>
-        <mat-form-field><input matInput="" placeholder="Phone Number" required></mat-form-field>
-        <mat-form-field><input matInput="" placeholder="Resident Address" required></mat-form-field><button mat-raised-button="">Register Me</button>
-      </div>
-    </form>
+    <mat-form-field><input matInput="" [(ngModel)]="person.personal_info.name" placeholder="First Name" required></mat-form-field>
+    <mat-form-field><input matInput="" [(ngModel)]="person.personal_info.surname" placeholder="Last Name" required></mat-form-field>
+    <mat-form-field><input matInput="" placeholder="Date of Birth" [matDatepicker]="picker" [(ngModel)]="person.personal_info.date_of_birth">
+      <mat-datepicker-toggle matSuffix="" [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker=""></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field><input matInput="" [(ngModel)]="person.contact_details.email_address" placeholder="Email Address" required></mat-form-field>
+    <mat-form-field><input matInput="" [(ngModel)]="person.contact_details.phone_number" placeholder="Phone Number" required></mat-form-field>
+    <mat-form-field><input matInput="" [(ngModel)]="person.contact_details.home_address" placeholder="Resident Address" required></mat-form-field>
+    <mat-form-field><input matInput="" placeholder="Password" required></mat-form-field>
+    <mat-form-field><input matInput="" placeholder="Password Confirmation" required></mat-form-field><button mat-raised-button="" (click)="register()">Register Me</button>
   </div>
 </div>

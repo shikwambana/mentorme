@@ -18,8 +18,10 @@ export class inviteService {
         ){}
 
     inviteUser(inviteDetails){
-        console.log('running');
-        this.http.post(this.url, inviteDetails);
+        // console.log('running');
+        this.http.post(this.url, inviteDetails).subscribe(result => {
+            console.log(result);
+        });
         
     }
 

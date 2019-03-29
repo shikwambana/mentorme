@@ -1,1 +1,19 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+      <mat-icon [routerLink]="[&apos;../mentees&apos;]">arrow_back</mat-icon>
+    </div>
+    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+      <h1>Invite Mentee</h1>
+    </div>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+      <mat-form-field><input matInput="" [(ngModel)]="details.name" placeholder="Full Name" required></mat-form-field>
+      <mat-form-field><input matInput="" [(ngModel)]="details.email" placeholder="Email Address" required></mat-form-field>
+    </div>
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false"><button mat-raised-button="" [disabled]="!details.name || !details.email" (click)="invite()">Invite</button><button mat-raised-button="" [routerLink]="[&apos;../home/feed&apos;]">Cancel</button></div>
+    </div>
+  </div>
+</div>

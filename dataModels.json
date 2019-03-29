@@ -39,7 +39,7 @@
                 "isArray": false
             },
             {
-                "name": "date_ob_birth",
+                "name": "date_of_birth",
                 "fieldType": 3,
                 "isArray": false
             },

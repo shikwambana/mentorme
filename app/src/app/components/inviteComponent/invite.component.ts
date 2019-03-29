@@ -45,9 +45,7 @@ export class inviteComponent extends NBaseComponent implements OnInit {
     }
 
     invite(){
-        //  this.metadataService.getUserObj().subscribe(result => {
-        //     this.userObj = result;
-        // });
+       
 
         this.userObj = this.metadataService.getUserObj()
 
@@ -63,7 +61,7 @@ export class inviteComponent extends NBaseComponent implements OnInit {
         // this.put('invites', this.invites);
 
         this.inviteService.inviteUser(this.invites);
-        
+        this.put('invites', this.invites);
     }
 
 

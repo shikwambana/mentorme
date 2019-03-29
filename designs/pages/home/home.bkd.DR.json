@@ -132,7 +132,7 @@
                     },
                     {
                         "_key": "buttonname",
-                        "_value": "<mat-icon>menu</mat-icon>",
+                        "_value": "<mat-icon>power_settings_new</mat-icon>",
                         "_type": "a",
                         "_attrDef": "p"
                     },
@@ -144,7 +144,7 @@
                     },
                     {
                         "_key": "(click)",
-                        "_value": "",
+                        "_value": "logoutUser()",
                         "_type": "kv",
                         "_attrDef": "p"
                     }
