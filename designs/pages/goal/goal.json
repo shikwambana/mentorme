@@ -1,0 +1,13 @@
+{
+    "appPageId": "76de12ba-8818-8e9f-12ab-61cdb28b2406",
+    "appPageName": "goal",
+    "componentName": "goalComponent",
+    "selectorName": "bh-goal",
+    "htmlFileName": "goal.template.html",
+    "tsFileName": "goal.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

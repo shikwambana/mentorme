@@ -4,7 +4,7 @@ export const environment = {
     "properties": {
         "production": false,
         "baseUrl": " http://localhost:3000/bhive-art/",
-        "tenantName": "neutrinos-delivery",
+        "tenantName": "mentorme",
         "appName": "mentorme",
         "namespace": "com.neutrinos-delivery.mentorme",
         "isNotificationEnabled": true,
@@ -15,7 +15,7 @@ export const environment = {
         "databaseURL": "FIREBASE_DATABASE_URL",
         "storageBucket": "FIREBASE_STORAGE_BUCKET",
         "messagingSenderId": "FIREBASE_SENDER_ID",
-        "appDataSource": "neutrinos-delivery-rt",
+        "appDataSource": "neutrinos-delivery",
         "appAuthenticationStrategy": "localAuth",
         "basicAuthUser": "username",
         "basicAuthPassword": "password",

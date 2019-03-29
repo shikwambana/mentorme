@@ -1,0 +1,13 @@
+{
+    "appPageId": "de821a2d-1983-4bc2-86d3-478f3d553c3d",
+    "appPageName": "goals",
+    "componentName": "goalsComponent",
+    "selectorName": "bh-goals",
+    "htmlFileName": "goals.template.html",
+    "tsFileName": "goals.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

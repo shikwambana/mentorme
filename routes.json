@@ -24,16 +24,35 @@
                 {
                     "component": "menteesComponent",
                     "path": "mentees",
-                    "children": [
-                        {
-                            "component": "menteeinfoComponent",
-                            "path": "mentee"
-                        }
-                    ]
+                    "children": []
                 },
                 {
                     "path": "mentee",
                     "component": "menteeinfoComponent"
+                },
+                {
+                    "path": "addgoal",
+                    "component": "addgoalComponent"
+                },
+                {
+                    "component": "groupmessageComponent",
+                    "path": "broadcast"
+                },
+                {
+                    "path": "''",
+                    "component": "goalsComponent"
+                },
+                {
+                    "path": "goal",
+                    "component": "goalComponent"
+                },
+                {
+                    "path": "invite",
+                    "component": "inviteComponent"
+                },
+                {
+                    "component": "profileComponent",
+                    "path": "profile"
                 }
             ]
         },

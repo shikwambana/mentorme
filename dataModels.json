@@ -3,7 +3,7 @@
         "dataModelId": "612ee53c-d6b7-0ef7-4743-4102b97d9d63",
         "name": "user",
         "description": "DM for mapping user values from form",
-        "dataSource": "neutrinos-delivery-rt",
+        "dataSource": "mentorme",
         "fields": [
             {
                 "name": "username",
@@ -18,6 +18,372 @@
             {
                 "name": "remember",
                 "fieldType": 4,
+                "isArray": false
+            }
+        ]
+    },
+    "8357eee2-eb72-ca0d-5536-5b3eb7a8aa73": {
+        "dataModelId": "8357eee2-eb72-ca0d-5536-5b3eb7a8aa73",
+        "name": "personal_info",
+        "description": "The user's personal information",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "name",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "surname",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "date_ob_birth",
+                "fieldType": 3,
+                "isArray": false
+            },
+            {
+                "name": "date_of_joining",
+                "fieldType": 3,
+                "isArray": false
+            }
+        ]
+    },
+    "44b2f4c0-57a0-2eaa-9777-23cd161dc75f": {
+        "dataModelId": "44b2f4c0-57a0-2eaa-9777-23cd161dc75f",
+        "name": "contact_details",
+        "description": "Contact details of user",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "email_address",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "phone_number",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "home_address",
+                "fieldType": 2,
+                "isArray": false
+            }
+        ]
+    },
+    "8f18f5a5-bf02-c7ce-ca98-5b902929fce4": {
+        "dataModelId": "8f18f5a5-bf02-c7ce-ca98-5b902929fce4",
+        "name": "mentoring",
+        "description": "information pertaining to user's mentors and mentees",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "mentors",
+                "fieldType": 5,
+                "isArray": true,
+                "complexTypeName": "mentors",
+                "complexTypeId": "873a4cf6-264c-df40-9115-d47e877e78ff"
+            },
+            {
+                "name": "mentees",
+                "fieldType": 5,
+                "isArray": true,
+                "complexTypeName": "mentees",
+                "complexTypeId": "95b5cc94-6bd7-6d0c-1c20-7d4c194757bc"
+            },
+            {
+                "name": "mentor",
+                "fieldType": 4,
+                "isArray": false
+            },
+            {
+                "name": "potential",
+                "fieldType": 5,
+                "isArray": true,
+                "complexTypeName": "potential",
+                "complexTypeId": "a6f52e2c-5b37-ebae-06b3-3e1a6ee288d6"
+            }
+        ]
+    },
+    "873a4cf6-264c-df40-9115-d47e877e78ff": {
+        "dataModelId": "873a4cf6-264c-df40-9115-d47e877e78ff",
+        "name": "mentors",
+        "description": "details of user's mentors",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "full_name",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "email_address",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "start_date",
+                "fieldType": 3,
+                "isArray": false
+            },
+            {
+                "name": "end_date",
+                "fieldType": 3,
+                "isArray": false
+            }
+        ]
+    },
+    "95b5cc94-6bd7-6d0c-1c20-7d4c194757bc": {
+        "dataModelId": "95b5cc94-6bd7-6d0c-1c20-7d4c194757bc",
+        "name": "mentees",
+        "description": "details of user's mentees",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "full_name",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "email_address",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "start_date",
+                "fieldType": 3,
+                "isArray": false
+            },
+            {
+                "name": "end_date",
+                "fieldType": 3,
+                "isArray": false
+            }
+        ]
+    },
+    "68934913-a5c7-7549-45b8-a045a1f291b4": {
+        "dataModelId": "68934913-a5c7-7549-45b8-a045a1f291b4",
+        "name": "goals",
+        "description": "user's goals",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "author",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "author_email",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "title",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "category",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "description",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "start_date",
+                "fieldType": 3,
+                "isArray": false
+            },
+            {
+                "name": "due_date",
+                "fieldType": 3,
+                "isArray": false
+            },
+            {
+                "name": "comments",
+                "fieldType": 5,
+                "isArray": true,
+                "complexTypeName": "comments",
+                "complexTypeId": "910da1b1-8ae3-82b7-b309-297f89e6a666"
+            },
+            {
+                "name": "status",
+                "fieldType": 2,
+                "isArray": false
+            }
+        ]
+    },
+    "057ee1af-7dc6-6b9d-f205-a9e2377be40b": {
+        "dataModelId": "057ee1af-7dc6-6b9d-f205-a9e2377be40b",
+        "name": "activity_log",
+        "description": "documenting all the activities that took place between mentor and mentee",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "date",
+                "fieldType": 3,
+                "isArray": false
+            },
+            {
+                "name": "location",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "mood",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "notes",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "mentor_name",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "mentee_name",
+                "fieldType": 2,
+                "isArray": false
+            }
+        ]
+    },
+    "910da1b1-8ae3-82b7-b309-297f89e6a666": {
+        "dataModelId": "910da1b1-8ae3-82b7-b309-297f89e6a666",
+        "name": "comments",
+        "description": "comments of goals",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "sender",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "email_address",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "comment",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "date",
+                "fieldType": 3,
+                "isArray": false
+            },
+            {
+                "name": "time",
+                "fieldType": 2,
+                "isArray": false
+            }
+        ]
+    },
+    "29d26fda-0ab2-3cb4-3127-8ad10e7fa67e": {
+        "dataModelId": "29d26fda-0ab2-3cb4-3127-8ad10e7fa67e",
+        "name": "person",
+        "description": "all the user's information",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "personal_info",
+                "fieldType": 5,
+                "isArray": false,
+                "complexTypeName": "personal_info",
+                "complexTypeId": "8357eee2-eb72-ca0d-5536-5b3eb7a8aa73"
+            },
+            {
+                "name": "contact_details",
+                "fieldType": 5,
+                "isArray": false,
+                "complexTypeName": "contact_details",
+                "complexTypeId": "44b2f4c0-57a0-2eaa-9777-23cd161dc75f"
+            },
+            {
+                "name": "mentoring",
+                "fieldType": 5,
+                "isArray": false,
+                "complexTypeName": "mentoring",
+                "complexTypeId": "8f18f5a5-bf02-c7ce-ca98-5b902929fce4"
+            },
+            {
+                "name": "goals",
+                "fieldType": 5,
+                "isArray": true,
+                "complexTypeName": "goals",
+                "complexTypeId": "68934913-a5c7-7549-45b8-a045a1f291b4"
+            },
+            {
+                "name": "activity_log",
+                "fieldType": 5,
+                "isArray": true,
+                "complexTypeName": "activity_log",
+                "complexTypeId": "057ee1af-7dc6-6b9d-f205-a9e2377be40b"
+            }
+        ]
+    },
+    "a281535c-fa2a-6055-4c88-6c6fb1873c15": {
+        "dataModelId": "a281535c-fa2a-6055-4c88-6c6fb1873c15",
+        "name": "invites",
+        "description": "a list of all the people you have invited",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "full_name",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "email_address",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "code",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "mentor",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "mentorName",
+                "fieldType": 2,
+                "isArray": false
+            }
+        ]
+    },
+    "a6f52e2c-5b37-ebae-06b3-3e1a6ee288d6": {
+        "dataModelId": "a6f52e2c-5b37-ebae-06b3-3e1a6ee288d6",
+        "name": "potential",
+        "description": "all your potential mentees",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "full_name",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "email_address",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "code",
+                "fieldType": 2,
                 "isArray": false
             }
         ]

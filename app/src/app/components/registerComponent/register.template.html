@@ -1,0 +1,25 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+      <mat-icon>arrow_back</mat-icon>
+    </div>
+    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+      <h2>Lets get you Registered</h2>
+    </div>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+    <form>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+        <mat-form-field><input matInput="" placeholder="First Name" required></mat-form-field>
+        <mat-form-field><input matInput="" placeholder="Last Name" required></mat-form-field>
+        <mat-form-field><input matInput="" placeholder="Date of Birth" [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix="" [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker=""></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field><input matInput="" placeholder="Email Address" required></mat-form-field>
+        <mat-form-field><input matInput="" placeholder="Phone Number" required></mat-form-field>
+        <mat-form-field><input matInput="" placeholder="Resident Address" required></mat-form-field><button mat-raised-button="">Register Me</button>
+      </div>
+    </form>
+  </div>
+</div>

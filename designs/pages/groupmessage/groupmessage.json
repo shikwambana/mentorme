@@ -1,0 +1,13 @@
+{
+    "appPageId": "f241c17d-b223-1213-b6a5-7b5e00c1191f",
+    "appPageName": "groupmessage",
+    "componentName": "groupmessageComponent",
+    "selectorName": "bh-groupmessage",
+    "htmlFileName": "groupmessage.template.html",
+    "tsFileName": "groupmessage.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

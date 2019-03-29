@@ -1,4 +1,12 @@
 <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+      <mat-icon>bubble_chart</mat-icon>
+    </div>
+    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+      <h1>My Mentees&apos; Goals</h1>
+    </div>
+  </div>
   <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start none" fxShow="true" fxHide="false" *ngFor="let card of card" fxFlex.gt-sm="40">
     <mat-card class="feed-card">
       <mat-card-title>{{ card.name }}</mat-card-title>
@@ -10,7 +18,7 @@
         <div fxLayout="row wrap" fxLayoutAlign="start start" fxShow="true" fxHide="false">
           <mat-card-actions><button mat-raised-button="">
               <mat-icon>comment</mat-icon>
-            </button><button mat-raised-button="">
+            </button><button mat-raised-button="" [routerLink]="[&apos;../mentee&apos;]">
               <mat-icon>perm_identity</mat-icon>
             </button></mat-card-actions>
         </div>
@@ -18,3 +26,6 @@
     </mat-card>
   </div>
 </div>
+<div fxLayout="column wrap" class="fabBtn" fxFlex="20" fxLayoutAlign="space-around center" fxShow="true" fxHide="false"><button mat-fab="" [routerLink]="[&apos;../log&apos;]">
+    <mat-icon>add</mat-icon>
+  </button></div>

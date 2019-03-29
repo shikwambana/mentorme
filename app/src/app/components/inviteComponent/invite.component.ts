@@ -4,6 +4,12 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import { inviteService } from '../../services/invite/invite.service';
+import { HttpClient } from '@angular/common/http';
+
+import uid from 'tiny-uid';
+import { invites } from '../../models/invites.model';
+import { metadataService } from '../../services/metadata/metadata.service';
 
 /**
  * Service import Example :
@@ -17,8 +23,19 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class inviteComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
+    fullName: string;
+    email: string;
 
-    constructor(private bdms: NDataModelService) {
+    details = {
+        'name' : '',
+        'email' : ''
+    }
+
+    invites = new invites();
+    userObj;
+    url = 'http://localhost:24483/api/';
+
+    constructor(private bdms: NDataModelService, private inviteService : inviteService, private metadataService : metadataService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -26,6 +43,29 @@ export class inviteComponent extends NBaseComponent implements OnInit {
     ngOnInit() {
 
     }
+
+    invite(){
+        //  this.metadataService.getUserObj().subscribe(result => {
+        //     this.userObj = result;
+        // });
+
+        this.userObj = this.metadataService.getUserObj()
+
+        this.invites = {
+            'full_name' : this.details.name,
+            'email_address' : this.details.email,
+            'code' : uid(12),
+            'mentor' : this.userObj.username,
+            'mentorName' : this.userObj.firstName + ' ' + this.userObj.lastName
+        }
+
+
+        // this.put('invites', this.invites);
+
+        this.inviteService.inviteUser(this.invites);
+        
+    }
+
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
@@ -51,8 +91,11 @@ export class inviteComponent extends NBaseComponent implements OnInit {
         this.mm.put(dataModelName, dataModelObject,
             result => {
                 // On Success code here
+                console.log(result);
             }, error => {
                 // Handle errors here
+                console.log(error);
+                
             })
     }
 

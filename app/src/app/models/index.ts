@@ -1,2 +1,13 @@
 export * from '../models';
 export { user } from './user.model';
+export { personal_info } from './personal_info.model';
+export { contact_details } from './contact_details.model';
+export { mentoring } from './mentoring.model';
+export { mentors } from './mentors.model';
+export { mentees } from './mentees.model';
+export { goals } from './goals.model';
+export { activity_log } from './activity_log.model';
+export { comments } from './comments.model';
+export { person } from './person.model';
+export { invites } from './invites.model';
+export { potential } from './potential.model';

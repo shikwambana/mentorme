@@ -12,6 +12,22 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-inviteService
+import { inviteService } from '../services/invite/invite.service';
+//CORE_REFERENCE_IMPORT-registerService
+import { registerService } from '../services/register/register.service';
+//CORE_REFERENCE_IMPORT-registerComponent
+import { registerComponent } from '../components/registerComponent/register.component';
+//CORE_REFERENCE_IMPORT-goalComponent
+import { goalComponent } from '../components/goalComponent/goal.component';
+//CORE_REFERENCE_IMPORT-goalsService
+import { goalsService } from '../services/goals/goals.service';
+//CORE_REFERENCE_IMPORT-goalsComponent
+import { goalsComponent } from '../components/goalsComponent/goals.component';
+//CORE_REFERENCE_IMPORT-groupmessageComponent
+import { groupmessageComponent } from '../components/groupmessageComponent/groupmessage.component';
+//CORE_REFERENCE_IMPORT-addgoalComponent
+import { addgoalComponent } from '../components/addgoalComponent/addgoal.component';
 //CORE_REFERENCE_IMPORT-inviteComponent
 import { inviteComponent } from '../components/inviteComponent/invite.component';
 //CORE_REFERENCE_IMPORT-profileComponent
@@ -70,6 +86,16 @@ export const appDeclarations = [
   PageNotFoundComponent,
   NMapComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-registerComponent
+registerComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-goalComponent
+goalComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-goalsComponent
+goalsComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-groupmessageComponent
+groupmessageComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-addgoalComponent
+addgoalComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-inviteComponent
 inviteComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-profileComponent
@@ -107,6 +133,12 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-inviteService
+inviteService,
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-registerService
+registerService,
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-goalsService
+goalsService,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-metadataService
 metadataService,
 
@@ -119,5 +151,5 @@ metadataService,
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [{path: 'home', component: homeComponent,
 children: [{path: 'load', component: splashComponent},{path: 'feed', component: feedComponent},{path: 'log', component: logactivityComponent},{path: 'mentees', component: menteesComponent,
-children: [{path: 'mentee', component: menteeinfoComponent}]},{path: 'mentee', component: menteeinfoComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full', canActivate: [NAuthGuardService]},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: []},{path: 'mentee', component: menteeinfoComponent},{path: 'addgoal', component: addgoalComponent},{path: 'broadcast', component: groupmessageComponent},{path: '', component: goalsComponent},{path: 'goal', component: goalComponent},{path: 'invite', component: inviteComponent},{path: 'profile', component: profileComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full', canActivate: [NAuthGuardService]},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

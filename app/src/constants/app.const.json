@@ -1,5 +1,16 @@
 {
     "dataSource": {
-        "user": "neutrinos-delivery-rt"
+        "user": "mentorme",
+        "personal_info": "mentorme",
+        "contact_details": "mentorme",
+        "mentoring": "mentorme",
+        "mentors": "mentorme",
+        "mentees": "mentorme",
+        "goals": "mentorme",
+        "activity_log": "mentorme",
+        "comments": "mentorme",
+        "person": "mentorme",
+        "invites": "mentorme",
+        "potential": "mentorme"
     }
 }

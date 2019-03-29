@@ -1,0 +1,27 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+      <mat-icon [routerLink]="[&apos;../&apos;]">arrow_back</mat-icon>
+    </div>
+    <div fxLayout="column wrap" class="headerTitle" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+      <p>Add a goal for</p>
+      <h1>Lesego Matsobane</h1>
+    </div>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+    <form>
+      <div fxLayout="column wrap" fxLayoutAlign="space-around center" fxShow="true" fxHide="false">
+        <mat-form-field><input matInput="" placeholder="What is the goal?" required></mat-form-field>
+        <mat-form-field>
+          <mat-select placeholder="Category" required>
+            <mat-option></mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field><input matInput="" placeholder="short description" required></mat-form-field>
+        <mat-form-field><input matInput="" placeholder="Additional notes" required></mat-form-field><button mat-raised-button="">
+          <mat-icon>done</mat-icon>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -214,7 +214,7 @@
                     },
                     {
                         "_key": "class",
-                        "_value": "",
+                        "_value": "headerTitle",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -261,6 +261,29 @@
                         "_attrDef": "p"
                     }
                 ],
+                "046c4fcc-58ea-7079-ffbb-184b2a1a7866": {
+                    "paletteKey": "NG-Paragraph",
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "text",
+                            "_value": "Profile of",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        }
+                    ]
+                },
                 "fafc0a14-e4a1-362e-05e6-e8547c3040f7": {
                     "paletteKey": "NG-H1",
                     "designerReference": [

@@ -5,6 +5,7 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { metadataService } from '../../services/metadata/metadata.service';
+import { invites } from '../../models/invites.model';
 
 /**
  * Service import Example :
@@ -25,17 +26,23 @@ export class menteesComponent extends NBaseComponent implements OnInit {
     }
     menteesList;
 
+    potential;
+
     ngOnInit() {
         this.menteesList = this.getData.getMentees();
+        this.potential = this.get('invites');
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
+                console.log(result);
             },
             error => {
                 // Handle errors here
+                console.log(error);
+                
             });
     }
 

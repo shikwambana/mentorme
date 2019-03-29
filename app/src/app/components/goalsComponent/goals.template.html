@@ -1,0 +1,36 @@
+<div fxLayout="column wrap" class="fabBtn" fxFlex="20" fxLayoutAlign="space-around center" fxShow="true" fxHide="false"><button mat-fab="" [routerLink]="[&apos;addgoal&apos;]">
+    <mat-icon>add</mat-icon>
+  </button></div>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+      <mat-icon>bubble_chart</mat-icon>
+    </div>
+    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+      <h1>My Goal Stats</h1>
+    </div>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let goal of goals">
+    <mat-card (click)="selectedGoal(goal)" [routerLink]="[&apos;goal&apos;]">
+      <mat-card-header>
+        <mat-card-title>{{ goal.title }}</mat-card-title>
+        <mat-card-subtitle>Status : {{ goal.status }}</mat-card-subtitle><img mat-card-avatar="">
+      </mat-card-header>
+      <mat-card-content>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+          <p>Due Date: {{ goal.date }}</p>
+          <h3>{{ goal.content }}</h3>
+        </div>
+      </mat-card-content>
+      <mat-card-footer>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+          <mat-card-actions><button mat-raised-button="">
+              <mat-icon>comment</mat-icon>
+            </button><button mat-raised-button="">
+              <mat-icon>info</mat-icon>
+            </button></mat-card-actions>
+        </div>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>

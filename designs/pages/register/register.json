@@ -1,0 +1,13 @@
+{
+    "appPageId": "fe0756f6-3c87-331d-bfe4-551e5c48cc33",
+    "appPageName": "register",
+    "componentName": "registerComponent",
+    "selectorName": "bh-register",
+    "htmlFileName": "register.template.html",
+    "tsFileName": "register.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

@@ -48,5 +48,30 @@
         "appPageName": "invite",
         "componentName": "inviteComponent",
         "isEntry": false
+    },
+    "268eda5e-a47f-6fc9-0189-b9fef71d5ca4": {
+        "appPageName": "addgoal",
+        "componentName": "addgoalComponent",
+        "isEntry": false
+    },
+    "f241c17d-b223-1213-b6a5-7b5e00c1191f": {
+        "appPageName": "groupmessage",
+        "componentName": "groupmessageComponent",
+        "isEntry": false
+    },
+    "de821a2d-1983-4bc2-86d3-478f3d553c3d": {
+        "appPageName": "goals",
+        "componentName": "goalsComponent",
+        "isEntry": false
+    },
+    "76de12ba-8818-8e9f-12ab-61cdb28b2406": {
+        "appPageName": "goal",
+        "componentName": "goalComponent",
+        "isEntry": false
+    },
+    "fe0756f6-3c87-331d-bfe4-551e5c48cc33": {
+        "appPageName": "register",
+        "componentName": "registerComponent",
+        "isEntry": false
     }
 }

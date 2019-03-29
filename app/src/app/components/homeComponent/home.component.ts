@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 import { ModelMethods } from '../../lib/model.methods';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { NDataModelService, NLogoutService } from 'neutrinos-seed-services';
+import { goalsService } from '../../services/goals/goals.service';
+import { metadataService } from '../../services/metadata/metadata.service';
 
 @Component({
     selector: 'bh-home',
@@ -14,13 +16,19 @@ import { NDataModelService, NLogoutService } from 'neutrinos-seed-services';
 export class homeComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService, private logoutService: NLogoutService, private router: Router) {
+    menu;
+    constructor(private bdms: NDataModelService, private logoutService: NLogoutService, private router: Router, private metadata : metadataService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
+        this.metadata.getMenu().subscribe(result => {
+            // console.log("data", result);
+            this.menu = result;
+        });
 
+        this.metadata.getUserObj();
     }
 
     logoutUser() {

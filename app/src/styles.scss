@@ -50,19 +50,19 @@ $dark : #0088a3;
 //header and footer 
 
 .nav {
-    height: 100px !important; 
+    height: 65px !important; 
     background-color: white;
 }
 
 .nav .mat-icon {
-    font-size: 50px;
+    font-size: 35px;
     height: auto;
     width: auto;
     cursor: pointer;
 }
 
 .nav .mat-icon:hover, .nav img:hover {
-    font-size: 60px;
+    font-size: 38px;
     color: teal;
 }
 
@@ -105,10 +105,37 @@ $dark : #0088a3;
     z-index: 2;
     right: 0;
     padding: 15px;
-    bottom: 100px;
+    bottom: 70px;
+}
+
+.fabMenu {
+    top: 10px;
+    bottom: auto !important;
 }
 
 .fabBtn .mat-fab {
     margin: 5px;
     background-color: $dark;
+}
+
+.headerTitle p, .headerTitle h1 {
+    margin: 0;
+}
+
+.formBox {
+        margin: 0 30px !important;
+}
+
+.nameBubble {
+    background-color: $secondary;
+    padding: 5px;
+    border-radius: 15px;
+    color: white;
+}
+
+.commentInput {
+    bottom: 60px;
+    position: fixed;
+    z-index: 2;
+    width: 95%;
 }

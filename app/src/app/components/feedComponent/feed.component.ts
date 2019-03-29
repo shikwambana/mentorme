@@ -56,6 +56,7 @@ export class feedComponent extends NBaseComponent implements OnInit {
         }
         
     ]
+    
     ngOnInit() {
 
     }
