@@ -14,4 +14,7 @@ export class personal_info {
   @JsonProperty('date_of_joining', Date, true)
   public date_of_joining: Date = undefined;
 
+  @JsonProperty('userKey', String, true)
+  public userKey: string = undefined;
+
 }

@@ -149,7 +149,7 @@ metadataService,
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: homeComponent, canActivate: [NAuthGuardService],
+export const appRoutes = [{path: 'home', component: homeComponent,
 children: [{path: 'load', component: splashComponent},{path: 'feed', component: feedComponent},{path: 'log', component: logactivityComponent},{path: 'mentees', component: menteesComponent,
 children: []},{path: 'mentee', component: menteeinfoComponent},{path: 'addgoal', component: addgoalComponent},{path: 'broadcast', component: groupmessageComponent},{path: '', component: goalsComponent},{path: 'goal', component: goalComponent},{path: 'invite', component: inviteComponent},{path: 'profile', component: profileComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full', canActivate: [NAuthGuardService]},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: 'register', component: registerComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

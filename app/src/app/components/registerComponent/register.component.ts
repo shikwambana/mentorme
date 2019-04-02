@@ -2,11 +2,11 @@
 import { Component, OnInit } from '@angular/core'
 import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
-import { NDataModelService } from 'neutrinos-seed-services';
+import { NDataModelService, NSessionStorageService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { person } from '../../models/person.model';
 import { registerService } from '../../services/register/register.service';
-
+import uid from 'tiny-uid';
 
 @Component({
     selector: 'bh-register',
@@ -16,39 +16,72 @@ import { registerService } from '../../services/register/register.service';
 export class registerComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     date = new Date();
-    person = new person();
     possibleMentees = [];
     mentor;
-    
-    constructor(private bdms: NDataModelService, private registerService : registerService) {
+    pwd;
+    pwd2;
+
+    // Tukiso member variables
+    accessToken;
+    person: person;
+
+    constructor(private bdms: NDataModelService, private registerService: registerService, private session: NSessionStorageService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-        this.get('invites');
+        this.registerService.getToken();        
+        // this.get('invites');
+        this.person = new person();
+        
     }
 
-    register(){
-        // console.log(this.person.mentoring.mentors);
-        // this.put('person',this.person);
+    register() {
+        console.log(this.person)
+        let user = {
+            "userKey": uid(),
+            "firstName": this.person.personal_info.name,
+            "lastName": this.person.personal_info.surname,
+            "username": this.person.contact_details.email_address,
+            "displayName": this.person.personal_info.name + " " + this.person.personal_info.surname,
+            "password": this.pwd,
+            "groupList": [
+                'mentee'
+            ]
+        }
+
+        // From service by Tukiso
+        var myheaders = new Headers();
+        myheaders.append('Content-Type', "application/json");
+
+        // get session storage user
+        this.accessToken = this.session.getValue('accessToken');
+        // console.log(this.accessToken, "My Token...");
+
+        myheaders.append("Authorization", "Bearer " + this.accessToken);
+
 
         this.checkMentor(this.person.contact_details.email_address);
 
-        console.log(this.person);
-        
+        this.registerService.register(user, this.pwd, myheaders);
+
     }
 
-    checkMentor(user){
+    checkMentor(user) {
 
-        this.mentor = this.possibleMentees.find(val=>val.email_address == user);
-        delete this.mentor._id;
-        console.log(this.mentor);
+        this.mentor = this.possibleMentees.find(val => val.email_address == user);
+        if (this.mentor) {
+            delete this.mentor._id;
+            console.log(this.mentor);
 
-        this.person.mentoring.mentors.push(this.mentor);
-        
+            this.person.mentoring.mentors.push(this.mentor);
+        } else {
+            this.person.personal_info.userKey = uid(7);
+        }
     }
-    
+
+
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
@@ -76,12 +109,12 @@ export class registerComponent extends NBaseComponent implements OnInit {
         this.mm.put(dataModelName, dataModelObject,
             result => {
                 // On Success code here
-                this.registerService.register(this.person);
+                // this.registerService.register(this.person);
 
             }, error => {
                 // Handle errors here
                 console.log(error);
-                
+
             })
     }
 
@@ -108,7 +141,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
             })
     }
 
-    delete (dataModelName, filter) {
+    delete(dataModelName, filter) {
         this.mm.delete(dataModelName, filter,
             result => {
                 // On Success code here

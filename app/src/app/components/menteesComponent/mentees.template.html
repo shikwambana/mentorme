@@ -1,4 +1,12 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+      <mat-icon>bubble_chart</mat-icon>
+    </div>
+    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+      <h1>My Mentees</h1>
+    </div>
+  </div>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let mentee of menteesList">
     <mat-card [routerLink]="[&apos;../mentee&apos;]">
       <mat-card-title>{{ mentee.name }}</mat-card-title>

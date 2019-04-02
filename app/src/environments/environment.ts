@@ -19,6 +19,8 @@ export const environment = {
         "appAuthenticationStrategy": "localAuth",
         "basicAuthUser": "username",
         "basicAuthPassword": "password",
-        "useDefaultExceptionUI": true
+        "useDefaultExceptionUI": true,
+        "registerUrl": "http://localhost:3000/bhive-art/mentorme/auth/mentorme/register",
+        "modellerUrl": "http://localhost:24483/api"
     }
 }

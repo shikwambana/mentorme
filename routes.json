@@ -7,7 +7,7 @@
             "redirectTo": "",
             "resolve": "",
             "data": "",
-            "canActivate": "NAuthGuardService",
+            "canActivate": "",
             "children": [
                 {
                     "path": "load",

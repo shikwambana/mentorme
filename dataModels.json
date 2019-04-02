@@ -47,6 +47,11 @@
                 "name": "date_of_joining",
                 "fieldType": 3,
                 "isArray": false
+            },
+            {
+                "name": "userKey",
+                "fieldType": 2,
+                "isArray": false
             }
         ]
     },

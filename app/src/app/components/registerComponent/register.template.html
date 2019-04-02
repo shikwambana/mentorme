@@ -17,7 +17,7 @@
     <mat-form-field><input matInput="" [(ngModel)]="person.contact_details.email_address" placeholder="Email Address" required></mat-form-field>
     <mat-form-field><input matInput="" [(ngModel)]="person.contact_details.phone_number" placeholder="Phone Number" required></mat-form-field>
     <mat-form-field><input matInput="" [(ngModel)]="person.contact_details.home_address" placeholder="Resident Address" required></mat-form-field>
-    <mat-form-field><input matInput="" placeholder="Password" required></mat-form-field>
-    <mat-form-field><input matInput="" placeholder="Password Confirmation" required></mat-form-field><button mat-raised-button="" (click)="register()">Register Me</button>
+    <mat-form-field><input matInput="" [(ngModel)]="pwd" placeholder="Password" required></mat-form-field>
+    <mat-form-field><input matInput="" [(ngModel)]="pwd2" placeholder="Password Confirmation" required></mat-form-field><button mat-raised-button="" (click)="register()">Register Me</button>
   </div>
 </div>
