@@ -2,94 +2,56 @@
 import { Component, OnInit } from '@angular/core'
 import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
-import { NDataModelService, NSessionStorageService } from 'neutrinos-seed-services';
+import { NDataModelService, NLogoutService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
-import { person } from '../../models/person.model';
-import { registerService } from '../../services/register/register.service';
-import uid from 'tiny-uid';
+import { Router } from '@angular/router';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { tokenService } from '../../services/token/token.service';
+/**
+ * Service import Example :
+ * import { HeroService } from '../services/hero/hero.service';
+ */
 
 @Component({
-    selector: 'bh-register',
-    templateUrl: './register.template.html'
+    selector: 'bh-user',
+    templateUrl: './user.template.html'
 })
 
-export class registerComponent extends NBaseComponent implements OnInit {
+export class userComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-    date = new Date();
-    possibleMentees = [];
-    mentor;
-    pwd;
-    pwd2;
 
-    // Tukiso member variables
-    accessToken;
-    person: person;
-    uid: string;
-    constructor(private bdms: NDataModelService, private registerService: registerService, private session: NSessionStorageService) {
+    constructor(private bdms: NDataModelService, 
+    private logoutService: NLogoutService, 
+    private router: Router, 
+    private tokenService : tokenService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-        
-        //Get token
-       this.registerService.getToken().then(result => {
-         this.accessToken = result;  
-         console.log('it works ',this.accessToken);
-       }, error => {
-           console.log(error, 'could not get token');
-       });        
-        // this.get('invites');
-        this.person = new person();
-        this.uid = uid();
+        this.getToken();
     }
 
-    register() {
-        console.log(this.accessToken)
-        this.person.personal_info.userKey = this.uid;
-        let user = {
-            "userKey": this.person.personal_info.userKey,
-            "firstName": this.person.personal_info.name,
-            "lastName": this.person.personal_info.surname,
-            "username": this.person.contact_details.email_address,
-            "displayName": this.person.personal_info.name + " " + this.person.personal_info.surname,
-            "password": this.pwd,
-            "groupList": [
-                'mentee'
-            ]
-        }
-
-        this.checkMentor(this.person.contact_details.email_address);
-
-        if(this.registerService.register(user)){
-            // this.put('person',this.person);
-        }
+    getToken(){
+        this.tokenService.generateToken();
+       
     }
 
-    checkMentor(user) {
-
-        this.mentor = this.possibleMentees.find(val => val.email_address == user);
-        if (this.mentor) {
-            delete this.mentor._id;
-            console.log(this.mentor);
-
-            this.person.mentoring.mentors.push(this.mentor);
-        } else {
-            this.person.personal_info.userKey = uid(7);
-        }
+    fetchToken(){
+        this.tokenService.getToken();
     }
-
+     logoutUser() {
+      this.logoutService.logout();
+      this.router.navigate(['/login']);
+    }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
-                this.possibleMentees = result;
-                // console.log(this.possibleMentees);
             },
             error => {
                 // Handle errors here
-                console.log(error);
             });
     }
 
@@ -107,12 +69,8 @@ export class registerComponent extends NBaseComponent implements OnInit {
         this.mm.put(dataModelName, dataModelObject,
             result => {
                 // On Success code here
-                // this.registerService.register(this.person);
-                console.log(result)
             }, error => {
                 // Handle errors here
-                console.log(error);
-
             })
     }
 
@@ -139,7 +97,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
             })
     }
 
-    delete(dataModelName, filter) {
+    delete (dataModelName, filter) {
         this.mm.delete(dataModelName, filter,
             result => {
                 // On Success code here

@@ -12,6 +12,14 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-tokenService
+import { tokenService } from '../services/token/token.service';
+//CORE_REFERENCE_IMPORT-userComponent
+import { userComponent } from '../components/userComponent/user.component';
+//CORE_REFERENCE_IMPORT-resetpasswordService
+import { resetpasswordService } from '../services/resetpassword/resetpassword.service';
+//CORE_REFERENCE_IMPORT-changepwdComponent
+import { changepwdComponent } from '../components/changepwdComponent/changepwd.component';
 //CORE_REFERENCE_IMPORT-inviteService
 import { inviteService } from '../services/invite/invite.service';
 //CORE_REFERENCE_IMPORT-registerService
@@ -86,6 +94,10 @@ export const appDeclarations = [
   PageNotFoundComponent,
   NMapComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-userComponent
+userComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-changepwdComponent
+changepwdComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-registerComponent
 registerComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-goalComponent
@@ -133,6 +145,10 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-tokenService
+tokenService,
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-resetpasswordService
+resetpasswordService,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-inviteService
 inviteService,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-registerService
@@ -151,5 +167,6 @@ metadataService,
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [{path: 'home', component: homeComponent,
 children: [{path: 'load', component: splashComponent},{path: 'feed', component: feedComponent},{path: 'log', component: logactivityComponent},{path: 'mentees', component: menteesComponent,
-children: []},{path: 'mentee', component: menteeinfoComponent},{path: 'addgoal', component: addgoalComponent},{path: 'broadcast', component: groupmessageComponent},{path: '', component: goalsComponent},{path: 'goal', component: goalComponent},{path: 'invite', component: inviteComponent},{path: 'profile', component: profileComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full', canActivate: [NAuthGuardService]},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: 'register', component: registerComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: []},{path: 'mentee', component: menteeinfoComponent},{path: 'addgoal', component: addgoalComponent},{path: 'broadcast', component: groupmessageComponent},{path: '', component: goalsComponent},{path: 'goal', component: goalComponent},{path: 'invite', component: inviteComponent},{path: 'profile', component: profileComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full', canActivate: [NAuthGuardService]},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: 'register', component: registerComponent},{path: 'resetpassword', component: changepwdComponent},{path: 'user', component: userComponent,
+children: [{path: 'register', component: registerComponent},{path: 'changepwd', component: changepwdComponent}]},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

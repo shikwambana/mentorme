@@ -1,0 +1,13 @@
+{
+    "appPageId": "d318ccad-150d-e8c6-f186-8bcf53ac24a1",
+    "appPageName": "changePwd",
+    "componentName": "changepwdComponent",
+    "selectorName": "bh-changepwd",
+    "htmlFileName": "changepwd.template.html",
+    "tsFileName": "changepwd.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

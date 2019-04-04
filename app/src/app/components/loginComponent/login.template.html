@@ -1,9 +1,8 @@
 <div fxLayout="row " fxLayoutAlign="center center" fxShow="true" fxHide="false" fxFill="">
   <div fxLayout="column " fxLayoutAlign=" " fxShow="true" fxHide="false" fxFlex.sm="40" fxFlex.md="30" fxFlex.gt-md="20" fxFlex.xs="70">
     <mat-card class="login-card">
-      <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="end end" fxShow="true" fxHide="false"><button mat-button="">Register</button></div>
       <div fxLayout="row wrap" fxLayoutAlign="center none" fxShow="true" fxHide="false">
-        <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="center center" fxShow="true" fxHide="false"><img mat-card-image="" class="card-image" imgSrc="Web/white_mentor_me_logo.png"></div>
+        <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="center center" fxShow="true" fxHide="false"><img mat-card-image="" class="card-image" imgSrc="Web/small_logo.png"></div>
       </div>
       <div fxLayout="column " fxLayoutAlign=" " fxShow="true" fxHide="false">
         <form>
@@ -27,10 +26,13 @@
             <div fxLayout="row " fxLayoutAlign="center center" fxShow="true" fxHide="false" *ngIf="!isMobile">
               <mat-checkbox [(ngModel)]="user.remember" name="user.remember">Remember me?</mat-checkbox>
             </div>
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-              <h3></h3>
-            </div>
             <div fxLayout="row " fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false"><button mat-raised-button="" class="primary-btn" (click)="authenticate()">Login</button></div>
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+              <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="center stretch" fxShow="true" fxHide="false"><button mat-button="" [routerLink]="[&apos;../user/register&apos;]">Register</button></div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+                <h3 [routerLink]="[&apos;../user/changepwd&apos;]">Reset Password</h3>
+              </div>
+            </div>
           </div>
         </form>
       </div>

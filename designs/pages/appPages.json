@@ -73,5 +73,15 @@
         "appPageName": "register",
         "componentName": "registerComponent",
         "isEntry": false
+    },
+    "d318ccad-150d-e8c6-f186-8bcf53ac24a1": {
+        "appPageName": "changePwd",
+        "componentName": "changepwdComponent",
+        "isEntry": false
+    },
+    "974580b7-f8e1-2315-d528-9948dc2f4286": {
+        "appPageName": "user",
+        "componentName": "userComponent",
+        "isEntry": false
     }
 }

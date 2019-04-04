@@ -1,10 +1,10 @@
 {
-    "68a4aadd-06c6-0956-7c75-9e27d957a229": {
+    "c6783888-4b15-0ed5-0082-9639aae5d3a7": {
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
                 "_key": "style",
-                "_value": "margin: 0 20px;",
+                "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -57,7 +57,7 @@
                 "_attrDef": "p"
             }
         ],
-        "927b6246-6961-90e1-5264-07e6260bb719": {
+        "70e88cda-757b-58f1-30de-c01673acefd7": {
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
                 {
@@ -92,7 +92,7 @@
                 },
                 {
                     "_key": "layoutAlign",
-                    "_value": "center",
+                    "_value": "start",
                     "_type": "a",
                     "_attrDef": "p"
                 },
@@ -115,7 +115,7 @@
                     "_attrDef": "p"
                 }
             ],
-            "2abbfed5-1fcf-42c8-6000-138e1b941ee7": {
+            "2a7ae438-5f77-825b-a65d-944a769bc35e": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
                     {
@@ -173,7 +173,7 @@
                         "_attrDef": "p"
                     }
                 ],
-                "eb847de9-295e-718d-74b7-c3e47c3ac0fe": {
+                "502d918c-f6b5-5c4d-fa6f-882059c3da44": {
                     "paletteKey": "NG-icon",
                     "designerReference": [
                         {
@@ -203,7 +203,7 @@
                     ]
                 }
             },
-            "1dc6ef4c-3bca-1b21-4a83-8b20b888d1d6": {
+            "c9da1ce5-4765-33a8-df17-83b6b3319b07": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
                     {
@@ -261,8 +261,8 @@
                         "_attrDef": "p"
                     }
                 ],
-                "8c4be273-8e1c-0177-e869-a7b8d771bb08": {
-                    "paletteKey": "NG-H2",
+                "986e27fd-f9f0-3f4e-eb7a-39fa3298e1f6": {
+                    "paletteKey": "NG-H1",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -277,8 +277,8 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "H2 Text",
-                            "_value": "Lets get you Registered",
+                            "_key": "H1 Text",
+                            "_value": "Reset Password",
                             "_type": "a",
                             "_attrDef": "p"
                         }
@@ -286,12 +286,12 @@
                 }
             }
         },
-        "074c00c3-0d96-5211-bdef-6db227881110": {
+        "033bd00c-53e2-1306-843a-b5964552b5fa": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
                 {
                     "_key": "style",
-                    "_value": "",
+                    "_value": "margin: 0 20px;",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -344,8 +344,8 @@
                     "_attrDef": "p"
                 }
             ],
-            "2becafdf-21fc-6a53-e2e2-3c8f1aef273b": {
-                "paletteKey": "NG-Input",
+            "f77dfa3c-516b-36c3-a525-a6e71df168aa": {
+                "paletteKey": "NG-H3",
                 "designerReference": [
                     {
                         "_key": "style",
@@ -360,50 +360,73 @@
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "placeholder",
-                        "_value": "First Name",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "value",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "required",
-                        "_value": "required",
+                        "_key": "H3 Text",
+                        "_value": "Enter your email address below and we will email you your new password",
                         "_type": "a",
                         "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[(ngModel)]",
-                        "_value": "person.personal_info.name",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "color",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "name",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "type",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
                     }
                 ]
-            },
-            "c3967c83-2065-da6a-c609-608a24edf51b": {
+            }
+        },
+        "968cd5b8-b82c-184c-b7e8-c2db231185e0": {
+            "paletteKey": "FlexLayoutCol",
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "margin: 0 20px;",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxLayoutGap",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "wrap",
+                    "_value": "wrap",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "layoutAlign",
+                    "_value": "start",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "pLayoutAlign",
+                    "_value": "stretch",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxShow",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxHide",
+                    "_value": "false",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                }
+            ],
+            "14c2d5b0-48ab-4e62-42ac-e8a3e6612987": {
                 "paletteKey": "NG-Input",
                 "designerReference": [
                     {
@@ -420,368 +443,7 @@
                     },
                     {
                         "_key": "placeholder",
-                        "_value": "Last Name",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "value",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "required",
-                        "_value": "required",
-                        "_type": "a",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[(ngModel)]",
-                        "_value": "person.personal_info.surname",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "color",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "name",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "type",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    }
-                ]
-            },
-            "4698259e-fac3-a68c-580b-cc2076f37eed": {
-                "paletteKey": "NG-DatePicker",
-                "designerReference": [
-                    {
-                        "_key": "style",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "class",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "placeholder",
-                        "_value": "Date of Birth",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "value",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[min]",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[max]",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[startAt]",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "startView",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "touchUi",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "id",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "(dateChange)",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "(dateInput)",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "opened",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "disabled",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "(open)",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "(close)",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[matDatepickerFilter]",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[(ngModel)]",
-                        "_value": "person.personal_info.date_of_birth",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "name",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "picker",
-                        "_value": "picker",
-                        "_type": "ma",
-                        "_attrDef": "p"
-                    }
-                ]
-            },
-            "65701375-59c2-6fbc-c373-4ed6c4c1bb8d": {
-                "paletteKey": "NG-Input",
-                "designerReference": [
-                    {
-                        "_key": "style",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "class",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "placeholder",
-                        "_value": "Email Address",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "value",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "required",
-                        "_value": "required",
-                        "_type": "a",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[(ngModel)]",
-                        "_value": "person.contact_details.email_address",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "color",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "name",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "type",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    }
-                ]
-            },
-            "948e04e7-9a73-a24c-938e-4315cbb68047": {
-                "paletteKey": "NG-Input",
-                "designerReference": [
-                    {
-                        "_key": "style",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "class",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "placeholder",
-                        "_value": "Phone Number",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "value",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "required",
-                        "_value": "required",
-                        "_type": "a",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[(ngModel)]",
-                        "_value": "person.contact_details.phone_number",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "color",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "name",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "type",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    }
-                ]
-            },
-            "74014e81-d594-6d6c-c55d-48975da89c4b": {
-                "paletteKey": "NG-Input",
-                "designerReference": [
-                    {
-                        "_key": "style",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "class",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "placeholder",
-                        "_value": "Resident Address",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "value",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "required",
-                        "_value": "required",
-                        "_type": "a",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[(ngModel)]",
-                        "_value": "person.contact_details.home_address",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "color",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "name",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "type",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    }
-                ]
-            },
-            "08e5a46f-2029-4763-0901-9f4661fb7808": {
-                "paletteKey": "NG-Input",
-                "designerReference": [
-                    {
-                        "_key": "style",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "class",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "placeholder",
-                        "_value": "Password",
+                        "_value": "username or email address",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -823,7 +485,7 @@
                     }
                 ]
             },
-            "ad5d3314-e8ca-88ee-c470-495debfba2be": {
+            "2d6d8d18-52c8-fb3b-29e4-6ace410ec836": {
                 "paletteKey": "NG-Input",
                 "designerReference": [
                     {
@@ -840,7 +502,7 @@
                     },
                     {
                         "_key": "placeholder",
-                        "_value": "Password Confirmation",
+                        "_value": "New Password",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -858,7 +520,7 @@
                     },
                     {
                         "_key": "[(ngModel)]",
-                        "_value": "pwd2",
+                        "_value": "email",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -882,8 +544,8 @@
                     }
                 ]
             },
-            "3ace3cfe-3a4c-b61f-1df8-3a4804676c7e": {
-                "paletteKey": "NG-RaisedButton",
+            "766fb7d8-eaf1-1ca3-ee7a-1e21c103f26a": {
+                "paletteKey": "FlexLayoutCol",
                 "designerReference": [
                     {
                         "_key": "style",
@@ -898,24 +560,118 @@
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "buttonname",
-                        "_value": "Register Me",
-                        "_type": "a",
+                        "_key": "fxFlex",
+                        "_value": "20",
+                        "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "color",
+                        "_key": "fxLayoutGap",
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "(click)",
-                        "_value": "register()",
+                        "_key": "wrap",
+                        "_value": "wrap",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "layoutAlign",
+                        "_value": "center",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "pLayoutAlign",
+                        "_value": "center",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxShow",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxHide",
+                        "_value": "false",
                         "_type": "kv",
                         "_attrDef": "p"
                     }
-                ]
+                ],
+                "c9a95bca-b1f9-0fc5-7f74-67fe8ab0730e": {
+                    "paletteKey": "NG-button",
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "buttonname",
+                            "_value": "test",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "color",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "(click)",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ]
+                },
+                "0ebf4ddd-845d-8483-8f98-a9557788bbfd": {
+                    "paletteKey": "NG-RaisedButton",
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "buttonname",
+                            "_value": "Reset Password",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "color",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "(click)",
+                            "_value": "reset()",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ]
+                }
             }
         }
     }
