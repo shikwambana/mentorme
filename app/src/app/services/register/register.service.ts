@@ -5,6 +5,8 @@ import { NSystemService, NSessionStorageService } from 'neutrinos-seed-services'
 // import { commonService } from "../common/common.service";
 import { of } from 'rxjs/observable/of';
 import { tap, catchError } from 'rxjs/operators';
+import { tokenService } from '../../services/token/token.service';
+
 
 @Injectable()
 export class registerService {
@@ -22,7 +24,7 @@ export class registerService {
     
     
 
-    constructor(private http: HttpClient, private sessionStorage: NSessionStorageService, ) {
+    constructor(private http: HttpClient, private sessionStorage: NSessionStorageService, private tokenService : tokenService) {
         // this.appProperties = this.systemService.getVal('properties');
         // console.log(this.appProperties);
         // this.registerUrl = this.appProperties.registerUrl;
@@ -52,7 +54,7 @@ export class registerService {
             return this.http
             .post('http://localhost:3000/bhive-art/mentorme/auth/mentorme', body, this.myheaders)
             .subscribe(res => {
-                console.log("Got the token", res);
+                console.log("Got the token from register services", res);
                 this.accessToken = res;
                 console.log('got token?', this.accessToken.accessToken);
                 this.token = this.accessToken.accessToken;
@@ -68,7 +70,9 @@ export class registerService {
 
     }
 
-    register(person) {
+    register(user, person) {
+
+        this.token = this.tokenService.getToken();
 
        let headers = new HttpHeaders({
             'Content-Type': 'application/json',
@@ -76,7 +80,12 @@ export class registerService {
        let options = { headers: headers };
         console.log(this.token);
         
-        return this.http.put(this.url, person, options).subscribe(res => {
+         let data = {
+            'user' : user,
+            'person' :person,
+            'token' : this.token
+        }
+        return this.http.post(this.urlBmodeller + '/register', data, options).subscribe(res => {
             console.log(res, " Successfully registered");
 
             // this.http.post(this.urlBmodeller + '/register', person).subscribe(res => {

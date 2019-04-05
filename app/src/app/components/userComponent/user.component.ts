@@ -46,7 +46,7 @@ export class userComponent extends NBaseComponent implements OnInit {
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
-        this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
+        this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
             },

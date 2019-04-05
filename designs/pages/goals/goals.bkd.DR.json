@@ -125,7 +125,7 @@
             },
             {
                 "_key": "class",
-                "_value": "",
+                "_value": "outerCont",
                 "_type": "kv",
                 "_attrDef": "p"
             },

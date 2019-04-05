@@ -11,9 +11,8 @@ export class tokenService {
     bModellerURL: string;
     token;
 
-    constructor(private http: HttpClient){
+    constructor(private http: HttpClient, private session : NSessionStorageService){
         this.appProperties = this.systemService.getVal('properties');
-        console.log(this.appProperties);
         this.bModellerURL = this.appProperties.modellerUrl + '/token';
      
     }
@@ -22,7 +21,8 @@ export class tokenService {
         if(!this.token){
             this.http.post(this.bModellerURL, {'hi' : 'ola'} ).subscribe(result => {
                 this.token = result;
-                 console.log('got token');
+                this.session.setValue('accessToken',this.token.accessToken);
+                 console.log('got token from token service');
                  },
                  error => {
                  console.log('failed to get token', error)

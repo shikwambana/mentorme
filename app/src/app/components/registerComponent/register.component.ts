@@ -22,7 +22,6 @@ export class registerComponent extends NBaseComponent implements OnInit {
     pwd2;
 
     // Tukiso member variables
-    accessToken;
     person: person;
     uid: string;
     constructor(private bdms: NDataModelService, private registerService: registerService, private session: NSessionStorageService) {
@@ -33,20 +32,20 @@ export class registerComponent extends NBaseComponent implements OnInit {
     ngOnInit() {
         
         //Get token
-       this.registerService.getToken().then(result => {
-         this.accessToken = result;  
-         console.log('it works ',this.accessToken);
-       }, error => {
-           console.log(error, 'could not get token');
-       });        
+    //    this.registerService.getToken().then(result => {
+    //      this.accessToken = result;  
+    //      console.log('it works ',this.accessToken);
+    //    }, error => {
+    //        console.log(error, 'could not get token');
+    //    });        
         // this.get('invites');
         this.person = new person();
         this.uid = uid();
     }
 
     register() {
-        console.log(this.accessToken)
         this.person.personal_info.userKey = this.uid;
+        console.log(this.person.personal_info)
         let user = {
             "userKey": this.person.personal_info.userKey,
             "firstName": this.person.personal_info.name,
@@ -61,7 +60,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
 
         this.checkMentor(this.person.contact_details.email_address);
 
-        if(this.registerService.register(user)){
+        if(this.registerService.register(user, this.person)){
             // this.put('person',this.person);
         }
     }
@@ -81,7 +80,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
 
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
-        this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
+        this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
                 this.possibleMentees = result;

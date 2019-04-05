@@ -1,7 +1,9 @@
 <div fxLayout="column wrap" class="fabBtn" fxFlex="20" fxLayoutAlign="space-around center" fxShow="true" fxHide="false"><button mat-fab="" [routerLink]="[&apos;addgoal&apos;]">
-    <mat-icon>add</mat-icon>
+    <mat-icon>
+      <mat-icon>add</mat-icon>
+    </mat-icon>
   </button></div>
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+<div fxLayout="column wrap" class="outerCont" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
   <div fxLayout="row wrap" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
     <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
       <mat-icon>bubble_chart</mat-icon>
@@ -14,7 +16,8 @@
     <mat-card (click)="selectedGoal(goal)" [routerLink]="[&apos;goal&apos;]">
       <mat-card-header>
         <mat-card-title>{{ goal.title }}</mat-card-title>
-        <mat-card-subtitle>Status : {{ goal.status }}</mat-card-subtitle><img mat-card-avatar="">
+        <mat-card-subtitle>Status : {{ goal.status }}</mat-card-subtitle>
+        <img mat-card-avatar="">
       </mat-card-header>
       <mat-card-content>
         <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">

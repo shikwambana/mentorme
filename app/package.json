@@ -50,6 +50,7 @@
     "rxjs": "6.4.0",
     "rxjs-compat": "6.4.0",
     "signature_pad": "2.3.2",
+    "tiny-uid": "^1.0.0",
     "zone.js": "0.8.29"
   },
   "devDependencies": {

@@ -80,14 +80,6 @@
             "component": "inviteComponent"
         },
         {
-            "path": "register",
-            "component": "registerComponent"
-        },
-        {
-            "component": "changepwdComponent",
-            "path": "resetpassword"
-        },
-        {
             "path": "user",
             "component": "userComponent",
             "children": [

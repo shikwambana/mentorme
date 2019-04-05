@@ -10,6 +10,7 @@ export class resetpasswordService {
     systemService = NSystemService.getInstance();
     appProperties: any;
     bModellerURL: string;
+    token: string;
 
     constructor(private http: HttpClient, private tokenService: tokenService) {
         this.appProperties = this.systemService.getVal('properties');
@@ -21,30 +22,37 @@ export class resetpasswordService {
         console.log(username, password)
 
         let body = {
-            "userKey": username,
+            "userKey": 'j0pznt8',
             "password": password,
-            "sendMail": true,
+            "sendMail": false,
             "sendMailKey": username
           }
 
           
-        
-        this.tokenService.getToken().subscribe(result => {
+        this.token = this.tokenService.getToken();
+        console.log(this.token);
+
+        let data = {
+            'body' : body,
+            'token' : this.token
+        }
+
+        // this.tokenService.getToken().subscribe(result => {
             
             let headers = new HttpHeaders({
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + result.accessToken });
+                'Authorization': 'Bearer ' + this.token });
                 let options = { headers: headers };
 
-            this.http.patch(this.bModellerURL, body, options).subscribe(results => {
+            this.http.post(this.bModellerURL, data, options).subscribe(results => {
                 console.log('pwd reset', results)
             }, error => {
                 console.log('failed to reset', error)
             })
 
-        }, error => {
+        // }, error => {
 
-        })
+        // })
 
     }
 

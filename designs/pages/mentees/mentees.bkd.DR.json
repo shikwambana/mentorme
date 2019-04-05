@@ -17,13 +17,13 @@
             },
             {
                 "_key": "class",
-                "_value": "",
+                "_value": "outerCont",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "_key": "fxFlex",
-                "_value": "",
+                "_value": "100",
                 "_type": "kv",
                 "_attrDef": "p"
             },
