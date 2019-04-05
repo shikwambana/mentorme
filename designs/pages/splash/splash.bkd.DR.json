@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "height: 100%; background-color: #cceafa;",
                 "_type": "kv",
@@ -60,6 +67,13 @@
         "0d583022-ffcf-3cb3-506f-9631a9fb2f60": {
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -119,6 +133,13 @@
                 "paletteKey": "NG-image",
                 "designerReference": [
                     {
+                        "_key": "componentLabel",
+                        "_value": "Image",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
                         "_key": "style",
                         "_value": "width: 300px; height: 300px;",
                         "_type": "kv",
@@ -138,6 +159,24 @@
                     },
                     {
                         "_key": "alt",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "imgSecure",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[collectionName]",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[imageFilter]",
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"

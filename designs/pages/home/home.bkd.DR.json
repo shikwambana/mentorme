@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -60,6 +67,13 @@
         "50ae7220-3764-1fef-2b4a-fc61965b22d2": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -134,7 +148,8 @@
                         "_key": "buttonname",
                         "_value": "<mat-icon>power_settings_new</mat-icon>",
                         "_type": "a",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "color",
@@ -154,6 +169,13 @@
         "ce4b9355-bddd-0a90-eaed-faa7ea936842": {
             "paletteKey": "NG-Toolbar",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Toolbar",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -188,6 +210,13 @@
             "a89b8d2b-80ac-0466-f811-d29194879927": {
                 "paletteKey": "FlexLayoutRow",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Row",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -249,6 +278,13 @@
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "overflow-y: auto !important; margin: 0 15px 80px; ",
                     "_type": "kv",
@@ -307,6 +343,13 @@
                 "paletteKey": "NG-RouterOutlet",
                 "designerReference": [
                     {
+                        "_key": "componentLabel",
+                        "_value": "Router Outlet",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
                         "_key": "style",
                         "_value": "",
                         "_type": "kv",
@@ -324,6 +367,13 @@
         "f2e76e21-8d4e-8379-03ed-4e69d5794776": {
             "paletteKey": "NG-Toolbar",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Toolbar",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -352,6 +402,13 @@
             "7423b02a-d58e-2c9b-7f1e-cdbfa8912166": {
                 "paletteKey": "FlexLayoutRow",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Row",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -416,6 +473,13 @@
                 "2865b1be-8e47-f506-641a-7ccab3a9a02b": {
                     "paletteKey": "FlexLayoutCol",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -490,7 +554,8 @@
                                 "_key": "IconName",
                                 "_value": "{{ menu.icon }}",
                                 "_type": "a",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "[routerLink]",
@@ -505,6 +570,13 @@
             "f9633bf1-b43a-eb32-f17d-f16a807626f9": {
                 "paletteKey": "FlexLayoutRow",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Row",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -563,6 +635,13 @@
                 "3add1e96-d7ec-d2a9-d71c-eb10c5527f39": {
                     "paletteKey": "FlexLayoutCol",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -637,7 +716,8 @@
                                 "_key": "IconName",
                                 "_value": "track_changes",
                                 "_type": "a",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "[routerLink]",
@@ -651,6 +731,13 @@
                 "daf84229-537c-6a37-2962-0c65b8c78c66": {
                     "paletteKey": "FlexLayoutCol",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -725,7 +812,8 @@
                                 "_key": "IconName",
                                 "_value": "dashboard",
                                 "_type": "a",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "[routerLink]",
@@ -739,6 +827,13 @@
                 "ad59fb6b-b02f-a4e1-8828-faa257fd0c76": {
                     "paletteKey": "FlexLayoutCol",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -813,7 +908,8 @@
                                 "_key": "IconName",
                                 "_value": "people_outline",
                                 "_type": "a",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "[routerLink]",

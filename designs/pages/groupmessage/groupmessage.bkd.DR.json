@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -61,6 +68,13 @@
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -118,6 +132,13 @@
             "116c1d90-c9d3-bb5a-bbd3-e77a0b853e22": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -192,7 +213,8 @@
                             "_key": "IconName",
                             "_value": "arrow_back",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "[routerLink]",
@@ -206,6 +228,13 @@
             "a1fc4c74-172a-09e0-76d4-d52033667fa6": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -280,7 +309,8 @@
                             "_key": "text",
                             "_value": "Send your mentees a ",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 },
@@ -303,7 +333,8 @@
                             "_key": "H1 Text",
                             "_value": "Group Message",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -312,6 +343,13 @@
         "3be1ef64-2354-32bc-80d4-edbad2280ecb": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -371,6 +409,13 @@
                 "paletteKey": "NG-Form",
                 "designerReference": [
                     {
+                        "_key": "componentLabel",
+                        "_value": "Form",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
                         "_key": "style",
                         "_value": "",
                         "_type": "kv",
@@ -386,6 +431,13 @@
                 "c5b8fd2d-0c52-08c7-f674-4400d1623425": {
                     "paletteKey": "FlexLayoutCol",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -445,6 +497,13 @@
                         "paletteKey": "FlexLayoutRow",
                         "designerReference": [
                             {
+                                "_key": "componentLabel",
+                                "_value": "Row",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
                                 "_key": "style",
                                 "_value": "",
                                 "_type": "kv",
@@ -502,6 +561,13 @@
                         "3a7223be-31d0-7223-db04-ecd429229808": {
                             "paletteKey": "FlexLayoutRow",
                             "designerReference": [
+                                {
+                                    "_key": "componentLabel",
+                                    "_value": "Row",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
                                 {
                                     "_key": "style",
                                     "_value": "",
@@ -576,7 +642,8 @@
                                         "_key": "Tooltip Text",
                                         "_value": "Andrea Nyambo",
                                         "_type": "a",
-                                        "_attrDef": "p"
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
                                     },
                                     {
                                         "_key": "matTooltip",
@@ -623,7 +690,8 @@
                                         "_key": "IconName",
                                         "_value": "clear",
                                         "_type": "a",
-                                        "_attrDef": "p"
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
                                     }
                                 ]
                             }
@@ -648,7 +716,8 @@
                                 "_key": "placeholder",
                                 "_value": "Recipients",
                                 "_type": "kv",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "value",
@@ -707,7 +776,8 @@
                                 "_key": "placeholder",
                                 "_value": "Subject",
                                 "_type": "kv",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "value",
@@ -766,7 +836,8 @@
                                 "_key": "placeholder",
                                 "_value": "Message",
                                 "_type": "kv",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "value",
@@ -819,7 +890,8 @@
                                 "_key": "buttonname",
                                 "_value": "<mat-icon>send</mat-icon>",
                                 "_type": "a",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "color",

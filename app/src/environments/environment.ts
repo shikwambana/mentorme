@@ -14,7 +14,6 @@ export const environment = {
         "authDomain": "FIREBASE_AUTH_DOMAIN",
         "databaseURL": "FIREBASE_DATABASE_URL",
         "storageBucket": "FIREBASE_STORAGE_BUCKET",
-        "messagingSenderId": "FIREBASE_SENDER_ID",
         "appDataSource": "neutrinos-delivery",
         "appAuthenticationStrategy": "localAuth",
         "basicAuthUser": "username",

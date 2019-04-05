@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -61,6 +68,13 @@
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -118,6 +132,13 @@
             "71a97150-9133-db5b-4ee4-1949f7b0883d": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -192,7 +213,8 @@
                             "_key": "IconName",
                             "_value": "arrow_back",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "[routerLink]",
@@ -206,6 +228,13 @@
             "035aedc8-427a-af4d-6a91-408469e78ad5": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -280,7 +309,8 @@
                             "_key": "H1 Text",
                             "_value": "Log Activity",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -289,6 +319,13 @@
         "470b2a4c-2a3c-1d31-8361-2edf96a3153d": {
             "paletteKey": "NG-Form",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Form",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -305,6 +342,13 @@
             "29b34837-5ec9-e743-082c-509ed11df504": {
                 "paletteKey": "NG-Stepper",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Stepper",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -364,6 +408,13 @@
                     "paletteKey": "NG-Step",
                     "designerReference": [
                         {
+                            "_key": "componentLabel",
+                            "_value": "Step",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
                             "_key": "style",
                             "_value": "",
                             "_type": "kv",
@@ -415,6 +466,13 @@
                     "45c2e812-08e2-46c7-b27d-6942b5468d79": {
                         "paletteKey": "FlexLayoutCol",
                         "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Column",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
                             {
                                 "_key": "style",
                                 "_value": "",
@@ -489,7 +547,8 @@
                                     "_key": "placeholder",
                                     "_value": "Select mentee",
                                     "_type": "kv",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
                                 },
                                 {
                                     "_key": "[(ngModel)]",
@@ -560,7 +619,8 @@
                                     "_key": "placeholder",
                                     "_value": "Date",
                                     "_type": "kv",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
                                 },
                                 {
                                     "_key": "value",
@@ -685,7 +745,8 @@
                                     "_key": "placeholder",
                                     "_value": "Location",
                                     "_type": "kv",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
                                 },
                                 {
                                     "_key": "value",
@@ -730,6 +791,13 @@
                 "77fc4df5-bd0e-53d2-ee43-48cd965a807e": {
                     "paletteKey": "NG-Step",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Step",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -782,6 +850,13 @@
                     "55817837-80b7-5465-fa14-1de1f2f1df21": {
                         "paletteKey": "FlexLayoutCol",
                         "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Column",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
                             {
                                 "_key": "style",
                                 "_value": "",
@@ -841,6 +916,13 @@
                             "paletteKey": "FlexLayoutCol",
                             "designerReference": [
                                 {
+                                    "_key": "componentLabel",
+                                    "_value": "Column",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
                                     "_key": "style",
                                     "_value": "",
                                     "_type": "kv",
@@ -898,6 +980,13 @@
                             "8fb557a7-61d9-1604-70b4-95d5c269f94f": {
                                 "paletteKey": "NG-slide",
                                 "designerReference": [
+                                    {
+                                        "_key": "componentLabel",
+                                        "_value": "Slide Toggle",
+                                        "_type": "kv",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
                                     {
                                         "_key": "style",
                                         "_value": "",
@@ -979,7 +1068,8 @@
                                         "_key": "placeholder",
                                         "_value": "why not?",
                                         "_type": "kv",
-                                        "_attrDef": "p"
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
                                     },
                                     {
                                         "_key": "value",
@@ -1022,6 +1112,13 @@
                             "c23ffa03-1df8-a3ef-7c74-f0615760193e": {
                                 "paletteKey": "NG-slide",
                                 "designerReference": [
+                                    {
+                                        "_key": "componentLabel",
+                                        "_value": "Slide Toggle",
+                                        "_type": "kv",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
                                     {
                                         "_key": "style",
                                         "_value": "",
@@ -1088,6 +1185,13 @@
                         "9388d798-6ca9-c8fb-ed86-18847af970dc": {
                             "paletteKey": "FlexLayoutCol",
                             "designerReference": [
+                                {
+                                    "_key": "componentLabel",
+                                    "_value": "Column",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
                                 {
                                     "_key": "style",
                                     "_value": "",
@@ -1162,7 +1266,8 @@
                                         "_key": "placeholder",
                                         "_value": "Category",
                                         "_type": "kv",
-                                        "_attrDef": "p"
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
                                     },
                                     {
                                         "_key": "[(ngModel)]",
@@ -1221,6 +1326,13 @@
                     "paletteKey": "NG-Step",
                     "designerReference": [
                         {
+                            "_key": "componentLabel",
+                            "_value": "Step",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
                             "_key": "style",
                             "_value": "",
                             "_type": "kv",
@@ -1272,6 +1384,13 @@
                     "2f219d65-8406-7334-f405-f1afdf64de90": {
                         "paletteKey": "FlexLayoutCol",
                         "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Column",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
                             {
                                 "_key": "style",
                                 "_value": "",
@@ -1346,7 +1465,8 @@
                                     "_key": "placeholder",
                                     "_value": "Additional Info",
                                     "_type": "kv",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
                                 },
                                 {
                                     "_key": "value",

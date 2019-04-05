@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -61,6 +68,13 @@
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -118,6 +132,13 @@
             "769e1200-840a-769c-f8df-5c4ac5081cb5": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -192,7 +213,8 @@
                             "_key": "IconName",
                             "_value": "arrow_back",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "[routerLink]",
@@ -206,6 +228,13 @@
             "82c4edbb-957f-f0b4-09ba-e318f68ac6ab": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -280,7 +309,8 @@
                             "_key": "H1 Text",
                             "_value": "Invite Mentee",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -289,6 +319,13 @@
         "79bbadd2-cfbf-fcd1-c2b0-ad0aed60e9d7": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -347,6 +384,13 @@
             "b89bc248-fc58-d112-03b9-7c7a03de1d2a": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -421,7 +465,8 @@
                             "_key": "placeholder",
                             "_value": "Full Name",
                             "_type": "kv",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "value",
@@ -480,7 +525,8 @@
                             "_key": "placeholder",
                             "_value": "Email Address",
                             "_type": "kv",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "value",
@@ -524,6 +570,13 @@
             "308c1bbc-67c7-25d8-4057-f47b0b46b432": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -582,6 +635,13 @@
                 "3eaea6d4-75e8-4d62-8b60-353719086bb5": {
                     "paletteKey": "FlexLayoutRow",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Row",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -656,7 +716,8 @@
                                 "_key": "buttonname",
                                 "_value": "Invite",
                                 "_type": "a",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "color",
@@ -697,7 +758,8 @@
                                 "_key": "buttonname",
                                 "_value": "Cancel",
                                 "_type": "a",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "color",

@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -61,6 +68,13 @@
             "paletteKey": "NG-Toolbar",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Toolbar",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -88,6 +102,13 @@
             "fb31c0a4-16e6-86fd-bbc6-d5cd0d92c5fd": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -147,6 +168,13 @@
                     "paletteKey": "NG-image",
                     "designerReference": [
                         {
+                            "_key": "componentLabel",
+                            "_value": "Image",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
                             "_key": "style",
                             "_value": "width: 60px;",
                             "_type": "kv",
@@ -169,6 +197,24 @@
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "imgSecure",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[collectionName]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[imageFilter]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
                     ]
                 }
@@ -176,6 +222,13 @@
             "db231c17-b9d4-4603-9785-3729d078844e": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -250,7 +303,8 @@
                             "_key": "buttonname",
                             "_value": "Login",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "color",
@@ -285,7 +339,8 @@
                             "_key": "buttonname",
                             "_value": "test",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "color",
@@ -306,6 +361,13 @@
         "88e3f65e-87fe-557a-625a-c028c3a29f0e": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -364,6 +426,13 @@
             "663a6465-2a72-f0d8-cddf-96524184b114": {
                 "paletteKey": "NG-RouterOutlet",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Router Outlet",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",

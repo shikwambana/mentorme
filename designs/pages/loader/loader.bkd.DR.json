@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutRow",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Row",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -57,9 +64,16 @@
                 "_attrDef": "p"
             }
         ],
-        "21f3f110-5763-f022-e813-8b6e2115aa72": {
+        "c5ba94a4-455e-b6b0-f594-cd5e6ba2a3af": {
             "paletteKey": "NG-ProgressSpinner",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Progress Spinner",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -73,7 +87,7 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "mode",
+                    "_key": "[mode]",
                     "_value": "indeterminate",
                     "_type": "kv",
                     "_attrDef": "p"
@@ -85,14 +99,14 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "value",
+                    "_key": "[value]",
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "color",
-                    "_value": "primary",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -123,7 +137,8 @@
                     "_key": "H4 Text",
                     "_value": "{{data.message}}",
                     "_type": "a",
-                    "_attrDef": "p"
+                    "_attrDef": "p",
+                    "_useAsLabel": true
                 }
             ]
         }

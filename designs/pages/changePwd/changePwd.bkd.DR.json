@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -61,6 +68,13 @@
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -118,6 +132,13 @@
             "2a7ae438-5f77-825b-a65d-944a769bc35e": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -192,7 +213,8 @@
                             "_key": "IconName",
                             "_value": "arrow_back",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "[routerLink]",
@@ -206,6 +228,13 @@
             "c9da1ce5-4765-33a8-df17-83b6b3319b07": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -280,7 +309,8 @@
                             "_key": "H1 Text",
                             "_value": "Reset Password",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -289,6 +319,13 @@
         "033bd00c-53e2-1306-843a-b5964552b5fa": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "margin: 0 20px;",
@@ -363,7 +400,8 @@
                         "_key": "H3 Text",
                         "_value": "Enter your email address below and we will email you your new password",
                         "_type": "a",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     }
                 ]
             }
@@ -371,6 +409,13 @@
         "968cd5b8-b82c-184c-b7e8-c2db231185e0": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "margin: 0 20px;",
@@ -445,7 +490,8 @@
                         "_key": "placeholder",
                         "_value": "username or email address",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "value",
@@ -504,7 +550,8 @@
                         "_key": "placeholder",
                         "_value": "New Password",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "value",
@@ -547,6 +594,13 @@
             "766fb7d8-eaf1-1ca3-ee7a-1e21c103f26a": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -621,7 +675,8 @@
                             "_key": "buttonname",
                             "_value": "test",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "color",
@@ -656,7 +711,8 @@
                             "_key": "buttonname",
                             "_value": "Reset Password",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "color",

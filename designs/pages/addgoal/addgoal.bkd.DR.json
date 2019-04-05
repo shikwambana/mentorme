@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -61,6 +68,13 @@
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -118,6 +132,13 @@
             "d7c9348b-190b-c262-6503-17c1fd63281e": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -192,7 +213,8 @@
                             "_key": "IconName",
                             "_value": "arrow_back",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "[routerLink]",
@@ -206,6 +228,13 @@
             "494e5913-be19-dbe2-d46e-35e87543b32a": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -280,7 +309,8 @@
                             "_key": "text",
                             "_value": "Add a goal for",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 },
@@ -303,7 +333,8 @@
                             "_key": "H1 Text",
                             "_value": "Lesego Matsobane",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -312,6 +343,13 @@
         "bc3ba753-74b6-e892-56a0-af2171e0848b": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -371,6 +409,13 @@
                 "paletteKey": "NG-Form",
                 "designerReference": [
                     {
+                        "_key": "componentLabel",
+                        "_value": "Form",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
                         "_key": "style",
                         "_value": "",
                         "_type": "kv",
@@ -386,6 +431,13 @@
                 "85d17ef3-ae05-8632-51c4-f51a4a04fb4d": {
                     "paletteKey": "FlexLayoutCol",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -460,7 +512,8 @@
                                 "_key": "placeholder",
                                 "_value": "What is the goal?",
                                 "_type": "kv",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "value",
@@ -519,7 +572,8 @@
                                 "_key": "placeholder",
                                 "_value": "Category",
                                 "_type": "kv",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "[(ngModel)]",
@@ -590,7 +644,8 @@
                                 "_key": "placeholder",
                                 "_value": "short description",
                                 "_type": "kv",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "value",
@@ -649,7 +704,8 @@
                                 "_key": "placeholder",
                                 "_value": "Additional notes",
                                 "_type": "kv",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "value",
@@ -708,7 +764,8 @@
                                 "_key": "buttonname",
                                 "_value": "<mat-icon>done</mat-icon>",
                                 "_type": "a",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "color",

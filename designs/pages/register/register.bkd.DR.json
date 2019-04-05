@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "margin: 0 20px;",
                 "_type": "kv",
@@ -61,6 +68,13 @@
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -118,6 +132,13 @@
             "2abbfed5-1fcf-42c8-6000-138e1b941ee7": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -192,7 +213,8 @@
                             "_key": "IconName",
                             "_value": "arrow_back",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "[routerLink]",
@@ -206,6 +228,13 @@
             "1dc6ef4c-3bca-1b21-4a83-8b20b888d1d6": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -280,7 +309,8 @@
                             "_key": "H2 Text",
                             "_value": "Lets get you Registered",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -289,6 +319,13 @@
         "074c00c3-0d96-5211-bdef-6db227881110": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -363,7 +400,8 @@
                         "_key": "placeholder",
                         "_value": "First Name",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "value",
@@ -422,7 +460,8 @@
                         "_key": "placeholder",
                         "_value": "Last Name",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "value",
@@ -481,7 +520,8 @@
                         "_key": "placeholder",
                         "_value": "Date of Birth",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "value",
@@ -606,7 +646,8 @@
                         "_key": "placeholder",
                         "_value": "Email Address",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "value",
@@ -665,7 +706,8 @@
                         "_key": "placeholder",
                         "_value": "Phone Number",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "value",
@@ -724,7 +766,8 @@
                         "_key": "placeholder",
                         "_value": "Resident Address",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "value",
@@ -783,7 +826,8 @@
                         "_key": "placeholder",
                         "_value": "Password",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "value",
@@ -842,7 +886,8 @@
                         "_key": "placeholder",
                         "_value": "Password Confirmation",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "value",
@@ -901,7 +946,8 @@
                         "_key": "buttonname",
                         "_value": "Register Me",
                         "_type": "a",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_useAsLabel": true
                     },
                     {
                         "_key": "color",

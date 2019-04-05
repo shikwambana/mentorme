@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -61,6 +68,13 @@
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -118,6 +132,13 @@
             "1a298b3f-58dc-becf-602c-042d25873ec7": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -192,7 +213,8 @@
                             "_key": "IconName",
                             "_value": "arrow_back",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "[routerLink]",
@@ -206,6 +228,13 @@
             "470614ef-ace7-cc46-868a-62138403205c": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -280,7 +309,8 @@
                             "_key": "H2 Text",
                             "_value": "Jog everyday",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -289,6 +319,13 @@
         "1c786fe5-fb16-b00d-5406-da9ef35c8d68": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -348,6 +385,13 @@
                 "paletteKey": "FlexLayoutRow",
                 "designerReference": [
                     {
+                        "_key": "componentLabel",
+                        "_value": "Row",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
                         "_key": "style",
                         "_value": "",
                         "_type": "kv",
@@ -406,6 +450,13 @@
                     "paletteKey": "FlexLayoutCol",
                     "designerReference": [
                         {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
                             "_key": "style",
                             "_value": "",
                             "_type": "kv",
@@ -463,6 +514,13 @@
                     "1556dbfa-0089-3af9-5406-68696a79a001": {
                         "paletteKey": "FlexLayoutRow",
                         "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Row",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
                             {
                                 "_key": "style",
                                 "_value": "",
@@ -537,7 +595,8 @@
                                     "_key": "IconName",
                                     "_value": "update",
                                     "_type": "a",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
                                 }
                             ]
                         },
@@ -560,7 +619,8 @@
                                     "_key": "text",
                                     "_value": "Status : In Progress",
                                     "_type": "a",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
                                 }
                             ]
                         }
@@ -570,6 +630,13 @@
             "840d32e2-027d-74b7-4191-08600eba6b1e": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -644,7 +711,8 @@
                             "_key": "placeholder",
                             "_value": "Category",
                             "_type": "kv",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "[(ngModel)]",
@@ -700,6 +768,13 @@
             "ead1f342-a4a4-3d46-80e6-a075127b1987": {
                 "paletteKey": "FlexLayoutRow",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Row",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -759,6 +834,13 @@
                     "paletteKey": "FlexLayoutCol",
                     "designerReference": [
                         {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
                             "_key": "style",
                             "_value": "",
                             "_type": "kv",
@@ -817,6 +899,13 @@
                 "ffa233a9-7185-1658-4233-466b50ed75cd": {
                     "paletteKey": "FlexLayoutCol",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -891,7 +980,8 @@
                                 "_key": "placeholder",
                                 "_value": "Due Date",
                                 "_type": "kv",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             },
                             {
                                 "_key": "value",
@@ -1004,6 +1094,13 @@
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -1061,6 +1158,13 @@
             "a64b92c5-846a-b558-2898-e2ccc90f6e21": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -1135,7 +1239,8 @@
                             "_key": "H2 Text",
                             "_value": "Comments",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -1143,6 +1248,13 @@
             "d5e1b6b3-e167-b4ac-60b2-f3c661567171": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -1202,6 +1314,13 @@
                     "paletteKey": "NG-card",
                     "designerReference": [
                         {
+                            "_key": "componentLabel",
+                            "_value": "Card",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
                             "_key": "style",
                             "_value": "",
                             "_type": "kv",
@@ -1217,6 +1336,13 @@
                     "0fa53260-792e-aa10-45ad-6052e08a3b45": {
                         "paletteKey": "NG-CardContent",
                         "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Card Content",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
                             {
                                 "_key": "style",
                                 "_value": "",
@@ -1249,7 +1375,8 @@
                                     "_key": "text",
                                     "_value": "Doing great so far",
                                     "_type": "a",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
                                 }
                             ]
                         },
@@ -1272,7 +1399,8 @@
                                     "_key": "H6 Text",
                                     "_value": "18:00",
                                     "_type": "a",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
                                 }
                             ]
                         }
@@ -1283,6 +1411,13 @@
         "d70bf3eb-de80-0618-5947-c9783d1f7bbd": {
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -1341,6 +1476,13 @@
             "3058a6a7-ab59-6304-124d-25952eb5cac7": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -1415,7 +1557,8 @@
                             "_key": "placeholder",
                             "_value": "Type Comment",
                             "_type": "kv",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "value",
@@ -1459,6 +1602,13 @@
             "5e89c3c6-9d8b-a89e-a46a-c906f4b96479": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -1533,7 +1683,8 @@
                             "_key": "IconName",
                             "_value": "send",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }

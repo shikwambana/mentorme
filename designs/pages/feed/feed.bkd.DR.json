@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -61,6 +68,13 @@
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -118,6 +132,13 @@
             "77ee546b-40c9-c109-9265-c1f60b94fcc8": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -192,7 +213,8 @@
                             "_key": "IconName",
                             "_value": "bubble_chart",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -200,6 +222,13 @@
             "04c49ab3-5797-4d8c-c734-bfc14c7f22dc": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -274,7 +303,8 @@
                             "_key": "H1 Text",
                             "_value": "My Mentees' Goals",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -283,6 +313,13 @@
         "2abf84b1-a7e5-2b62-b886-f4b94c51655d": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -354,6 +391,13 @@
                 "paletteKey": "NG-card",
                 "designerReference": [
                     {
+                        "_key": "componentLabel",
+                        "_value": "Card",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
                         "_key": "style",
                         "_value": "",
                         "_type": "kv",
@@ -385,7 +429,8 @@
                             "_key": "Title",
                             "_value": "{{ card.name }}",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 },
@@ -408,13 +453,21 @@
                             "_key": "Sub Title",
                             "_value": "Date: {{ card.date}} | Category: {{ card.category }}",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 },
                 "50938415-b4d1-2261-e100-be6ace8ecf6f": {
                     "paletteKey": "NG-CardContent",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Card Content",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -447,7 +500,8 @@
                                 "_key": "text",
                                 "_value": "{{ card.content }}",
                                 "_type": "a",
-                                "_attrDef": "p"
+                                "_attrDef": "p",
+                                "_useAsLabel": true
                             }
                         ]
                     }
@@ -455,6 +509,13 @@
                 "8250f072-5a43-f34a-42aa-61a404c7d74e": {
                     "paletteKey": "NG-CardFooter",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Card Footer",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -471,6 +532,13 @@
                     "c8d325dd-e755-820e-5f7d-53ccac1195f7": {
                         "paletteKey": "FlexLayoutRow",
                         "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Row",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
                             {
                                 "_key": "style",
                                 "_value": "",
@@ -530,6 +598,13 @@
                             "paletteKey": "NG-CardActions",
                             "designerReference": [
                                 {
+                                    "_key": "componentLabel",
+                                    "_value": "Card Actions",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
                                     "_key": "style",
                                     "_value": "",
                                     "_type": "kv",
@@ -561,7 +636,8 @@
                                         "_key": "buttonname",
                                         "_value": "<mat-icon>comment</mat-icon>",
                                         "_type": "a",
-                                        "_attrDef": "p"
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
                                     },
                                     {
                                         "_key": "color",
@@ -596,7 +672,8 @@
                                         "_key": "buttonname",
                                         "_value": "<mat-icon>perm_identity</mat-icon>",
                                         "_type": "a",
-                                        "_attrDef": "p"
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
                                     },
                                     {
                                         "_key": "color",
@@ -627,6 +704,13 @@
     "8892c768-0b19-b8eb-06a6-0173888889d5": {
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
             {
                 "_key": "style",
                 "_value": "",
@@ -701,7 +785,8 @@
                     "_key": "fabicon",
                     "_value": "<mat-icon>add</mat-icon>",
                     "_type": "a",
-                    "_attrDef": "p"
+                    "_attrDef": "p",
+                    "_useAsLabel": true
                 },
                 {
                     "_key": "color",

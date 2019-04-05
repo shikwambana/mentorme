@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutRow",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Row",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "0": false,
                 "_key": "style",
                 "_value": "",
@@ -73,6 +80,13 @@
         "17bd925c-e001-d918-2fe9-9ee1211e88b0": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "0": false,
                     "_key": "style",
@@ -168,6 +182,13 @@
                 "paletteKey": "NG-card",
                 "designerReference": [
                     {
+                        "_key": "componentLabel",
+                        "_value": "Card",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
                         "0": false,
                         "_key": "style",
                         "_value": "",
@@ -185,6 +206,13 @@
                 "6308274e-1bc1-8506-6508-2cd944c040d3": {
                     "paletteKey": "FlexLayoutRow",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Row",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -244,6 +272,13 @@
                         "paletteKey": "FlexLayoutCol",
                         "designerReference": [
                             {
+                                "_key": "componentLabel",
+                                "_value": "Column",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
                                 "_key": "style",
                                 "_value": "",
                                 "_type": "kv",
@@ -302,6 +337,13 @@
                             "paletteKey": "NG-CardImage",
                             "designerReference": [
                                 {
+                                    "_key": "componentLabel",
+                                    "_value": "Card Image",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
                                     "_key": "style",
                                     "_value": "",
                                     "_type": "kv",
@@ -332,6 +374,13 @@
                 "156c98c7-434d-d038-1c33-2cef2abfd39e": {
                     "paletteKey": "FlexLayoutCol",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "0": false,
                             "_key": "style",
@@ -397,6 +446,13 @@
                         "paletteKey": "NG-Form",
                         "designerReference": [
                             {
+                                "_key": "componentLabel",
+                                "_value": "Form",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
                                 "_key": "style",
                                 "_value": "",
                                 "_type": "kv",
@@ -413,6 +469,13 @@
                         "bc454d38-5998-a2dc-6570-4af239463030": {
                             "paletteKey": "FlexLayoutCol",
                             "designerReference": [
+                                {
+                                    "_key": "componentLabel",
+                                    "_value": "Column",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
                                 {
                                     "0": false,
                                     "_key": "style",
@@ -475,6 +538,13 @@
                             "7afbf036-6b56-074f-f92e-2c0204cb7b20": {
                                 "paletteKey": "FlexLayoutRow",
                                 "designerReference": [
+                                    {
+                                        "_key": "componentLabel",
+                                        "_value": "Row",
+                                        "_type": "kv",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
                                     {
                                         "0": false,
                                         "_key": "style",
@@ -540,6 +610,13 @@
                                 "8df093ac-f7e2-cc70-5e47-d9eed2f46c36": {
                                     "paletteKey": "FlexLayoutCol",
                                     "designerReference": [
+                                        {
+                                            "_key": "componentLabel",
+                                            "_value": "Column",
+                                            "_type": "kv",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
                                         {
                                             "_key": "style",
                                             "_value": "",
@@ -620,7 +697,8 @@
                                                 "_key": "IconName",
                                                 "_value": "person",
                                                 "_type": "a",
-                                                "_attrDef": "p"
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
                                             }
                                         ]
                                     }
@@ -628,6 +706,13 @@
                                 "344dc113-942c-6e6b-5518-de942ca30bf3": {
                                     "paletteKey": "FlexLayoutCol",
                                     "designerReference": [
+                                        {
+                                            "_key": "componentLabel",
+                                            "_value": "Column",
+                                            "_type": "kv",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
                                         {
                                             "_key": "style",
                                             "_value": "",
@@ -708,7 +793,8 @@
                                                 "_key": "placeholder",
                                                 "_value": "Username",
                                                 "_type": "kv",
-                                                "_attrDef": "p"
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
                                             },
                                             {
                                                 "3": false,
@@ -758,6 +844,13 @@
                             "73edbf6f-e65c-d180-eff3-5e8322332d63": {
                                 "paletteKey": "FlexLayoutRow",
                                 "designerReference": [
+                                    {
+                                        "_key": "componentLabel",
+                                        "_value": "Row",
+                                        "_type": "kv",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
                                     {
                                         "0": false,
                                         "_key": "style",
@@ -823,6 +916,13 @@
                                 "7999c932-0009-6284-83f0-0a9ef46b7b6f": {
                                     "paletteKey": "FlexLayoutCol",
                                     "designerReference": [
+                                        {
+                                            "_key": "componentLabel",
+                                            "_value": "Column",
+                                            "_type": "kv",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
                                         {
                                             "0": false,
                                             "_key": "style",
@@ -904,7 +1004,8 @@
                                                 "_key": "IconName",
                                                 "_value": "lock",
                                                 "_type": "a",
-                                                "_attrDef": "p"
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
                                             }
                                         ]
                                     }
@@ -912,6 +1013,13 @@
                                 "487518f9-1721-3a8f-ee56-815ff05ca019": {
                                     "paletteKey": "FlexLayoutCol",
                                     "designerReference": [
+                                        {
+                                            "_key": "componentLabel",
+                                            "_value": "Column",
+                                            "_type": "kv",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
                                         {
                                             "_key": "style",
                                             "_value": "",
@@ -990,7 +1098,8 @@
                                                 "_key": "placeholder",
                                                 "_value": "Password",
                                                 "_type": "kv",
-                                                "_attrDef": "p"
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
                                             },
                                             {
                                                 "3": false,
@@ -1041,6 +1150,13 @@
                             "0a5ef900-6744-d26f-6fdc-70d75f66aa63": {
                                 "paletteKey": "FlexLayoutRow",
                                 "designerReference": [
+                                    {
+                                        "_key": "componentLabel",
+                                        "_value": "Row",
+                                        "_type": "kv",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
                                     {
                                         "0": false,
                                         "_key": "style",
@@ -1111,6 +1227,13 @@
                                 "f6000e75-ab51-94a4-3650-8db4e1a83a6e": {
                                     "paletteKey": "NG-checkbox",
                                     "designerReference": [
+                                        {
+                                            "_key": "componentLabel",
+                                            "_value": "Checkbox",
+                                            "_type": "kv",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
                                         {
                                             "_key": "style",
                                             "_value": "",
@@ -1200,6 +1323,13 @@
                                 "paletteKey": "FlexLayoutRow",
                                 "designerReference": [
                                     {
+                                        "_key": "componentLabel",
+                                        "_value": "Row",
+                                        "_type": "kv",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
+                                    {
                                         "0": false,
                                         "_key": "style",
                                         "_value": "",
@@ -1283,7 +1413,8 @@
                                             "_key": "buttonname",
                                             "_value": "Login",
                                             "_type": "a",
-                                            "_attrDef": "p"
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
                                         },
                                         {
                                             "3": false,
@@ -1305,6 +1436,13 @@
                             "806671df-db69-b32c-c3cc-cfed5bd5ac45": {
                                 "paletteKey": "FlexLayoutRow",
                                 "designerReference": [
+                                    {
+                                        "_key": "componentLabel",
+                                        "_value": "Row",
+                                        "_type": "kv",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
                                     {
                                         "_key": "style",
                                         "_value": "",
@@ -1363,6 +1501,13 @@
                                 "baf6973b-615f-1733-0ae9-307237c6c12e": {
                                     "paletteKey": "FlexLayoutCol",
                                     "designerReference": [
+                                        {
+                                            "_key": "componentLabel",
+                                            "_value": "Column",
+                                            "_type": "kv",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
                                         {
                                             "_key": "style",
                                             "_value": "",
@@ -1437,7 +1582,8 @@
                                                 "_key": "buttonname",
                                                 "_value": "Register",
                                                 "_type": "a",
-                                                "_attrDef": "p"
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
                                             },
                                             {
                                                 "_key": "color",
@@ -1463,6 +1609,13 @@
                                 "6b124871-b047-573f-d934-99506b977c7b": {
                                     "paletteKey": "FlexLayoutCol",
                                     "designerReference": [
+                                        {
+                                            "_key": "componentLabel",
+                                            "_value": "Column",
+                                            "_type": "kv",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
                                         {
                                             "_key": "style",
                                             "_value": "",
@@ -1537,7 +1690,8 @@
                                                 "_key": "H3 Text",
                                                 "_value": "Reset Password",
                                                 "_type": "a",
-                                                "_attrDef": "p"
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
                                             },
                                             {
                                                 "_key": "[routerLink]",

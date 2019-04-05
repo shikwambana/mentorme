@@ -5,7 +5,7 @@ var del = require('del');
 
 
 gulp.task('default', function () {
-  return gulp.src('')
+  return gulp.src('.')
     .pipe(version(require('./package.json').version));
 });
 

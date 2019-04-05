@@ -12,6 +12,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-ArtImgSrcDirective
+import { ArtImgSrcDirective } from '../directives/artImgSrc.directive';
 //CORE_REFERENCE_IMPORT-tokenService
 import { tokenService } from '../services/token/token.service';
 //CORE_REFERENCE_IMPORT-userComponent
@@ -94,6 +96,8 @@ export const appDeclarations = [
   PageNotFoundComponent,
   NMapComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-ArtImgSrcDirective
+ArtImgSrcDirective,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-userComponent
 userComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-changepwdComponent

@@ -16,9 +16,9 @@ open.onsuccess = function () {
     var db = open.result;
     var tx = db.transaction("neutrinos_firebase_db_store", "readwrite");
     var store = tx.objectStore("neutrinos_firebase_db_store");
-    config['messagingSenderId'] = store.get("messagingSenderId");
+    config['messagingSenderId'] = store.get("firebaseSenderId");
 
-    let request = store.get("messagingSenderId");
+    let request = store.get("firebaseSenderId");
 
     request.onsuccess = function () {
         firebase.initializeApp({

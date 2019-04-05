@@ -3,6 +3,13 @@
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -61,6 +68,13 @@
             "paletteKey": "FlexLayoutRow",
             "designerReference": [
                 {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
                     "_key": "style",
                     "_value": "",
                     "_type": "kv",
@@ -118,6 +132,13 @@
             "fe4b2c92-1593-9adc-30e1-af8c90c21374": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -192,7 +213,8 @@
                             "_key": "IconName",
                             "_value": "arrow_back",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         },
                         {
                             "_key": "[routerLink]",
@@ -206,6 +228,13 @@
             "4dd4d7a7-8e3f-05eb-657a-f650b879d288": {
                 "paletteKey": "FlexLayoutCol",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -280,7 +309,8 @@
                             "_key": "text",
                             "_value": "Profile of",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 },
@@ -303,7 +333,8 @@
                             "_key": "H1 Text",
                             "_value": "Nyiko Shikwambana",
                             "_type": "a",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_useAsLabel": true
                         }
                     ]
                 }
@@ -312,6 +343,13 @@
         "4e11ab72-db43-1624-5855-3ade5f43150d": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -371,6 +409,13 @@
                 "paletteKey": "NG-TabGroup",
                 "designerReference": [
                     {
+                        "_key": "componentLabel",
+                        "_value": "Tab Group",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
                         "_key": "style",
                         "_value": "",
                         "_type": "kv",
@@ -386,6 +431,13 @@
                 "895b8f4f-70d9-5892-66a0-68519e58532f": {
                     "paletteKey": "NG-tab",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Tab",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -409,6 +461,13 @@
                         "paletteKey": "NG-card",
                         "designerReference": [
                             {
+                                "_key": "componentLabel",
+                                "_value": "Card",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
                                 "_key": "style",
                                 "_value": "",
                                 "_type": "kv",
@@ -424,6 +483,13 @@
                         "028e7d37-2c60-fea2-f0a3-004e9026e9ae": {
                             "paletteKey": "NG-CardHeader",
                             "designerReference": [
+                                {
+                                    "_key": "componentLabel",
+                                    "_value": "Card Header",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
                                 {
                                     "_key": "style",
                                     "_value": "",
@@ -468,6 +534,13 @@
                     "paletteKey": "NG-tab",
                     "designerReference": [
                         {
+                            "_key": "componentLabel",
+                            "_value": "Tab",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
                             "_key": "style",
                             "_value": "",
                             "_type": "kv",
@@ -490,6 +563,13 @@
                 "53af5926-aec2-6d3a-bb6f-2850475930ea": {
                     "paletteKey": "NG-tab",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Tab",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
