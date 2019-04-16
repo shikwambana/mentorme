@@ -30,4 +30,7 @@ export class goals {
   @JsonProperty('status', String, true)
   public status: string = undefined;
 
+  @JsonProperty('note', String, true)
+  public note: string = undefined;
+
 }

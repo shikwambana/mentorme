@@ -1,11 +1,10 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE CLASS NAME*/
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { NSystemService, NSessionStorageService } from 'neutrinos-seed-services';
-// import { commonService } from "../common/common.service";
-import { of } from 'rxjs/observable/of';
-import { tap, catchError } from 'rxjs/operators';
+import { NSystemService, NSnackbarService } from 'neutrinos-seed-services';
 import { tokenService } from '../../services/token/token.service';
+import { commonService } from "../../services/common/common.service";
+import { Router } from '@angular/router';
 
 
 @Injectable()
@@ -24,7 +23,11 @@ export class registerService {
     
     
 
-    constructor(private http: HttpClient, private sessionStorage: NSessionStorageService, private tokenService : tokenService) {
+    constructor(private http: HttpClient, 
+        private tokenService : tokenService,
+        private snackBarService: NSnackbarService,
+        private commService: commonService,
+        private router: Router) {
         // this.appProperties = this.systemService.getVal('properties');
         // console.log(this.appProperties);
         // this.registerUrl = this.appProperties.registerUrl;
@@ -78,7 +81,6 @@ export class registerService {
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + this.token });
        let options = { headers: headers };
-        console.log(this.token);
         
          let data = {
             'user' : user,
@@ -86,16 +88,15 @@ export class registerService {
             'token' : this.token
         }
         return this.http.post(this.urlBmodeller + '/register', data, options).subscribe(res => {
-            console.log(res, " Successfully registered");
+            this.commService.alertsnackbar('Successfully registered', 'close');
+            this.router.navigate(['login']);
 
-            // this.http.post(this.urlBmodeller + '/register', person).subscribe(res => {
-            //     console.log("Sent to B modeller");
-            // }, err => {
-            //     console.log(err, "Could not run B Modeller");
-            // });
 
         }, err => {
             console.log(err, " Registration Failed");
+            this.commService.alertsnackbar('Registration Failed', 'close');
+
+
         })
     }
 

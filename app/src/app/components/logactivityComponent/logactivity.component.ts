@@ -49,7 +49,7 @@ export class logactivityComponent extends NBaseComponent implements OnInit {
     ]
 
     ngOnInit() {
-       this.metadata = this.metadataService.category();
+       this.metadata = this.metadataService.getCategory();
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

@@ -216,8 +216,10 @@
                             "_attrDef": "p",
                             "_useAsLabel": true
                         }
-                    ]
-                }
+                    ],
+                    "parentEditorKey": "77ee546b-40c9-c109-9265-c1f60b94fcc8"
+                },
+                "parentEditorKey": "ffd4e1bc-46ac-dea7-94f0-c6cb04d32047"
             },
             "04c49ab3-5797-4d8c-c734-bfc14c7f22dc": {
                 "paletteKey": "FlexLayoutCol",
@@ -306,9 +308,12 @@
                             "_attrDef": "p",
                             "_useAsLabel": true
                         }
-                    ]
-                }
-            }
+                    ],
+                    "parentEditorKey": "04c49ab3-5797-4d8c-c734-bfc14c7f22dc"
+                },
+                "parentEditorKey": "ffd4e1bc-46ac-dea7-94f0-c6cb04d32047"
+            },
+            "parentEditorKey": "eb25d732-f6e3-6cb6-3644-de3efc75d9cb"
         },
         "2abf84b1-a7e5-2b62-b886-f4b94c51655d": {
             "paletteKey": "FlexLayoutCol",
@@ -432,7 +437,8 @@
                             "_attrDef": "p",
                             "_useAsLabel": true
                         }
-                    ]
+                    ],
+                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c"
                 },
                 "bdf11623-30c3-80dd-9c45-e18b76175403": {
                     "paletteKey": "NG-CardSubTitle",
@@ -456,7 +462,8 @@
                             "_attrDef": "p",
                             "_useAsLabel": true
                         }
-                    ]
+                    ],
+                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c"
                 },
                 "50938415-b4d1-2261-e100-be6ace8ecf6f": {
                     "paletteKey": "NG-CardContent",
@@ -503,8 +510,10 @@
                                 "_attrDef": "p",
                                 "_useAsLabel": true
                             }
-                        ]
-                    }
+                        ],
+                        "parentEditorKey": "50938415-b4d1-2261-e100-be6ace8ecf6f"
+                    },
+                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c"
                 },
                 "8250f072-5a43-f34a-42aa-61a404c7d74e": {
                     "paletteKey": "NG-CardFooter",
@@ -651,7 +660,8 @@
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     }
-                                ]
+                                ],
+                                "parentEditorKey": "8626fa85-e139-e5bb-8c89-f278988b87b1"
                             },
                             "2735452a-0b4b-243f-e52c-b3dc4200332e": {
                                 "paletteKey": "NG-RaisedButton",
@@ -693,12 +703,18 @@
                                         "_type": "kv",
                                         "_attrDef": "c"
                                     }
-                                ]
-                            }
-                        }
-                    }
-                }
-            }
+                                ],
+                                "parentEditorKey": "8626fa85-e139-e5bb-8c89-f278988b87b1"
+                            },
+                            "parentEditorKey": "c8d325dd-e755-820e-5f7d-53ccac1195f7"
+                        },
+                        "parentEditorKey": "8250f072-5a43-f34a-42aa-61a404c7d74e"
+                    },
+                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c"
+                },
+                "parentEditorKey": "2abf84b1-a7e5-2b62-b886-f4b94c51655d"
+            },
+            "parentEditorKey": "eb25d732-f6e3-6cb6-3644-de3efc75d9cb"
         }
     },
     "8892c768-0b19-b8eb-06a6-0173888889d5": {
@@ -806,7 +822,8 @@
                     "_type": "kv",
                     "_attrDef": "c"
                 }
-            ]
+            ],
+            "parentEditorKey": "8892c768-0b19-b8eb-06a6-0173888889d5"
         }
     }
 }

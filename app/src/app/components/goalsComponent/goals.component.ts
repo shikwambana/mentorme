@@ -6,7 +6,7 @@ import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { goalsService } from '../../services/goals/goals.service';
 import { Router } from '@angular/router';
-
+import { metadataService } from '../../services/metadata/metadata.service'
 
 /**
  * Service import Example :
@@ -21,7 +21,7 @@ import { Router } from '@angular/router';
 export class goalsComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService, public goalsService : goalsService, private router : Router) {
+    constructor(private bdms: NDataModelService, public goalsService : goalsService, private router : Router, private metadataService : metadataService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -30,6 +30,12 @@ export class goalsComponent extends NBaseComponent implements OnInit {
 
     ngOnInit() {
         this.goals = this.goalsService.getGoals();
+        console.log('goals :',this.goals);
+    }
+
+    deleteGaol(goal){
+        console.log('got goal', goal);
+        this.goalsService.deleteGoal(goal._id);
     }
 
     selectedGoal(goal){

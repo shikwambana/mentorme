@@ -64,12 +64,13 @@
                 "_attrDef": "p"
             }
         ],
-        "c5ba94a4-455e-b6b0-f594-cd5e6ba2a3af": {
-            "paletteKey": "NG-ProgressSpinner",
+        "6be0e744-28e8-c92e-ec92-6bcbee136a8a": {
+            "paletteKey": "HTML",
+            "parentEditorKey": "e336dc27-aa47-70a7-f8f2-fe2d34a40dd1",
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "Progress Spinner",
+                    "_value": "HTML",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
@@ -87,39 +88,47 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "[mode]",
-                    "_value": "indeterminate",
-                    "_type": "kv",
+                    "_key": "html",
+                    "_value": "<div class=\"lds-roller\" style=\"display: none;\"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>",
+                    "_type": "a",
                     "_attrDef": "p"
+                }
+            ]
+        },
+        "51b41f62-2202-cec3-0be2-a72a45efca54": {
+            "paletteKey": "HTML",
+            "parentEditorKey": "e336dc27-aa47-70a7-f8f2-fe2d34a40dd1",
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "HTML",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
                 },
                 {
-                    "_key": "strokeWidth",
-                    "_value": "4",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[value]",
+                    "_key": "style",
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "color",
+                    "_key": "class",
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "diameter",
-                    "_value": "40",
-                    "_type": "kv",
-                    "_attrDef": "c"
+                    "_key": "html",
+                    "_value": "<div style=\"color: #00b8d4\" class=\"la-ball-atom la-2x\">\r\n    <div></div>\r\n    <div></div>\r\n    <div></div>\r\n    <div></div>\r\n</div>",
+                    "_type": "a",
+                    "_attrDef": "p"
                 }
             ]
         },
         "596bdf22-6f46-5c4e-c6b0-bd7589da5327": {
             "paletteKey": "NG-H4",
+            "parentEditorKey": "e336dc27-aa47-70a7-f8f2-fe2d34a40dd1",
             "designerReference": [
                 {
                     "_key": "style",
@@ -139,6 +148,12 @@
                     "_type": "a",
                     "_attrDef": "p",
                     "_useAsLabel": true
+                },
+                {
+                    "_key": "align",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
                 }
             ]
         }

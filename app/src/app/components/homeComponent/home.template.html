@@ -1,28 +1,14 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <div fxLayout="column wrap" class="fabBtn fabMenu" fxFlex="20" fxLayoutAlign="center center" fxShow="true" fxHide="false"><button mat-button="" (click)="logoutUser()">
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" min-height="100%" *ngIf="menu">
+  <div fxLayout="column wrap" class="fabBtn fabMenu" fxFlex="20" fxLayoutAlign="center center" fxShow="true" fxHide="false"><button mat-button (click)="logoutUser()">
       <mat-icon>power_settings_new</mat-icon>
     </button></div>
-  <mat-toolbar fxHide="true" class="nav">
-    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center stretch" fxShow="true" fxHide="false"></div>
-  </mat-toolbar>
-  <div fxLayout="column " style="overflow-y: auto !important; margin: 0 15px 80px; " fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-    <router-outlet></router-outlet>
+  <div fxLayout="column " style="overflow-y: auto !important; margin: 0 15px 80px; " fxLayoutAlign="center stretch" fxShow="true" fxHide="false" min-height="90%">
+    <router-outlet componentLabel="Router Outlet"></router-outlet>
   </div>
   <mat-toolbar class="nav btm">
-    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly stretch" fxShow="true" fxHide="false" *ngFor="let menu of menu.navbar.mentor">
+    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly stretch" fxShow="true" fxHide="false" *ngFor="let menu of menu">
       <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
         <mat-icon [routerLink]="menu.url">{{ menu.icon }}</mat-icon>
-      </div>
-    </div>
-    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly stretch" fxShow="false" fxHide="true">
-      <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
-        <mat-icon [routerLink]="[&apos;&apos;]">track_changes</mat-icon>
-      </div>
-      <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
-        <mat-icon [routerLink]="[&apos;feed&apos;]">dashboard</mat-icon>
-      </div>
-      <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
-        <mat-icon [routerLink]="[&apos;mentees&apos;]">people_outline</mat-icon>
       </div>
     </div>
   </mat-toolbar>

@@ -220,6 +220,11 @@
                 "name": "status",
                 "fieldType": 2,
                 "isArray": false
+            },
+            {
+                "name": "note",
+                "fieldType": 2,
+                "isArray": false
             }
         ]
     },

@@ -10,6 +10,8 @@ import { HttpClient } from '@angular/common/http';
 import uid from 'tiny-uid';
 import { invites } from '../../models/invites.model';
 import { metadataService } from '../../services/metadata/metadata.service';
+import { MatDialog } from '@angular/material';
+import { loaderComponent } from '../loaderComponent/loader.component';
 
 /**
  * Service import Example :
@@ -27,41 +29,57 @@ export class inviteComponent extends NBaseComponent implements OnInit {
     email: string;
 
     details = {
-        'name' : '',
-        'email' : ''
+        'name': '',
+        'email': ''
     }
-
+    invited;
     invites = new invites();
     userObj;
     url = 'http://localhost:24483/api/';
 
-    constructor(private bdms: NDataModelService, private inviteService : inviteService, private metadataService : metadataService) {
+    constructor(private bdms: NDataModelService,
+        private inviteService: inviteService,
+        private dialog: MatDialog,
+        private metadataService: metadataService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-
+        // this.get('invites');        
     }
 
-    invite(){
-       
+    openDialog() {
+        const dialogRef = this.dialog.open(loaderComponent, {
+            data: { message: 'Inviting' },
+            width: '250px',
+            disableClose: true
+        });
+    }
 
-        this.userObj = this.metadataService.getUserObj()
 
-        this.invites = {
-            'full_name' : this.details.name,
-            'email_address' : this.details.email,
-            'code' : uid(12),
-            'mentor' : this.userObj.username,
-            'mentorName' : this.userObj.firstName + ' ' + this.userObj.lastName
+    invite() {
+
+        if (this.inviteService.checkInvite(this.details)) {
+
+
+
+        } else {
+
+            this.userObj = this.metadataService.getUserObj()
+
+            this.invites = {
+                'full_name': this.details.name,
+                'email_address': this.details.email,
+                'code': uid(12),
+                'mentor': this.userObj.username,
+                'mentorName': this.userObj.firstName + ' ' + this.userObj.lastName
+            }
+
+            this.inviteService.inviteUser(this.invites);
+            // this.put('invites', this.invites);
         }
 
-
-        // this.put('invites', this.invites);
-
-        this.inviteService.inviteUser(this.invites);
-        this.put('invites', this.invites);
     }
 
 
@@ -69,6 +87,8 @@ export class inviteComponent extends NBaseComponent implements OnInit {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
+                this.invited = result;
+                console.log('got list', result)
             },
             error => {
                 // Handle errors here
@@ -93,7 +113,7 @@ export class inviteComponent extends NBaseComponent implements OnInit {
             }, error => {
                 // Handle errors here
                 console.log(error);
-                
+
             })
     }
 
@@ -120,7 +140,7 @@ export class inviteComponent extends NBaseComponent implements OnInit {
             })
     }
 
-    delete (dataModelName, filter) {
+    delete(dataModelName, filter) {
         this.mm.delete(dataModelName, filter,
             result => {
                 // On Success code here

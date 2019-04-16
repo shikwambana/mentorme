@@ -6,7 +6,12 @@ import { NDataModelService, NSessionStorageService } from 'neutrinos-seed-servic
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { person } from '../../models/person.model';
 import { registerService } from '../../services/register/register.service';
+import { commonService } from "../../services/common/common.service";
 import uid from 'tiny-uid';
+import { FormBuilder } from '@angular/forms';
+import { loaderComponent } from '../loaderComponent/loader.component';
+import { MatDialog } from '@angular/material';
+
 
 @Component({
     selector: 'bh-register',
@@ -20,11 +25,15 @@ export class registerComponent extends NBaseComponent implements OnInit {
     mentor;
     pwd;
     pwd2;
-
     // Tukiso member variables
     person: person;
     uid: string;
-    constructor(private bdms: NDataModelService, private registerService: registerService, private session: NSessionStorageService) {
+    constructor(private bdms: NDataModelService, 
+        private registerService: registerService, 
+        private session: NSessionStorageService,
+        private commService: commonService,
+        private fb: FormBuilder,
+        private dialog: MatDialog) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -43,8 +52,19 @@ export class registerComponent extends NBaseComponent implements OnInit {
         this.uid = uid();
     }
 
+    openDialog() {
+    const dialogRef = this.dialog.open(loaderComponent, {
+      data: { message: 'Registering' },
+      width: '250px',
+      disableClose: true
+    });
+  }
+
     register() {
+
+        this.openDialog();
         this.person.personal_info.userKey = this.uid;
+        this.person.personal_info.date_of_joining = new Date();
         console.log(this.person.personal_info)
         let user = {
             "userKey": this.person.personal_info.userKey,
@@ -61,7 +81,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
         this.checkMentor(this.person.contact_details.email_address);
 
         if(this.registerService.register(user, this.person)){
-            // this.put('person',this.person);
+            this.dialog.closeAll();
         }
     }
 

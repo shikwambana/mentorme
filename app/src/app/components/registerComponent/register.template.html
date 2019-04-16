@@ -8,16 +8,39 @@
     </div>
   </div>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-    <mat-form-field><input matInput="" [(ngModel)]="person.personal_info.name" placeholder="First Name" required></mat-form-field>
-    <mat-form-field><input matInput="" [(ngModel)]="person.personal_info.surname" placeholder="Last Name" required></mat-form-field>
-    <mat-form-field><input matInput="" placeholder="Date of Birth" [matDatepicker]="picker" [(ngModel)]="person.personal_info.date_of_birth">
-      <mat-datepicker-toggle matSuffix="" [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker=""></mat-datepicker>
+    <mat-form-field>
+      <input matInput [(ngModel)]="person.personal_info.name" placeholder="First Name" required>
+
     </mat-form-field>
-    <mat-form-field><input matInput="" [(ngModel)]="person.contact_details.email_address" placeholder="Email Address" required></mat-form-field>
-    <mat-form-field><input matInput="" [(ngModel)]="person.contact_details.phone_number" placeholder="Phone Number" required></mat-form-field>
-    <mat-form-field><input matInput="" [(ngModel)]="person.contact_details.home_address" placeholder="Resident Address" required></mat-form-field>
-    <mat-form-field><input matInput="" [(ngModel)]="pwd" placeholder="Password" required></mat-form-field>
-    <mat-form-field><input matInput="" [(ngModel)]="pwd2" placeholder="Password Confirmation" required></mat-form-field><button mat-raised-button="" (click)="register()">Register Me</button>
+    <mat-form-field>
+      <input matInput [(ngModel)]="person.personal_info.surname" placeholder="Last Name" required>
+
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Date of Birth" [matDatepicker]="picker4" [(ngModel)]="person.personal_info.date_of_birth" name="dob">
+      <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+      <mat-datepicker #picker4 opened disabled [disabled]="false" startView="month"></mat-datepicker>
+
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="person.contact_details.email_address" placeholder="Email Address" required>
+
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="person.contact_details.phone_number" placeholder="Phone Number" required>
+
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="person.contact_details.home_address" placeholder="Resident Address" required>
+
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="pwd" placeholder="Password" required>
+
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="pwd2" placeholder="Password Confirmation" required>
+
+    </mat-form-field><button mat-raised-button (click)="register()">Register Me</button>
   </div>
 </div>

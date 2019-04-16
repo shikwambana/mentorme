@@ -1,45 +1,49 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
 import { Component, OnInit } from '@angular/core'
+import { ModelMethods } from '../../lib/model.methods';
+// import { BDataModelService } from '../service/bDataModel.service';
+import { NDataModelService } from 'neutrinos-seed-services';
+import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import { goalsService } from '../../services/goals/goals.service';
+import { metadataService } from '../../services/metadata/metadata.service';
 import { Router } from '@angular/router';
 
-import { ModelMethods } from '../../lib/model.methods';
-import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
-import { NDataModelService, NLogoutService } from 'neutrinos-seed-services';
-import { metadataService } from '../../services/metadata/metadata.service';
+/**
+ * Service import Example :
+ * import { HeroService } from '../../services/hero/hero.service';
+ */
 
 @Component({
-    selector: 'bh-home',
-    templateUrl: './home.template.html'
+    selector: 'bh-goalinfo',
+    templateUrl: './goalinfo.template.html'
 })
 
-export class homeComponent extends NBaseComponent implements OnInit {
+export class goalinfoComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-    user;
-    menu;
-    constructor(private bdms: NDataModelService, private logoutService: NLogoutService, private router: Router, private metadata : metadataService) {
+
+    category;
+    goal;
+
+    constructor(private bdms: NDataModelService, private goalsService : goalsService,  private router: Router, private metadata : metadataService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-        this.metadata.getMenu().subscribe(result => {
-            this.menu = result;
-            this.menu = this.menu.navbar.mentor;
-        });
-       this.user = this.metadata.getUserObj();
-       this.get('person', { 'contact_details.email_address' : this.user.username });
+        this.category = this.metadata.getCategory();
+        if(!this.goalsService.getSelectedGoal()){
+            this.router.navigate(['../'])
+        }else{
+            this.goal = this.goalsService.getSelectedGoal();
+            console.log(this.goal);
+        }
+        
     }
 
-    logoutUser() {
-      this.logoutService.logout();
-      this.router.navigate(['/login']);
-    }
-
-    get(dataModelName, filter ?, keys ?, sort ?, pagenumber ?, pagesize ?) {
+    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
-                this.metadata.storePersonLocally(result[0]);
             },
             error => {
                 // Handle errors here

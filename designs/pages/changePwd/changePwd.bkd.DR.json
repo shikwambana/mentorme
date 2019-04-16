@@ -222,8 +222,10 @@
                             "_type": "kv",
                             "_attrDef": "c"
                         }
-                    ]
-                }
+                    ],
+                    "parentEditorKey": "2a7ae438-5f77-825b-a65d-944a769bc35e"
+                },
+                "parentEditorKey": "70e88cda-757b-58f1-30de-c01673acefd7"
             },
             "c9da1ce5-4765-33a8-df17-83b6b3319b07": {
                 "paletteKey": "FlexLayoutCol",
@@ -312,9 +314,12 @@
                             "_attrDef": "p",
                             "_useAsLabel": true
                         }
-                    ]
-                }
-            }
+                    ],
+                    "parentEditorKey": "c9da1ce5-4765-33a8-df17-83b6b3319b07"
+                },
+                "parentEditorKey": "70e88cda-757b-58f1-30de-c01673acefd7"
+            },
+            "parentEditorKey": "c6783888-4b15-0ed5-0082-9639aae5d3a7"
         },
         "033bd00c-53e2-1306-843a-b5964552b5fa": {
             "paletteKey": "FlexLayoutCol",
@@ -403,8 +408,10 @@
                         "_attrDef": "p",
                         "_useAsLabel": true
                     }
-                ]
-            }
+                ],
+                "parentEditorKey": "033bd00c-53e2-1306-843a-b5964552b5fa"
+            },
+            "parentEditorKey": "c6783888-4b15-0ed5-0082-9639aae5d3a7"
         },
         "968cd5b8-b82c-184c-b7e8-c2db231185e0": {
             "paletteKey": "FlexLayoutCol",
@@ -528,8 +535,17 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "matError",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
                     }
-                ]
+                ],
+                "parentEditorKey": "968cd5b8-b82c-184c-b7e8-c2db231185e0",
+                "isAdvancedComponent": true
             },
             "2d6d8d18-52c8-fb3b-29e4-6ace410ec836": {
                 "paletteKey": "NG-Input",
@@ -588,8 +604,17 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "matError",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
                     }
-                ]
+                ],
+                "parentEditorKey": "968cd5b8-b82c-184c-b7e8-c2db231185e0",
+                "isAdvancedComponent": true
             },
             "766fb7d8-eaf1-1ca3-ee7a-1e21c103f26a": {
                 "paletteKey": "FlexLayoutCol",
@@ -690,7 +715,8 @@
                             "_type": "kv",
                             "_attrDef": "p"
                         }
-                    ]
+                    ],
+                    "parentEditorKey": "766fb7d8-eaf1-1ca3-ee7a-1e21c103f26a"
                 },
                 "0ebf4ddd-845d-8483-8f98-a9557788bbfd": {
                     "paletteKey": "NG-RaisedButton",
@@ -726,9 +752,12 @@
                             "_type": "kv",
                             "_attrDef": "p"
                         }
-                    ]
-                }
-            }
+                    ],
+                    "parentEditorKey": "766fb7d8-eaf1-1ca3-ee7a-1e21c103f26a"
+                },
+                "parentEditorKey": "968cd5b8-b82c-184c-b7e8-c2db231185e0"
+            },
+            "parentEditorKey": "c6783888-4b15-0ed5-0082-9639aae5d3a7"
         }
     }
 }

@@ -24,6 +24,7 @@ export class addgoalComponent extends NBaseComponent implements OnInit {
     }
 
     ngOnInit() {
+        
 
     }
 

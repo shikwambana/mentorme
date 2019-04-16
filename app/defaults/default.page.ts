@@ -7,7 +7,7 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 /**
  * Service import Example :
- * import { HeroService } from '../services/hero/hero.service';
+ * import { HeroService } from '../../services/hero/hero.service';
  */
 
 @Component({

@@ -66,6 +66,7 @@
         ],
         "3ee0ccab-be8d-3ce1-2c22-d9c9d652503a": {
             "paletteKey": "NG-FabButton",
+            "parentEditorKey": "5779671d-7928-291b-fb06-ddd4bb5134d4",
             "designerReference": [
                 {
                     "_key": "style",
@@ -100,9 +101,33 @@
                 },
                 {
                     "_key": "[routerLink]",
-                    "_value": "['addgoal']",
+                    "_value": "['personalgoal']",
                     "_type": "kv",
                     "_attrDef": "c"
+                },
+                {
+                    "_key": "[disabled]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[disableRipple]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "type",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "routerLink",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
                 }
             ]
         }
@@ -131,7 +156,7 @@
             },
             {
                 "_key": "fxFlex",
-                "_value": "",
+                "_value": "100",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -174,6 +199,7 @@
         ],
         "a3e3c144-421d-047f-9d28-b73edf9131b9": {
             "paletteKey": "FlexLayoutRow",
+            "parentEditorKey": "95d2eb75-f201-757a-82f1-4940f24ed3cb",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -239,6 +265,7 @@
             ],
             "8b1a9c38-011d-51e0-8bd3-3a59abfe0a89": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "a3e3c144-421d-047f-9d28-b73edf9131b9",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -304,6 +331,7 @@
                 ],
                 "c2e1cb31-0027-8266-c105-ccc84bdc6523": {
                     "paletteKey": "NG-icon",
+                    "parentEditorKey": "8b1a9c38-011d-51e0-8bd3-3a59abfe0a89",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -323,12 +351,25 @@
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
+                        },
+                        {
+                            "_key": "[inline]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "color",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
                     ]
                 }
             },
             "5dfd3307-3f7f-a504-e4e7-52dece284641": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "a3e3c144-421d-047f-9d28-b73edf9131b9",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -394,6 +435,7 @@
                 ],
                 "66807c90-27f7-da20-f769-e02e3014612c": {
                     "paletteKey": "NG-H1",
+                    "parentEditorKey": "5dfd3307-3f7f-a504-e4e7-52dece284641",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -413,6 +455,360 @@
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ]
+                }
+            }
+        },
+        "07d9d0bb-d19d-e1da-d68a-f4cf276c3cf4": {
+            "paletteKey": "FlexLayoutCol",
+            "parentEditorKey": "95d2eb75-f201-757a-82f1-4940f24ed3cb",
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxFlex",
+                    "_value": "100",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxLayoutGap",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "wrap",
+                    "_value": "wrap",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "layoutAlign",
+                    "_value": "start",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "pLayoutAlign",
+                    "_value": "stretch",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxShow",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxHide",
+                    "_value": "false",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "*ngIf",
+                    "_value": "!goals",
+                    "_type": "kv",
+                    "_attrDef": "c"
+                }
+            ],
+            "cadbe4b4-7a36-5d64-c03d-355fa33b33fe": {
+                "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "07d9d0bb-d19d-e1da-d68a-f4cf276c3cf4",
+                "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
+                        "_key": "style",
+                        "_value": "    width: 100%;",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxFlex",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxLayoutGap",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "wrap",
+                        "_value": "wrap",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "layoutAlign",
+                        "_value": "center",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "pLayoutAlign",
+                        "_value": "center",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxShow",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxHide",
+                        "_value": "false",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    }
+                ],
+                "bd3f4b72-2800-d605-5bc1-89e2e0a1f9dc": {
+                    "paletteKey": "NG-image",
+                    "parentEditorKey": "cadbe4b4-7a36-5d64-c03d-355fa33b33fe",
+                    "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Image",
+                            "_type": "kv",
+                            "_attrDef": "c",
+                            "_useAsLabel": true
+                        },
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "imgSrc",
+                            "_value": "/Web/no_goal.png",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "alt",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[src]",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "imgSecure",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[collectionName]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[imageFilter]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "width",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "srcset",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "sizes",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ]
+                }
+            },
+            "08a99b5f-7e2b-4573-947b-8bfdd708a4d5": {
+                "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "07d9d0bb-d19d-e1da-d68a-f4cf276c3cf4",
+                "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
+                        "_key": "style",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxFlex",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxLayoutGap",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "wrap",
+                        "_value": "wrap",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "layoutAlign",
+                        "_value": "center",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "pLayoutAlign",
+                        "_value": "center",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxShow",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxHide",
+                        "_value": "false",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    }
+                ],
+                "318a3755-f56e-237e-2c6d-d1e35549231f": {
+                    "paletteKey": "NG-H2",
+                    "parentEditorKey": "08a99b5f-7e2b-4573-947b-8bfdd708a4d5",
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "H2 Text",
+                            "_value": "No Goals Yet",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ]
+                },
+                "b4b8ef7e-7d7c-8b8b-37d1-cdd3af03ca01": {
+                    "paletteKey": "NG-Paragraph",
+                    "parentEditorKey": "08a99b5f-7e2b-4573-947b-8bfdd708a4d5",
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "text-align: center;",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "text",
+                            "_value": "It looks like you have not added any goals yet; click the + button to add your first goal",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
                     ]
                 }
@@ -420,6 +816,7 @@
         },
         "fd6c67ae-416f-8328-fa93-14a6865323e1": {
             "paletteKey": "FlexLayoutCol",
+            "parentEditorKey": "95d2eb75-f201-757a-82f1-4940f24ed3cb",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -491,6 +888,7 @@
             ],
             "b00a8948-3976-1724-02db-038046fda3e5": {
                 "paletteKey": "NG-card",
+                "parentEditorKey": "fd6c67ae-416f-8328-fa93-14a6865323e1",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -522,14 +920,21 @@
                         "_value": "['goal']",
                         "_type": "kv",
                         "_attrDef": "c"
+                    },
+                    {
+                        "_key": "*ngIf",
+                        "_value": "goals",
+                        "_type": "kv",
+                        "_attrDef": "c"
                     }
                 ],
-                "332c4af8-0471-9324-5ce4-8a1ca4fe6431": {
-                    "paletteKey": "NG-CardHeader",
+                "187dd5da-fb29-880b-86c0-30133683af6b": {
+                    "paletteKey": "FlexLayoutRow",
+                    "parentEditorKey": "b00a8948-3976-1724-02db-038046fda3e5",
                     "designerReference": [
                         {
                             "_key": "componentLabel",
-                            "_value": "Card Header",
+                            "_value": "Row",
                             "_type": "kv",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -547,33 +952,346 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "title",
-                            "_value": "{{ goal.title }}",
-                            "_type": "a",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "subtitle",
-                            "_value": "Status : {{ goal.status }}",
-                            "_type": "a",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "imgSrc",
+                            "_key": "fxFlex",
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "alt",
+                            "_key": "fxLayoutGap",
                             "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "wrap",
+                            "_value": "wrap",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "layoutAlign",
+                            "_value": "start",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "pLayoutAlign",
+                            "_value": "stretch",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "fxShow",
+                            "_value": "true",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "fxHide",
+                            "_value": "false",
                             "_type": "kv",
                             "_attrDef": "p"
                         }
-                    ]
+                    ],
+                    "2e25649c-6bfd-fb0e-c56a-e6438cc466b6": {
+                        "paletteKey": "FlexLayoutCol",
+                        "parentEditorKey": "187dd5da-fb29-880b-86c0-30133683af6b",
+                        "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Column",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxFlex",
+                                "_value": "80",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxLayoutGap",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "wrap",
+                                "_value": "wrap",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "layoutAlign",
+                                "_value": "start",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "pLayoutAlign",
+                                "_value": "stretch",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxShow",
+                                "_value": "true",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxHide",
+                                "_value": "false",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
+                        ],
+                        "0aa5ec00-bdcc-8f01-df1c-f4eb15f87d66": {
+                            "paletteKey": "NG-CardTitle",
+                            "parentEditorKey": "2e25649c-6bfd-fb0e-c56a-e6438cc466b6",
+                            "designerReference": [
+                                {
+                                    "_key": "style",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "Title",
+                                    "_value": "{{ goal.title }}",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "align",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                }
+                            ]
+                        },
+                        "ff72ce43-fb32-9390-f301-7e04da52918c": {
+                            "paletteKey": "NG-CardSubTitle",
+                            "parentEditorKey": "2e25649c-6bfd-fb0e-c56a-e6438cc466b6",
+                            "designerReference": [
+                                {
+                                    "_key": "style",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "Sub Title",
+                                    "_value": "Status : {{ goal.status }}",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "align",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                }
+                            ]
+                        }
+                    },
+                    "56a29420-a0cd-c735-2828-6f838579b8a6": {
+                        "paletteKey": "FlexLayoutCol",
+                        "parentEditorKey": "187dd5da-fb29-880b-86c0-30133683af6b",
+                        "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Column",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxFlex",
+                                "_value": "15",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxLayoutGap",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "wrap",
+                                "_value": "wrap",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "layoutAlign",
+                                "_value": "start",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "pLayoutAlign",
+                                "_value": "end",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxShow",
+                                "_value": "true",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxHide",
+                                "_value": "false",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
+                        ],
+                        "bb56044a-18a9-ca75-cfd3-14613f1fb9a0": {
+                            "paletteKey": "HTML",
+                            "parentEditorKey": "56a29420-a0cd-c735-2828-6f838579b8a6",
+                            "designerReference": [
+                                {
+                                    "_key": "componentLabel",
+                                    "_value": "HTML",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "style",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "html",
+                                    "_value": "<countdown units=\"Days | Hours\"  end=\"{{goal.end_date}}\"></countdown>",
+                                    "_type": "a",
+                                    "_attrDef": "p"
+                                }
+                            ]
+                        },
+                        "0cbd6e20-b856-a8ca-51e3-3868e6f6621b": {
+                            "paletteKey": "NG-button",
+                            "parentEditorKey": "56a29420-a0cd-c735-2828-6f838579b8a6",
+                            "designerReference": [
+                                {
+                                    "_key": "style",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "buttonname",
+                                    "_value": "Delete",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "color",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "(click)",
+                                    "_value": "deleteGaol(goal)",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "[disabled]",
+                                    "_value": "false",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "[disableRipple]",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "type",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "routerLink",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "fxHide",
+                                    "_value": "true",
+                                    "_type": "kv",
+                                    "_attrDef": "c"
+                                }
+                            ]
+                        }
+                    }
                 },
                 "e68756d4-ce21-8ea8-7242-2bc855a80f6c": {
                     "paletteKey": "NG-CardContent",
+                    "parentEditorKey": "b00a8948-3976-1724-02db-038046fda3e5",
                     "designerReference": [
                         {
                             "_key": "componentLabel",
@@ -597,6 +1315,7 @@
                     ],
                     "6377e4a3-6a6c-3943-5a12-d91c491e9248": {
                         "paletteKey": "FlexLayoutCol",
+                        "parentEditorKey": "e68756d4-ce21-8ea8-7242-2bc855a80f6c",
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
@@ -662,6 +1381,7 @@
                         ],
                         "0cbfd112-4525-0f32-da5d-02611e207e5a": {
                             "paletteKey": "NG-Paragraph",
+                            "parentEditorKey": "6377e4a3-6a6c-3943-5a12-d91c491e9248",
                             "designerReference": [
                                 {
                                     "_key": "style",
@@ -677,15 +1397,22 @@
                                 },
                                 {
                                     "_key": "text",
-                                    "_value": "Due Date: {{ goal.date }}",
+                                    "_value": "Started: {{ goal.start_date | date }} - Due Date: {{ goal.due_date | date }}",
                                     "_type": "a",
                                     "_attrDef": "p",
                                     "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "align",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
                                 }
                             ]
                         },
                         "e11c011f-61c8-62f7-10ed-a44338c28c98": {
                             "paletteKey": "NG-H3",
+                            "parentEditorKey": "6377e4a3-6a6c-3943-5a12-d91c491e9248",
                             "designerReference": [
                                 {
                                     "_key": "style",
@@ -701,10 +1428,16 @@
                                 },
                                 {
                                     "_key": "H3 Text",
-                                    "_value": "{{ goal.content }}",
+                                    "_value": "{{ goal.description }}",
                                     "_type": "a",
                                     "_attrDef": "p",
                                     "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "align",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
                                 }
                             ]
                         }
@@ -712,6 +1445,7 @@
                 },
                 "bf2216af-eee9-1bd8-b767-1031c54eadb3": {
                     "paletteKey": "NG-CardFooter",
+                    "parentEditorKey": "b00a8948-3976-1724-02db-038046fda3e5",
                     "designerReference": [
                         {
                             "_key": "componentLabel",
@@ -731,10 +1465,17 @@
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "fxHide",
+                            "_value": "true",
+                            "_type": "kv",
+                            "_attrDef": "c"
                         }
                     ],
                     "886476a8-679e-c8bb-9c59-46080268a7c1": {
                         "paletteKey": "FlexLayoutRow",
+                        "parentEditorKey": "bf2216af-eee9-1bd8-b767-1031c54eadb3",
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
@@ -800,6 +1541,7 @@
                         ],
                         "b4a6dc41-a062-95d9-f3ab-ddee901a0aae": {
                             "paletteKey": "NG-CardActions",
+                            "parentEditorKey": "886476a8-679e-c8bb-9c59-46080268a7c1",
                             "designerReference": [
                                 {
                                     "_key": "componentLabel",
@@ -823,6 +1565,7 @@
                             ],
                             "42276daa-d895-d242-9a03-6cce84bc65d7": {
                                 "paletteKey": "NG-RaisedButton",
+                                "parentEditorKey": "b4a6dc41-a062-95d9-f3ab-ddee901a0aae",
                                 "designerReference": [
                                     {
                                         "_key": "style",
@@ -854,11 +1597,36 @@
                                         "_value": "",
                                         "_type": "kv",
                                         "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disabled]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disableRipple]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "type",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "routerLink",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
                                     }
                                 ]
                             },
                             "254abed7-586f-1868-2d0c-b36d49296c14": {
                                 "paletteKey": "NG-RaisedButton",
+                                "parentEditorKey": "b4a6dc41-a062-95d9-f3ab-ddee901a0aae",
                                 "designerReference": [
                                     {
                                         "_key": "style",
@@ -887,6 +1655,30 @@
                                     },
                                     {
                                         "_key": "(click)",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disabled]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disableRipple]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "type",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "routerLink",
                                         "_value": "",
                                         "_type": "kv",
                                         "_attrDef": "p"

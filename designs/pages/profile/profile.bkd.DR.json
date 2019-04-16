@@ -193,7 +193,8 @@
                         "_type": "kv",
                         "_attrDef": "p"
                     }
-                ]
+                ],
+                "parentEditorKey": "5d5b0db7-7331-f16d-d4cc-6d526f325100"
             },
             "4615b9db-a113-61b7-e352-d3f3045539da": {
                 "paletteKey": "FlexLayoutCol",
@@ -259,8 +260,10 @@
                         "_type": "kv",
                         "_attrDef": "p"
                     }
-                ]
-            }
+                ],
+                "parentEditorKey": "5d5b0db7-7331-f16d-d4cc-6d526f325100"
+            },
+            "parentEditorKey": "bac41960-3355-0abe-ef6c-572b8ae2a35d"
         },
         "01cd728d-06c4-0665-951b-b0cc2994ecce": {
             "paletteKey": "FlexLayoutCol",
@@ -326,7 +329,8 @@
                     "_type": "kv",
                     "_attrDef": "p"
                 }
-            ]
+            ],
+            "parentEditorKey": "bac41960-3355-0abe-ef6c-572b8ae2a35d"
         }
     }
 }

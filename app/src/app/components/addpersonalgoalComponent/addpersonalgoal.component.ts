@@ -1,45 +1,63 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
 import { Component, OnInit } from '@angular/core'
-import { Router } from '@angular/router';
-
 import { ModelMethods } from '../../lib/model.methods';
+// import { BDataModelService } from '../service/bDataModel.service';
+import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
-import { NDataModelService, NLogoutService } from 'neutrinos-seed-services';
+import { goals } from '../../models/goals.model';
 import { metadataService } from '../../services/metadata/metadata.service';
+import { goalsService } from '../../services/goals/goals.service';
+import { Router } from '@angular/router';
+/**
+ * Service import Example :
+ * import { HeroService } from '../services/hero/hero.service';
+ */
 
 @Component({
-    selector: 'bh-home',
-    templateUrl: './home.template.html'
+    selector: 'bh-addpersonalgoal',
+    templateUrl: './addpersonalgoal.template.html'
 })
 
-export class homeComponent extends NBaseComponent implements OnInit {
+export class addpersonalgoalComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-    user;
-    menu;
-    constructor(private bdms: NDataModelService, private logoutService: NLogoutService, private router: Router, private metadata : metadataService) {
+    goal;
+    categories: { 'name': string; }[];
+    person: any;
+    constructor(private bdms: NDataModelService, 
+        private metadataService : metadataService,
+        private router: Router, 
+        private goalsService : goalsService) {
         super();
         this.mm = new ModelMethods(bdms);
+        this.goal = new goals();
+
     }
 
     ngOnInit() {
-        this.metadata.getMenu().subscribe(result => {
-            this.menu = result;
-            this.menu = this.menu.navbar.mentor;
-        });
-       this.user = this.metadata.getUserObj();
-       this.get('person', { 'contact_details.email_address' : this.user.username });
+        this.categories = this.metadataService.getCategory();
     }
 
-    logoutUser() {
-      this.logoutService.logout();
-      this.router.navigate(['/login']);
+    addGoal(){
+        //get entire person object
+        this.person = this.metadataService.getPerson();
+
+        //add outstanding info
+        this.goal.author = this.person.personal_info.name + " " + this.person.personal_info.surname;
+        this.goal.author_email = this.person.contact_details.email_address;
+        this.goal.status = "In Progress";
+        this.person.goals.push(this.goal);
+        console.log(this.person);
+        // this.goalsService.addGoal(this.goal);
+
+        //add goal to person document
+        this.update('person',{ $set: {'goals' : this.person.goals }}, { 'contact_details.email_address' : this.person.contact_details.email_address },{});
+        // this.router.navigate(['../']);
     }
 
-    get(dataModelName, filter ?, keys ?, sort ?, pagenumber ?, pagesize ?) {
+    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
-                this.metadata.storePersonLocally(result[0]);
             },
             error => {
                 // Handle errors here
@@ -83,8 +101,11 @@ export class homeComponent extends NBaseComponent implements OnInit {
         this.mm.update(dataModelName, updateObject,
             result => {
                 //  On Success code here
+                console.log(result);
+                this.router.navigate(['../']);
             }, error => {
                 // Handle errors here
+                console.log(error)
             })
     }
 

@@ -1,57 +1,49 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE CLASS NAME*/
 import { Injectable } from '@angular/core';
 
+import { NSystemService, NSessionStorageService } from 'neutrinos-seed-services';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 @Injectable()
 export class goalsService {
 
+    systemService = NSystemService.getInstance();
+    appProperties: any;
+    bModellerURL: string;
+    token;
+
+    constructor(private http: HttpClient, private session : NSessionStorageService){
+        this.appProperties = this.systemService.getVal('properties');
+        this.bModellerURL = this.appProperties.modellerUrl + '/deleteGoal';
+     
+    }
+
     selectedGoal;
 
-    goals = [
-        {
-            'title' : 'Get 5 mentors',
-            'category' : 'social',
-            'date' : '22 March 2019',
-            'content' : 'Added three new mentors',
-            'status' : 'In Progress'
-        },
-         {
-            'title' : 'Do devotion every morning',
-            'category' : 'spiritual',
-            'date' : '15 March 2019',
-            'content' : 'Did devotion 5 days in a row',
-            'status' : 'In Progress'
-        },
-         {
-            'title' : 'Do devotion every night',
-            'category' : 'spiritual',
-            'date' : '13 March 2019',
-            'content' : 'Did devotion 5 days in a row',
-            'status' : 'Have not started'
-        },
-         {
-            'title' : 'Bring 10 people to church',
-            'category' : 'emotional',
-            'date' : '10 March 2019',
-            'content' : 'Brought 4 people to church',
-            'status' : 'In Progress'
-        },
-         {
-            'title' : 'Study consistently',
-            'category' : 'mental',
-            'date' : '5 March 2019',
-            'content' : 'Passed all his modules during engineering week',
-            'status' : 'Achieved'
-        }
-        
-    ]
+    goals: Array<object>;
     
+    deleteGoal(id){
+
+        console.log('got ID', id)
+
+        this.http.post(this.bModellerURL, id ).subscribe(result => {
+                console.log(result);},
+                
+                 error => {
+                 console.log('failed to delete', error)
+             });
+
+    }
+
+    setSessionGoals(goals){
+        this.goals = goals;
+    }
 
     getGoals(){
         return this.goals;
     }
 
     setGoal(goal){
-        console.log(goal);
         this.selectedGoal = goal;
     }
 

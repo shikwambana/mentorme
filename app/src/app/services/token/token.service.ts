@@ -29,12 +29,12 @@ export class tokenService {
              });
         }else{
             console.log('already have token');
+            this.session.setValue('accessToken',this.token.accessToken);
         }
        
     }
 
     getToken(){
-        console.log(this.token.accessToken);
         return this.token.accessToken;
     }
 }

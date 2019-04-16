@@ -66,6 +66,7 @@
         ],
         "8de1b72d-5484-85c1-03d0-69651a296e7c": {
             "paletteKey": "FlexLayoutRow",
+            "parentEditorKey": "4233f6ef-1a4f-a19c-4b84-00488c64e3c5",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -88,7 +89,7 @@
                 },
                 {
                     "_key": "fxFlex",
-                    "_value": "100",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -131,6 +132,7 @@
             ],
             "769e1200-840a-769c-f8df-5c4ac5081cb5": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "8de1b72d-5484-85c1-03d0-69651a296e7c",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -196,6 +198,7 @@
                 ],
                 "215a8e45-dc71-186a-484b-c16adcbb7f78": {
                     "paletteKey": "NG-icon",
+                    "parentEditorKey": "769e1200-840a-769c-f8df-5c4ac5081cb5",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -221,12 +224,25 @@
                             "_value": "['../mentees']",
                             "_type": "kv",
                             "_attrDef": "c"
+                        },
+                        {
+                            "_key": "[inline]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "color",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
                     ]
                 }
             },
             "82c4edbb-957f-f0b4-09ba-e318f68ac6ab": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "8de1b72d-5484-85c1-03d0-69651a296e7c",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -292,6 +308,7 @@
                 ],
                 "66311ab3-30aa-2669-7d62-884437f9cf1f": {
                     "paletteKey": "NG-H1",
+                    "parentEditorKey": "82c4edbb-957f-f0b4-09ba-e318f68ac6ab",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -311,6 +328,12 @@
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
                     ]
                 }
@@ -318,6 +341,7 @@
         },
         "79bbadd2-cfbf-fcd1-c2b0-ad0aed60e9d7": {
             "paletteKey": "FlexLayoutCol",
+            "parentEditorKey": "4233f6ef-1a4f-a19c-4b84-00488c64e3c5",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -383,6 +407,7 @@
             ],
             "b89bc248-fc58-d112-03b9-7c7a03de1d2a": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "79bbadd2-cfbf-fcd1-c2b0-ad0aed60e9d7",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -448,6 +473,8 @@
                 ],
                 "a281dcfe-2103-712f-8e95-de9365177027": {
                     "paletteKey": "NG-Input",
+                    "parentEditorKey": "b89bc248-fc58-d112-03b9-7c7a03de1d2a",
+                    "isAdvancedComponent": true,
                     "designerReference": [
                         {
                             "_key": "style",
@@ -503,11 +530,44 @@
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "matError",
+                            "_value": [],
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": true
+                        },
+                        {
+                            "_key": "[formControl]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "readonly",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[disabled]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "id",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
                     ]
                 },
                 "6d5162ff-5842-b065-0252-74580c77a1c3": {
                     "paletteKey": "NG-Input",
+                    "parentEditorKey": "b89bc248-fc58-d112-03b9-7c7a03de1d2a",
+                    "isAdvancedComponent": true,
                     "designerReference": [
                         {
                             "_key": "style",
@@ -563,12 +623,44 @@
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "matError",
+                            "_value": [],
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": true
+                        },
+                        {
+                            "_key": "[formControl]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "readonly",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[disabled]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "id",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
                     ]
                 }
             },
             "308c1bbc-67c7-25d8-4057-f47b0b46b432": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "79bbadd2-cfbf-fcd1-c2b0-ad0aed60e9d7",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -634,6 +726,7 @@
                 ],
                 "3eaea6d4-75e8-4d62-8b60-353719086bb5": {
                     "paletteKey": "FlexLayoutRow",
+                    "parentEditorKey": "308c1bbc-67c7-25d8-4057-f47b0b46b432",
                     "designerReference": [
                         {
                             "_key": "componentLabel",
@@ -699,6 +792,7 @@
                     ],
                     "bc8a8fbd-2876-9caf-ab05-2f53df8c42c8": {
                         "paletteKey": "NG-RaisedButton",
+                        "parentEditorKey": "3eaea6d4-75e8-4d62-8b60-353719086bb5",
                         "designerReference": [
                             {
                                 "_key": "style",
@@ -732,15 +826,28 @@
                                 "_attrDef": "p"
                             },
                             {
-                                "_key": "[disabled]",
-                                "_value": "!details.name || !details.email",
+                                "_key": "[disableRipple]",
+                                "_value": "true",
                                 "_type": "kv",
-                                "_attrDef": "c"
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "type",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
                             }
                         ]
                     },
                     "32d1b465-6ea7-e16b-9525-dd0a0e8e7163": {
                         "paletteKey": "NG-RaisedButton",
+                        "parentEditorKey": "3eaea6d4-75e8-4d62-8b60-353719086bb5",
                         "designerReference": [
                             {
                                 "_key": "style",
@@ -778,6 +885,30 @@
                                 "_value": "['../home/feed']",
                                 "_type": "kv",
                                 "_attrDef": "c"
+                            },
+                            {
+                                "_key": "[disabled]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disableRipple]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "type",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
                             }
                         ]
                     }

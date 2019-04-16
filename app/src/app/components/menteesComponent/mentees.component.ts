@@ -37,7 +37,7 @@ export class menteesComponent extends NBaseComponent implements OnInit {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
-                console.log(result);
+                // console.log(result);
                 this.potential = result;
             },
             error => {

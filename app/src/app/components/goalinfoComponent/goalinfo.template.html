@@ -1,0 +1,19 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" fxLayoutAlign="start center" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="15" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+      <mat-icon [routerLink]="[&apos;../&apos;]">arrow_back</mat-icon>
+    </div>
+    <div fxLayout="column wrap" fxFlex="70" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+      <h1>{{ goal.title }}</h1>
+    </div>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+    <countdown units="Days | Hours | Minutes | Seconds" end="{{ goal.end_date }}"></countdown>
+    <h2>Due : {{ goal.end_date | date }}</h2>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+      <p>Started : {{ goal.end_date | date }} | Category: {{ goal.category }}</p>
+    </div>
+    <h3>Additional Notes:</h3>
+    <p>{{ goal.note }}</p>
+  </div>
+</div>

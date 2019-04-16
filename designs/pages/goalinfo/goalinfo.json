@@ -1,0 +1,13 @@
+{
+    "appPageId": "a812d878-de2e-caa3-bd8d-adb1f477afc6",
+    "appPageName": "goalinfo",
+    "componentName": "goalinfoComponent",
+    "selectorName": "bh-goalinfo",
+    "htmlFileName": "goalinfo.template.html",
+    "tsFileName": "goalinfo.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

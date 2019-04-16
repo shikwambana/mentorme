@@ -44,7 +44,7 @@
                 },
                 {
                     "path": "goal",
-                    "component": "goalComponent"
+                    "component": "goalinfoComponent"
                 },
                 {
                     "path": "invite",
@@ -53,6 +53,10 @@
                 {
                     "component": "profileComponent",
                     "path": "profile"
+                },
+                {
+                    "path": "personalgoal",
+                    "component": "addpersonalgoalComponent"
                 }
             ]
         },

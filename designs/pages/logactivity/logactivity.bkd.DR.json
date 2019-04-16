@@ -222,8 +222,10 @@
                             "_type": "kv",
                             "_attrDef": "c"
                         }
-                    ]
-                }
+                    ],
+                    "parentEditorKey": "71a97150-9133-db5b-4ee4-1949f7b0883d"
+                },
+                "parentEditorKey": "cea1efcb-30ff-d095-8826-a67a5798d4d3"
             },
             "035aedc8-427a-af4d-6a91-408469e78ad5": {
                 "paletteKey": "FlexLayoutCol",
@@ -312,9 +314,12 @@
                             "_attrDef": "p",
                             "_useAsLabel": true
                         }
-                    ]
-                }
-            }
+                    ],
+                    "parentEditorKey": "035aedc8-427a-af4d-6a91-408469e78ad5"
+                },
+                "parentEditorKey": "cea1efcb-30ff-d095-8826-a67a5798d4d3"
+            },
+            "parentEditorKey": "053bdf5c-7c76-bf31-9d2c-cbae97313559"
         },
         "470b2a4c-2a3c-1d31-8361-2edf96a3153d": {
             "paletteKey": "NG-Form",
@@ -597,8 +602,17 @@
                                     "_value": "{{ name.name }}",
                                     "_type": "a",
                                     "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "matError",
+                                    "_value": [],
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": true
                                 }
-                            ]
+                            ],
+                            "parentEditorKey": "45c2e812-08e2-46c7-b27d-6942b5468d79",
+                            "isAdvancedComponent": true
                         },
                         "a3bc6176-a7cf-42d4-12d7-1cbb77743261": {
                             "paletteKey": "NG-DatePicker",
@@ -723,8 +737,17 @@
                                     "_value": "picker",
                                     "_type": "ma",
                                     "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "matError",
+                                    "_value": [],
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": true
                                 }
-                            ]
+                            ],
+                            "parentEditorKey": "45c2e812-08e2-46c7-b27d-6942b5468d79",
+                            "isAdvancedComponent": true
                         },
                         "43bca9c6-753c-50d1-55d1-b9332d5fdd70": {
                             "paletteKey": "NG-Input",
@@ -783,10 +806,21 @@
                                     "_value": "",
                                     "_type": "kv",
                                     "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "matError",
+                                    "_value": [],
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": true
                                 }
-                            ]
-                        }
-                    }
+                            ],
+                            "parentEditorKey": "45c2e812-08e2-46c7-b27d-6942b5468d79",
+                            "isAdvancedComponent": true
+                        },
+                        "parentEditorKey": "4784dde6-776d-5ecf-141d-38724bd5b709"
+                    },
+                    "parentEditorKey": "29b34837-5ec9-e743-082c-509ed11df504"
                 },
                 "77fc4df5-bd0e-53d2-ee43-48cd965a807e": {
                     "paletteKey": "NG-Step",
@@ -1047,7 +1081,8 @@
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     }
-                                ]
+                                ],
+                                "parentEditorKey": "1805964b-ac63-64f8-1f5d-d695d3569284"
                             },
                             "9bdd06b0-6ae8-6927-67dd-ebaad39c76e9": {
                                 "paletteKey": "NG-Input",
@@ -1106,8 +1141,17 @@
                                         "_value": "",
                                         "_type": "kv",
                                         "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "matError",
+                                        "_value": [],
+                                        "_type": "a",
+                                        "_attrDef": "p",
+                                        "_visibility": true
                                     }
-                                ]
+                                ],
+                                "parentEditorKey": "1805964b-ac63-64f8-1f5d-d695d3569284",
+                                "isAdvancedComponent": true
                             },
                             "c23ffa03-1df8-a3ef-7c74-f0615760193e": {
                                 "paletteKey": "NG-slide",
@@ -1179,8 +1223,10 @@
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     }
-                                ]
-                            }
+                                ],
+                                "parentEditorKey": "1805964b-ac63-64f8-1f5d-d695d3569284"
+                            },
+                            "parentEditorKey": "55817837-80b7-5465-fa14-1de1f2f1df21"
                         },
                         "9388d798-6ca9-c8fb-ed86-18847af970dc": {
                             "paletteKey": "FlexLayoutCol",
@@ -1316,11 +1362,23 @@
                                         "_value": "{{ data.name }}",
                                         "_type": "a",
                                         "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "matError",
+                                        "_value": [],
+                                        "_type": "a",
+                                        "_attrDef": "p",
+                                        "_visibility": true
                                     }
-                                ]
-                            }
-                        }
-                    }
+                                ],
+                                "parentEditorKey": "9388d798-6ca9-c8fb-ed86-18847af970dc",
+                                "isAdvancedComponent": true
+                            },
+                            "parentEditorKey": "55817837-80b7-5465-fa14-1de1f2f1df21"
+                        },
+                        "parentEditorKey": "77fc4df5-bd0e-53d2-ee43-48cd965a807e"
+                    },
+                    "parentEditorKey": "29b34837-5ec9-e743-082c-509ed11df504"
                 },
                 "a77b3388-ad15-7a23-d5df-349428779623": {
                     "paletteKey": "NG-Step",
@@ -1503,12 +1561,25 @@
                                     "_value": "",
                                     "_type": "kv",
                                     "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "matError",
+                                    "_value": [],
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": true
                                 }
-                            ]
-                        }
-                    }
-                }
-            }
+                            ],
+                            "parentEditorKey": "2f219d65-8406-7334-f405-f1afdf64de90",
+                            "isAdvancedComponent": true
+                        },
+                        "parentEditorKey": "a77b3388-ad15-7a23-d5df-349428779623"
+                    },
+                    "parentEditorKey": "29b34837-5ec9-e743-082c-509ed11df504"
+                },
+                "parentEditorKey": "470b2a4c-2a3c-1d31-8361-2edf96a3153d"
+            },
+            "parentEditorKey": "053bdf5c-7c76-bf31-9d2c-cbae97313559"
         }
     }
 }

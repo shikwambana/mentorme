@@ -1,57 +1,28 @@
-<div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-    <div fxLayout="column wrap" class="back_wrapper" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
-      <mat-icon [routerLink]="[&apos;../&apos;]">arrow_back</mat-icon>
-    </div>
-    <div fxLayout="column wrap" class="headerTitle" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-      <h2>Jog everyday</h2>
-    </div>
-  </div>
+<div fxLayout="column wrap" class="fabBtn" fxFlex="20" fxLayoutAlign="center center" fxShow="true" fxHide="false"><button mat-fab>
+    <mat-icon>chat_bubble</mat-icon>
+  </button></div>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-    <div fxLayout="row wrap" fxLayoutAlign="space-evenly center" fxShow="true" fxHide="false">
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-        <div fxLayout="row wrap" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-          <mat-icon>update</mat-icon>
-          <p>Status : In Progress</p>
-        </div>
+    <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" fxShow="true" fxHide="false">
+      <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+        <mat-icon [routerLink]="[&apos;../mentees&apos;]">arrow_back</mat-icon>
       </div>
-    </div>
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-      <mat-form-field>
-        <mat-select placeholder="Category" required>
-          <mat-option *ngFor="let category of category" [value]="category">{{ cattegory }}</mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-    <div fxLayout="row wrap" fxLayoutAlign="space-evenly center" fxShow="true" fxHide="false">
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false"></div>
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-        <mat-form-field><input matInput="" placeholder="Due Date" [matDatepicker]="picker">
-          <mat-datepicker-toggle matSuffix="" [for]="picker"></mat-datepicker-toggle>
-          <mat-datepicker #picker=""></mat-datepicker>
-        </mat-form-field>
+      <div fxLayout="column wrap" class="headerTitle" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+        <h1>{{ goal.title }}</h1>
       </div>
     </div>
   </div>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-      <h2>Comments</h2>
+  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+      <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="space-around stretch" fxShow="true" fxHide="false">
+        <h3>Due in</h3>
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+        <!-- <countdown units="Days | Hours | Minutes | Seconds"  end="{{goal.end_date | date }}"></countdown> -->
+        fdceccscdsd</div>
     </div>
     <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-      <mat-card>
-        <mat-card-content>
-          <p>Doing great so far</p>
-          <h6>18:00</h6>
-        </mat-card-content>
-      </mat-card>
-    </div>
-  </div>
-  <div fxLayout="row wrap" class="commentInput" fxFlex="100" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-      <mat-form-field><input matInput="" placeholder="Type Comment" required></mat-form-field>
-    </div>
-    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
-      <mat-icon>send</mat-icon>
+      <p>Started : {{goal.start_date | date }}</p>
     </div>
   </div>
 </div>

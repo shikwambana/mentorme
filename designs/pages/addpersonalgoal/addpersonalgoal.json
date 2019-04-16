@@ -1,0 +1,13 @@
+{
+    "appPageId": "7959a757-773e-44e2-dfb8-293be6a4f09e",
+    "appPageName": "addpersonalgoal",
+    "componentName": "addpersonalgoalComponent",
+    "selectorName": "bh-addpersonalgoal",
+    "htmlFileName": "addpersonalgoal.template.html",
+    "tsFileName": "addpersonalgoal.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

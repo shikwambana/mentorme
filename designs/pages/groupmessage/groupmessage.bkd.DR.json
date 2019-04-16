@@ -222,8 +222,10 @@
                             "_type": "kv",
                             "_attrDef": "c"
                         }
-                    ]
-                }
+                    ],
+                    "parentEditorKey": "116c1d90-c9d3-bb5a-bbd3-e77a0b853e22"
+                },
+                "parentEditorKey": "b6532b4b-0ecf-3740-4b84-84cf311bcba4"
             },
             "a1fc4c74-172a-09e0-76d4-d52033667fa6": {
                 "paletteKey": "FlexLayoutCol",
@@ -312,7 +314,8 @@
                             "_attrDef": "p",
                             "_useAsLabel": true
                         }
-                    ]
+                    ],
+                    "parentEditorKey": "a1fc4c74-172a-09e0-76d4-d52033667fa6"
                 },
                 "54313236-7b36-cfe7-28cc-353eb90b9692": {
                     "paletteKey": "NG-H1",
@@ -336,9 +339,12 @@
                             "_attrDef": "p",
                             "_useAsLabel": true
                         }
-                    ]
-                }
-            }
+                    ],
+                    "parentEditorKey": "a1fc4c74-172a-09e0-76d4-d52033667fa6"
+                },
+                "parentEditorKey": "b6532b4b-0ecf-3740-4b84-84cf311bcba4"
+            },
+            "parentEditorKey": "c0e4fed4-d8ea-703c-361b-9ba71ef3e4f9"
         },
         "3be1ef64-2354-32bc-80d4-edbad2280ecb": {
             "paletteKey": "FlexLayoutCol",
@@ -669,7 +675,8 @@
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     }
-                                ]
+                                ],
+                                "parentEditorKey": "3a7223be-31d0-7223-db04-ecd429229808"
                             },
                             "eada84ba-b7b6-1a98-a40e-c3ca7078dbf5": {
                                 "paletteKey": "NG-icon",
@@ -693,9 +700,12 @@
                                         "_attrDef": "p",
                                         "_useAsLabel": true
                                     }
-                                ]
-                            }
-                        }
+                                ],
+                                "parentEditorKey": "3a7223be-31d0-7223-db04-ecd429229808"
+                            },
+                            "parentEditorKey": "6c641e95-7db6-4d36-68d5-06e599587bd4"
+                        },
+                        "parentEditorKey": "c5b8fd2d-0c52-08c7-f674-4400d1623425"
                     },
                     "93d0cd84-1d2b-03fd-67d2-b03a49c72bf8": {
                         "paletteKey": "NG-Input",
@@ -754,8 +764,17 @@
                                 "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
+                            },
+                            {
+                                "_key": "matError",
+                                "_value": [],
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": true
                             }
-                        ]
+                        ],
+                        "parentEditorKey": "c5b8fd2d-0c52-08c7-f674-4400d1623425",
+                        "isAdvancedComponent": true
                     },
                     "ed7d3685-bc1b-5fb1-8a0a-f8b3eddbd454": {
                         "paletteKey": "NG-Input",
@@ -814,8 +833,17 @@
                                 "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
+                            },
+                            {
+                                "_key": "matError",
+                                "_value": [],
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": true
                             }
-                        ]
+                        ],
+                        "parentEditorKey": "c5b8fd2d-0c52-08c7-f674-4400d1623425",
+                        "isAdvancedComponent": true
                     },
                     "7d08d23c-40c2-41cd-2ae9-c7694105aecc": {
                         "paletteKey": "NG-TextArea",
@@ -869,7 +897,8 @@
                                 "_type": "kv",
                                 "_attrDef": "p"
                             }
-                        ]
+                        ],
+                        "parentEditorKey": "c5b8fd2d-0c52-08c7-f674-4400d1623425"
                     },
                     "4f6998ab-4aea-4394-370b-ce2a6f405bb7": {
                         "paletteKey": "NG-RaisedButton",
@@ -905,10 +934,14 @@
                                 "_type": "kv",
                                 "_attrDef": "p"
                             }
-                        ]
-                    }
-                }
-            }
+                        ],
+                        "parentEditorKey": "c5b8fd2d-0c52-08c7-f674-4400d1623425"
+                    },
+                    "parentEditorKey": "a671d46c-37a5-4693-9baa-64b64579d9e3"
+                },
+                "parentEditorKey": "3be1ef64-2354-32bc-80d4-edbad2280ecb"
+            },
+            "parentEditorKey": "c0e4fed4-d8ea-703c-361b-9ba71ef3e4f9"
         }
     }
 }

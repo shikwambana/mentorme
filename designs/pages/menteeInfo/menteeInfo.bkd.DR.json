@@ -222,8 +222,10 @@
                             "_type": "kv",
                             "_attrDef": "c"
                         }
-                    ]
-                }
+                    ],
+                    "parentEditorKey": "fe4b2c92-1593-9adc-30e1-af8c90c21374"
+                },
+                "parentEditorKey": "a2b2a94f-64e3-9184-f77f-a70cc839e32c"
             },
             "4dd4d7a7-8e3f-05eb-657a-f650b879d288": {
                 "paletteKey": "FlexLayoutCol",
@@ -312,7 +314,8 @@
                             "_attrDef": "p",
                             "_useAsLabel": true
                         }
-                    ]
+                    ],
+                    "parentEditorKey": "4dd4d7a7-8e3f-05eb-657a-f650b879d288"
                 },
                 "fafc0a14-e4a1-362e-05e6-e8547c3040f7": {
                     "paletteKey": "NG-H1",
@@ -336,9 +339,12 @@
                             "_attrDef": "p",
                             "_useAsLabel": true
                         }
-                    ]
-                }
-            }
+                    ],
+                    "parentEditorKey": "4dd4d7a7-8e3f-05eb-657a-f650b879d288"
+                },
+                "parentEditorKey": "a2b2a94f-64e3-9184-f77f-a70cc839e32c"
+            },
+            "parentEditorKey": "14cba4b6-84c2-9e31-9d0f-50fc2438c904"
         },
         "4e11ab72-db43-1624-5855-3ade5f43150d": {
             "paletteKey": "FlexLayoutCol",
@@ -526,39 +532,12 @@
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 }
-                            ]
-                        }
-                    }
-                },
-                "02e5b3ec-b655-7b7a-8973-02109c6ee95a": {
-                    "paletteKey": "NG-tab",
-                    "designerReference": [
-                        {
-                            "_key": "componentLabel",
-                            "_value": "Tab",
-                            "_type": "kv",
-                            "_attrDef": "p",
-                            "_useAsLabel": true
+                            ],
+                            "parentEditorKey": "dfa85f9c-f0ec-c35c-7efc-03d369b39d3a"
                         },
-                        {
-                            "_key": "style",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "class",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "label",
-                            "_value": "Strength and Weaknesses",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        }
-                    ]
+                        "parentEditorKey": "895b8f4f-70d9-5892-66a0-68519e58532f"
+                    },
+                    "parentEditorKey": "73c390a0-8a26-ffad-d6fd-fb84aee862d7"
                 },
                 "53af5926-aec2-6d3a-bb6f-2850475930ea": {
                     "paletteKey": "NG-tab",
@@ -588,9 +567,43 @@
                             "_type": "kv",
                             "_attrDef": "p"
                         }
-                    ]
-                }
-            }
+                    ],
+                    "parentEditorKey": "73c390a0-8a26-ffad-d6fd-fb84aee862d7"
+                },
+                "defe3e43-f3ed-ab47-0dd4-34c8147bb7cb": {
+                    "paletteKey": "NG-tab",
+                    "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Tab",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "label",
+                            "_value": "Interaction",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ],
+                    "parentEditorKey": "73c390a0-8a26-ffad-d6fd-fb84aee862d7"
+                },
+                "parentEditorKey": "4e11ab72-db43-1624-5855-3ade5f43150d"
+            },
+            "parentEditorKey": "14cba4b6-84c2-9e31-9d0f-50fc2438c904"
         }
     }
 }
