@@ -36,42 +36,42 @@ export class registerService {
     }
 
 
-    getToken() {
+    // getToken() {
 
-        return new Promise((resolve, reject) => {
+    //     return new Promise((resolve, reject) => {
 
-            // let myheaders = new Headers();
-            this.myheaders.append('Content-Type', "application/json");
-            let body = {
-                "username": "neutrinosadmin@neutrinos.co", "password": "Neutrinos13579!#%&(", "uuid": "asdhhhsadasdasd",
-                "platformDetails": {
-                    "browser": "Chrome",
-                    "browserVersion": "70.0.3538.110",
-                    "platform": "Windows",
-                    "platformVersion": "10",
-                    "type": "browser",
-                    "uuid": "asdhhhsadasdasd"
-                }
-            }
+    //         // let myheaders = new Headers();
+    //         this.myheaders.append('Content-Type', "application/json");
+    //         let body = {
+    //             "username": "neutrinosadmin@neutrinos.co", "password": "Neutrinos13579!#%&(", "uuid": "asdhhhsadasdasd",
+    //             "platformDetails": {
+    //                 "browser": "Chrome",
+    //                 "browserVersion": "70.0.3538.110",
+    //                 "platform": "Windows",
+    //                 "platformVersion": "10",
+    //                 "type": "browser",
+    //                 "uuid": "asdhhhsadasdasd"
+    //             }
+    //         }
 
-            return this.http
-                .post('http://localhost:3000/bhive-art/mentorme/auth/mentorme', body, this.myheaders)
-                .subscribe(res => {
-                    console.log("Got the token from register services", res);
-                    this.accessToken = res;
-                    console.log('got token?', this.accessToken.accessToken);
-                    this.token = this.accessToken.accessToken;
-                    console.log('token', this.token);
-                    return resolve(res);
-                }, err => {
-                    console.log(" Token generation failed", err);
-                });
+    //         return this.http
+    //             .post('http://localhost:3000/bhive-art/mentorme/auth/mentorme', body, this.myheaders)
+    //             .subscribe(res => {
+    //                 console.log("Got the token from register services", res);
+    //                 this.accessToken = res;
+    //                 console.log('got token?', this.accessToken.accessToken);
+    //                 this.token = this.accessToken.accessToken;
+    //                 console.log('token', this.token);
+    //                 return resolve(res);
+    //             }, err => {
+    //                 console.log(" Token generation failed", err);
+    //             });
 
-        }
+    //     }
 
-        );
+    //     );
 
-    }
+    // }
 
     register(user, person) {
 

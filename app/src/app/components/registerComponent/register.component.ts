@@ -49,7 +49,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
     //        console.log(error, 'could not get token');
     //    });        
         if(!sessionStorage.getItem('accessToken')){
-            
+
             this.get('invites');
         }
         
@@ -114,7 +114,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
             }
 
             //add mentee to mentor's person document
-            this.update('person',{ $set: {'mentoring.mentees' : [menteeInfo] }},{'contact_details.email_address' : this.mentor.mentor},{})
+            this.update('person',{ $push: {'mentoring.mentees' : menteeInfo }},{'contact_details.email_address' : this.mentor.mentor},{})
 
             //add mentor to mentee's person document
             this.person.mentoring.mentors.push(mentorInfo);

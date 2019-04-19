@@ -7,6 +7,8 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { goalsService } from '../../services/goals/goals.service';
 import { Router } from '@angular/router';
 import { metadataService } from '../../services/metadata/metadata.service'
+import { loaderComponent } from '../loaderComponent/loader.component';
+import { MatDialog } from '@angular/material';
 
 /**
  * Service import Example :
@@ -21,7 +23,11 @@ import { metadataService } from '../../services/metadata/metadata.service'
 export class goalsComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService, public goalsService : goalsService, private router : Router, private metadataService : metadataService) {
+    constructor(private bdms: NDataModelService, 
+        public goalsService : goalsService, 
+        private router : Router, 
+        private metadataService : metadataService, 
+        private dialog: MatDialog) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -29,8 +35,17 @@ export class goalsComponent extends NBaseComponent implements OnInit {
     goals;
 
     ngOnInit() {
-        this.goals = this.goalsService.getGoals();
-        console.log('goals :',this.goals);
+        if(!this.goals){
+            // this.openDialog();
+            this.goals = this.goalsService.getGoals()
+            // .subscribe(result =>{
+            //     this.goals = result;
+            // }
+
+            // );
+
+        }
+        // console.log('goals :',this.goals);
     }
 
     deleteGaol(goal){
@@ -42,6 +57,14 @@ export class goalsComponent extends NBaseComponent implements OnInit {
         // console.log(goal);
         this.goalsService.setGoal(goal);        
         this.router.navigate['/goal'];        
+    }
+
+    openDialog() {
+        const dialogRef = this.dialog.open(loaderComponent, {
+          data: { message: 'Authenticating' },
+          width: '250px',
+          disableClose: true
+        });
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

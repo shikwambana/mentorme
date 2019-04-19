@@ -20,4 +20,7 @@ export class activity_log {
   @JsonProperty('mentee_name', String, true)
   public mentee_name: string = undefined;
 
+  @JsonProperty('reason', String, true)
+  public reason: string = undefined;
+
 }

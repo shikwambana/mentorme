@@ -4,6 +4,9 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import { mentorService } from '../../services/mentor/mentor.service';
+import { goalsService} from '../../services/goals/goals.service'
+import { Router } from '@angular/router';
 
 /**
  * Service import Example :
@@ -17,14 +20,20 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class menteeinfoComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
+    mentee: any;
 
-    constructor(private bdms: NDataModelService) {
+    constructor(private bdms: NDataModelService, private goalsService : goalsService, private router: Router) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
+        if(!this.goalsService.getSelectedGoal()){
+            this.router.navigate(['../']);
+        }
 
+        this.mentee = this.goalsService.getSelectedGoal();
+        console.table(this.mentee)
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

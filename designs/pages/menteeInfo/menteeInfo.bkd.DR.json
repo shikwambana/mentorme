@@ -66,6 +66,7 @@
         ],
         "a2b2a94f-64e3-9184-f77f-a70cc839e32c": {
             "paletteKey": "FlexLayoutRow",
+            "parentEditorKey": "14cba4b6-84c2-9e31-9d0f-50fc2438c904",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -131,6 +132,7 @@
             ],
             "fe4b2c92-1593-9adc-30e1-af8c90c21374": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "a2b2a94f-64e3-9184-f77f-a70cc839e32c",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -196,6 +198,7 @@
                 ],
                 "549f838e-0bb5-818d-d217-feec7967d300": {
                     "paletteKey": "NG-icon",
+                    "parentEditorKey": "fe4b2c92-1593-9adc-30e1-af8c90c21374",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -221,14 +224,25 @@
                             "_value": "['../mentees']",
                             "_type": "kv",
                             "_attrDef": "c"
+                        },
+                        {
+                            "_key": "[inline]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "color",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
-                    ],
-                    "parentEditorKey": "fe4b2c92-1593-9adc-30e1-af8c90c21374"
-                },
-                "parentEditorKey": "a2b2a94f-64e3-9184-f77f-a70cc839e32c"
+                    ]
+                }
             },
             "4dd4d7a7-8e3f-05eb-657a-f650b879d288": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "a2b2a94f-64e3-9184-f77f-a70cc839e32c",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -294,6 +308,7 @@
                 ],
                 "046c4fcc-58ea-7079-ffbb-184b2a1a7866": {
                     "paletteKey": "NG-Paragraph",
+                    "parentEditorKey": "4dd4d7a7-8e3f-05eb-657a-f650b879d288",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -313,12 +328,18 @@
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
-                    ],
-                    "parentEditorKey": "4dd4d7a7-8e3f-05eb-657a-f650b879d288"
+                    ]
                 },
                 "fafc0a14-e4a1-362e-05e6-e8547c3040f7": {
                     "paletteKey": "NG-H1",
+                    "parentEditorKey": "4dd4d7a7-8e3f-05eb-657a-f650b879d288",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -334,20 +355,24 @@
                         },
                         {
                             "_key": "H1 Text",
-                            "_value": "Nyiko Shikwambana",
+                            "_value": "{{ mentee.personal_info.name }}",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
-                    ],
-                    "parentEditorKey": "4dd4d7a7-8e3f-05eb-657a-f650b879d288"
-                },
-                "parentEditorKey": "a2b2a94f-64e3-9184-f77f-a70cc839e32c"
-            },
-            "parentEditorKey": "14cba4b6-84c2-9e31-9d0f-50fc2438c904"
+                    ]
+                }
+            }
         },
         "4e11ab72-db43-1624-5855-3ade5f43150d": {
             "paletteKey": "FlexLayoutCol",
+            "parentEditorKey": "14cba4b6-84c2-9e31-9d0f-50fc2438c904",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -413,12 +438,13 @@
             ],
             "73c390a0-8a26-ffad-d6fd-fb84aee862d7": {
                 "paletteKey": "NG-TabGroup",
+                "parentEditorKey": "4e11ab72-db43-1624-5855-3ade5f43150d",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
                         "_value": "Tab Group",
                         "_type": "kv",
-                        "_attrDef": "p",
+                        "_attrDef": "c",
                         "_useAsLabel": true
                     },
                     {
@@ -432,16 +458,71 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "animationDuration",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "backgroundColor",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "color",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "dynamicHeight",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "headerPosition",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "selectedIndex",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "(animationDone)",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "(focusChange)",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "(selectedIndexChange)",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
                     }
                 ],
                 "895b8f4f-70d9-5892-66a0-68519e58532f": {
                     "paletteKey": "NG-tab",
+                    "parentEditorKey": "73c390a0-8a26-ffad-d6fd-fb84aee862d7",
                     "designerReference": [
                         {
                             "_key": "componentLabel",
                             "_value": "Tab",
                             "_type": "kv",
-                            "_attrDef": "p",
+                            "_attrDef": "c",
                             "_useAsLabel": true
                         },
                         {
@@ -461,14 +542,45 @@
                             "_value": "Goals",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[disabled]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[isActive]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "position",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "index",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "origin",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
                     ],
-                    "dfa85f9c-f0ec-c35c-7efc-03d369b39d3a": {
-                        "paletteKey": "NG-card",
+                    "0bd5eb05-b6e5-03fa-8bb9-e972f5678a12": {
+                        "paletteKey": "FlexLayoutCol",
+                        "parentEditorKey": "895b8f4f-70d9-5892-66a0-68519e58532f",
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
-                                "_value": "Card",
+                                "_value": "Column",
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -484,14 +596,64 @@
                                 "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxFlex",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxLayoutGap",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "wrap",
+                                "_value": "wrap",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "layoutAlign",
+                                "_value": "start",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "pLayoutAlign",
+                                "_value": "stretch",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxShow",
+                                "_value": "true",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxHide",
+                                "_value": "false",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "*ngFor",
+                                "_value": "let goal of mentee.goals",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ],
-                        "028e7d37-2c60-fea2-f0a3-004e9026e9ae": {
-                            "paletteKey": "NG-CardHeader",
+                        "114f1202-e855-e244-d9e6-ee7e3a66ad7c": {
+                            "paletteKey": "ad-card",
+                            "parentEditorKey": "0bd5eb05-b6e5-03fa-8bb9-e972f5678a12",
+                            "isAdvancedComponent": true,
                             "designerReference": [
                                 {
                                     "_key": "componentLabel",
-                                    "_value": "Card Header",
+                                    "_value": "Card",
                                     "_type": "kv",
                                     "_attrDef": "p",
                                     "_useAsLabel": true
@@ -509,44 +671,170 @@
                                     "_attrDef": "p"
                                 },
                                 {
-                                    "_key": "title",
-                                    "_value": "Pass School",
-                                    "_type": "a",
-                                    "_attrDef": "p"
-                                },
-                                {
-                                    "_key": "subtitle",
-                                    "_value": "Status: In Progress",
-                                    "_type": "a",
-                                    "_attrDef": "p"
-                                },
-                                {
-                                    "_key": "imgSrc",
-                                    "_value": "",
-                                    "_type": "kv",
-                                    "_attrDef": "p"
-                                },
-                                {
-                                    "_key": "alt",
+                                    "_key": "tabindex",
                                     "_value": "",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 }
                             ],
-                            "parentEditorKey": "dfa85f9c-f0ec-c35c-7efc-03d369b39d3a"
-                        },
-                        "parentEditorKey": "895b8f4f-70d9-5892-66a0-68519e58532f"
-                    },
-                    "parentEditorKey": "73c390a0-8a26-ffad-d6fd-fb84aee862d7"
+                            "7823c2c3-2e7d-7fe8-b6fb-4f5b06bca5d7": {
+                                "paletteKey": "ng-card-title",
+                                "parentEditorKey": "114f1202-e855-e244-d9e6-ee7e3a66ad7c",
+                                "isAdvancedChildComponent": true,
+                                "designerReference": [
+                                    {
+                                        "_key": "style",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "class",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "Title",
+                                        "_value": "{{ goal.title }}",
+                                        "_type": "a",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
+                                    {
+                                        "_key": "align",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    }
+                                ]
+                            },
+                            "afdf60e0-b105-5aa5-a37a-9c403052d6a1": {
+                                "paletteKey": "ng-card-subtitle",
+                                "parentEditorKey": "114f1202-e855-e244-d9e6-ee7e3a66ad7c",
+                                "isAdvancedChildComponent": true,
+                                "designerReference": [
+                                    {
+                                        "_key": "style",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "class",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "Sub Title",
+                                        "_value": "Due : {{ goal.due_date }}",
+                                        "_type": "a",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true,
+                                        "_isVisibleForParent": true
+                                    },
+                                    {
+                                        "_key": "align",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    }
+                                ]
+                            },
+                            "ef323956-74e2-e0ec-7209-afa8f63ead4c": {
+                                "paletteKey": "ng-card-content",
+                                "parentEditorKey": "114f1202-e855-e244-d9e6-ee7e3a66ad7c",
+                                "isAdvancedChildComponent": true,
+                                "designerReference": [
+                                    {
+                                        "_key": "style",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "class",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "align",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    }
+                                ],
+                                "a257ace0-782a-6a9e-7d6e-f66e02982be9": {
+                                    "paletteKey": "NG-Paragraph",
+                                    "parentEditorKey": "ef323956-74e2-e0ec-7209-afa8f63ead4c",
+                                    "designerReference": [
+                                        {
+                                            "_key": "style",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "class",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "text",
+                                            "_value": "{{ goal.description }}",
+                                            "_type": "a",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
+                                        {
+                                            "_key": "align",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        }
+                                    ]
+                                }
+                            },
+                            "636e3237-1d31-70ec-f886-cc8fc647a05a": {
+                                "paletteKey": "ng-card-action",
+                                "parentEditorKey": "114f1202-e855-e244-d9e6-ee7e3a66ad7c",
+                                "isAdvancedChildComponent": true,
+                                "designerReference": [
+                                    {
+                                        "_key": "style",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "class",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "align",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    }
+                                ]
+                            }
+                        }
+                    }
                 },
                 "53af5926-aec2-6d3a-bb6f-2850475930ea": {
                     "paletteKey": "NG-tab",
+                    "parentEditorKey": "73c390a0-8a26-ffad-d6fd-fb84aee862d7",
                     "designerReference": [
                         {
                             "_key": "componentLabel",
                             "_value": "Tab",
                             "_type": "kv",
-                            "_attrDef": "p",
+                            "_attrDef": "c",
                             "_useAsLabel": true
                         },
                         {
@@ -566,18 +854,208 @@
                             "_value": "Personal Info",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[disabled]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[isActive]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "position",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "index",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "origin",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
                     ],
-                    "parentEditorKey": "73c390a0-8a26-ffad-d6fd-fb84aee862d7"
+                    "c9e10415-be33-fed5-6881-dd2deba5d655": {
+                        "paletteKey": "FlexLayoutCol",
+                        "parentEditorKey": "53af5926-aec2-6d3a-bb6f-2850475930ea",
+                        "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Column",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxFlex",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxLayoutGap",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "wrap",
+                                "_value": "wrap",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "layoutAlign",
+                                "_value": "start",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "pLayoutAlign",
+                                "_value": "stretch",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxShow",
+                                "_value": "true",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxHide",
+                                "_value": "false",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
+                        ],
+                        "2267b234-23b2-d2fb-a73e-c1314900befc": {
+                            "paletteKey": "NG-H2",
+                            "parentEditorKey": "c9e10415-be33-fed5-6881-dd2deba5d655",
+                            "designerReference": [
+                                {
+                                    "_key": "style",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "H2 Text",
+                                    "_value": "{{ mentee.personal_info.name }} {{ mentee.personal_info.surname }}",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "align",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                }
+                            ]
+                        },
+                        "a02b2a77-86fb-f855-f7b0-8b02f021b15a": {
+                            "paletteKey": "NG-H3",
+                            "parentEditorKey": "c9e10415-be33-fed5-6881-dd2deba5d655",
+                            "designerReference": [
+                                {
+                                    "_key": "style",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "H3 Text",
+                                    "_value": "{{ mentee.contact_details.email_address}}",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "align",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                }
+                            ]
+                        },
+                        "e12e2cfc-28be-8776-c264-ee933d69bfb8": {
+                            "paletteKey": "NG-Paragraph",
+                            "parentEditorKey": "c9e10415-be33-fed5-6881-dd2deba5d655",
+                            "designerReference": [
+                                {
+                                    "_key": "style",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "text",
+                                    "_value": "{{ mentee.contact_details.home_address}}",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "align",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                }
+                            ]
+                        }
+                    }
                 },
                 "defe3e43-f3ed-ab47-0dd4-34c8147bb7cb": {
                     "paletteKey": "NG-tab",
+                    "parentEditorKey": "73c390a0-8a26-ffad-d6fd-fb84aee862d7",
                     "designerReference": [
                         {
                             "_key": "componentLabel",
                             "_value": "Tab",
                             "_type": "kv",
-                            "_attrDef": "p",
+                            "_attrDef": "c",
                             "_useAsLabel": true
                         },
                         {
@@ -597,13 +1075,113 @@
                             "_value": "Interaction",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[disabled]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[isActive]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "position",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "index",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "origin",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
                     ],
-                    "parentEditorKey": "73c390a0-8a26-ffad-d6fd-fb84aee862d7"
-                },
-                "parentEditorKey": "4e11ab72-db43-1624-5855-3ade5f43150d"
-            },
-            "parentEditorKey": "14cba4b6-84c2-9e31-9d0f-50fc2438c904"
+                    "a96f4d3a-207d-07ae-5724-cdbf3e88e7aa": {
+                        "paletteKey": "FlexLayoutCol",
+                        "parentEditorKey": "defe3e43-f3ed-ab47-0dd4-34c8147bb7cb",
+                        "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Column",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxFlex",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxLayoutGap",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "wrap",
+                                "_value": "wrap",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "layoutAlign",
+                                "_value": "start",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "pLayoutAlign",
+                                "_value": "stretch",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxShow",
+                                "_value": "true",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxHide",
+                                "_value": "false",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "*ngFor",
+                                "_value": "let activity of mentee.activity_log",
+                                "_type": "kv",
+                                "_attrDef": "c"
+                            }
+                        ]
+                    }
+                }
+            }
         }
     }
 }

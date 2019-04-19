@@ -66,6 +66,7 @@
         ],
         "ffd4e1bc-46ac-dea7-94f0-c6cb04d32047": {
             "paletteKey": "FlexLayoutRow",
+            "parentEditorKey": "eb25d732-f6e3-6cb6-3644-de3efc75d9cb",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -131,6 +132,7 @@
             ],
             "77ee546b-40c9-c109-9265-c1f60b94fcc8": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "ffd4e1bc-46ac-dea7-94f0-c6cb04d32047",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -196,6 +198,7 @@
                 ],
                 "8ba0c463-2c47-6a2f-995c-4971381c18c8": {
                     "paletteKey": "NG-icon",
+                    "parentEditorKey": "77ee546b-40c9-c109-9265-c1f60b94fcc8",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -215,14 +218,25 @@
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
+                        },
+                        {
+                            "_key": "[inline]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "color",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
-                    ],
-                    "parentEditorKey": "77ee546b-40c9-c109-9265-c1f60b94fcc8"
-                },
-                "parentEditorKey": "ffd4e1bc-46ac-dea7-94f0-c6cb04d32047"
+                    ]
+                }
             },
             "04c49ab3-5797-4d8c-c734-bfc14c7f22dc": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "ffd4e1bc-46ac-dea7-94f0-c6cb04d32047",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -288,6 +302,7 @@
                 ],
                 "ebe5fd27-ab0c-e864-e72c-4dde1ff4984e": {
                     "paletteKey": "NG-H1",
+                    "parentEditorKey": "04c49ab3-5797-4d8c-c734-bfc14c7f22dc",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -307,16 +322,20 @@
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
-                    ],
-                    "parentEditorKey": "04c49ab3-5797-4d8c-c734-bfc14c7f22dc"
-                },
-                "parentEditorKey": "ffd4e1bc-46ac-dea7-94f0-c6cb04d32047"
-            },
-            "parentEditorKey": "eb25d732-f6e3-6cb6-3644-de3efc75d9cb"
+                    ]
+                }
+            }
         },
         "2abf84b1-a7e5-2b62-b886-f4b94c51655d": {
             "paletteKey": "FlexLayoutCol",
+            "parentEditorKey": "eb25d732-f6e3-6cb6-3644-de3efc75d9cb",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -381,7 +400,7 @@
                 },
                 {
                     "_key": "*ngFor",
-                    "_value": "let card of card",
+                    "_value": "let card of menteesList",
                     "_type": "kv",
                     "_attrDef": "c"
                 },
@@ -394,6 +413,7 @@
             ],
             "fc8fb599-f43f-1154-3586-bd5fc677005c": {
                 "paletteKey": "NG-card",
+                "parentEditorKey": "2abf84b1-a7e5-2b62-b886-f4b94c51655d",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -413,10 +433,17 @@
                         "_value": "feed-card",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "*ngFor",
+                        "_value": "let goal of card.goals",
+                        "_type": "kv",
+                        "_attrDef": "c"
                     }
                 ],
                 "9c2d8d6f-1b89-2b9c-6793-998ab351ba36": {
                     "paletteKey": "NG-CardTitle",
+                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -432,16 +459,22 @@
                         },
                         {
                             "_key": "Title",
-                            "_value": "{{ card.name }}",
+                            "_value": "{{ goal.title }}",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
-                    ],
-                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c"
+                    ]
                 },
                 "bdf11623-30c3-80dd-9c45-e18b76175403": {
                     "paletteKey": "NG-CardSubTitle",
+                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -461,12 +494,18 @@
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
                         }
-                    ],
-                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c"
+                    ]
                 },
                 "50938415-b4d1-2261-e100-be6ace8ecf6f": {
                     "paletteKey": "NG-CardContent",
+                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c",
                     "designerReference": [
                         {
                             "_key": "componentLabel",
@@ -490,6 +529,7 @@
                     ],
                     "6bcf3645-84eb-ee32-63a4-7f4b71c9992b": {
                         "paletteKey": "NG-Paragraph",
+                        "parentEditorKey": "50938415-b4d1-2261-e100-be6ace8ecf6f",
                         "designerReference": [
                             {
                                 "_key": "style",
@@ -509,14 +549,50 @@
                                 "_type": "a",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
+                            },
+                            {
+                                "_key": "align",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
                             }
-                        ],
-                        "parentEditorKey": "50938415-b4d1-2261-e100-be6ace8ecf6f"
+                        ]
                     },
-                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c"
+                    "7d7a718f-6b86-5baa-7e9e-337a88e83dc3": {
+                        "paletteKey": "NG-Paragraph",
+                        "parentEditorKey": "50938415-b4d1-2261-e100-be6ace8ecf6f",
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "text",
+                                "_value": "{{ card.personal_info.name }}",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "align",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
+                        ]
+                    }
                 },
                 "8250f072-5a43-f34a-42aa-61a404c7d74e": {
                     "paletteKey": "NG-CardFooter",
+                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c",
                     "designerReference": [
                         {
                             "_key": "componentLabel",
@@ -540,6 +616,7 @@
                     ],
                     "c8d325dd-e755-820e-5f7d-53ccac1195f7": {
                         "paletteKey": "FlexLayoutRow",
+                        "parentEditorKey": "8250f072-5a43-f34a-42aa-61a404c7d74e",
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
@@ -605,6 +682,7 @@
                         ],
                         "8626fa85-e139-e5bb-8c89-f278988b87b1": {
                             "paletteKey": "NG-CardActions",
+                            "parentEditorKey": "c8d325dd-e755-820e-5f7d-53ccac1195f7",
                             "designerReference": [
                                 {
                                     "_key": "componentLabel",
@@ -628,6 +706,7 @@
                             ],
                             "089e454c-8073-64f5-daa0-fe8dfadd9403": {
                                 "paletteKey": "NG-RaisedButton",
+                                "parentEditorKey": "8626fa85-e139-e5bb-8c89-f278988b87b1",
                                 "designerReference": [
                                     {
                                         "_key": "style",
@@ -659,12 +738,36 @@
                                         "_value": "",
                                         "_type": "kv",
                                         "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disabled]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disableRipple]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "type",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "routerLink",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
                                     }
-                                ],
-                                "parentEditorKey": "8626fa85-e139-e5bb-8c89-f278988b87b1"
+                                ]
                             },
                             "2735452a-0b4b-243f-e52c-b3dc4200332e": {
                                 "paletteKey": "NG-RaisedButton",
+                                "parentEditorKey": "8626fa85-e139-e5bb-8c89-f278988b87b1",
                                 "designerReference": [
                                     {
                                         "_key": "style",
@@ -702,19 +805,37 @@
                                         "_value": "['../mentee']",
                                         "_type": "kv",
                                         "_attrDef": "c"
+                                    },
+                                    {
+                                        "_key": "[disabled]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disableRipple]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "type",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "routerLink",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
                                     }
-                                ],
-                                "parentEditorKey": "8626fa85-e139-e5bb-8c89-f278988b87b1"
-                            },
-                            "parentEditorKey": "c8d325dd-e755-820e-5f7d-53ccac1195f7"
-                        },
-                        "parentEditorKey": "8250f072-5a43-f34a-42aa-61a404c7d74e"
-                    },
-                    "parentEditorKey": "fc8fb599-f43f-1154-3586-bd5fc677005c"
-                },
-                "parentEditorKey": "2abf84b1-a7e5-2b62-b886-f4b94c51655d"
-            },
-            "parentEditorKey": "eb25d732-f6e3-6cb6-3644-de3efc75d9cb"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "8892c768-0b19-b8eb-06a6-0173888889d5": {
@@ -784,6 +905,7 @@
         ],
         "4bb9c87f-a2ff-6da4-381d-6d26c88ef608": {
             "paletteKey": "NG-FabButton",
+            "parentEditorKey": "8892c768-0b19-b8eb-06a6-0173888889d5",
             "designerReference": [
                 {
                     "_key": "style",
@@ -821,9 +943,32 @@
                     "_value": "['../log']",
                     "_type": "kv",
                     "_attrDef": "c"
+                },
+                {
+                    "_key": "[disabled]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[disableRipple]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "type",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "routerLink",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
                 }
-            ],
-            "parentEditorKey": "8892c768-0b19-b8eb-06a6-0173888889d5"
+            ]
         }
     }
 }

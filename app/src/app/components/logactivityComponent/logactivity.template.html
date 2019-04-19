@@ -7,49 +7,32 @@
       <h1>Log Activity</h1>
     </div>
   </div>
-  <form>
-    <mat-vertical-stepper>
-      <mat-step label="The basics">
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-          <mat-form-field>
-            <mat-select placeholder="Select mentee" required>
-              <mat-option *ngFor="let name of mentee" [value]="name.name">{{ name.name }}</mat-option>
-            </mat-select>
-          </mat-form-field>
-          <mat-form-field><input matInput="" placeholder="Date" [matDatepicker]="picker" [(ngModel)]="today.today" name="today">
-            <mat-datepicker-toggle matSuffix="" [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker=""></mat-datepicker>
-          </mat-form-field>
-          <mat-form-field>
-            <input matInput="" placeholder="Location" required>
-          </mat-form-field>
-        </div>
-      </mat-step>
-      <mat-step label="Goals">
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-            <mat-slide-toggle labelPosition="before"> Was the Goal met?</mat-slide-toggle>
-            <mat-form-field>
-              <input matInput="" placeholder="why not?" required>
-            </mat-form-field>
-            <mat-slide-toggle labelPosition="before"> New Goal</mat-slide-toggle>
-          </div>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-            <mat-form-field>
-              <mat-select placeholder="Category" required>
-                <mat-option *ngFor="let data of metadata" [value]="data.name">{{ data.name }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-          </div>
-        </div>
-      </mat-step>
-      <mat-step label="Additional comments">
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-          <mat-form-field>
-            <input matInput="" placeholder="Additional Info" required>
-          </mat-form-field>
-        </div>
-      </mat-step>
-    </mat-vertical-stepper>
+  <form componentLabel="Form">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+      <mat-form-field>
+        <mat-select placeholder="Select mentee" required>
+          <mat-option *ngFor="let name of mentee" [value]="name.name">{{ name.name }}</mat-option>
+        </mat-select>
+
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Date" [matDatepicker]="picker" [(ngModel)]="today.today" name="today">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker opened disabled></mat-datepicker>
+
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Location" required>
+
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Reason for visit" required>
+
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Additional Notes" required>
+
+      </mat-form-field><button mat-raised-button>Save</button>
+    </div>
   </form>
 </div>

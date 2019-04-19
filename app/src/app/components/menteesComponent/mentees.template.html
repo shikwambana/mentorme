@@ -8,14 +8,14 @@
     </div>
   </div>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let mentee of menteesList">
-    <mat-card [routerLink]="[&apos;../mentee&apos;]">
-      <mat-card-title>{{ mentee.name }}</mat-card-title>
-      <mat-card-subtitle>{{ mentee.LatestGoal }}</mat-card-subtitle>
+    <mat-card [routerLink]="[&apos;../mentee&apos;]" (click)="selectMentee(mentee)">
+      <mat-card-title>{{ mentee.personal_info.name}} {{ mentee.personal_info.surname}}</mat-card-title>
+      <mat-card-subtitle>{{ mentee.contact_details.email_address }}</mat-card-subtitle>
       <mat-card-content>
         <p>{{ mentee.latestComment }}</p>
       </mat-card-content>
       <mat-card-footer>
-        <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="false" fxHide="true">
           <mat-card-actions><button mat-raised-button>
               <mat-icon>call</mat-icon>
             </button><button mat-raised-button>

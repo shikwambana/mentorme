@@ -23,6 +23,10 @@ export class addpersonalgoalComponent extends NBaseComponent implements OnInit {
     goal;
     categories: { 'name': string; }[];
     person: any;
+    mentees;
+    hidden: boolean = false;
+    checked: boolean = false;
+    email: any;
     constructor(private bdms: NDataModelService, 
         private metadataService : metadataService,
         private router: Router, 
@@ -35,22 +39,39 @@ export class addpersonalgoalComponent extends NBaseComponent implements OnInit {
 
     ngOnInit() {
         this.categories = this.metadataService.getCategory();
+        this.person = this.metadataService.getPerson();
+        this.mentees = this.person.mentoring.mentees;        
     }
 
+    changed(){
+        if(!this.hidden){
+            this.hidden = true;
+        }else{
+            this.hidden = false;
+        }
+      }
+
+     dis(){
+         console.log(this.email);
+         console.table(this.goal)
+     }
+      
     addGoal(){
         //get entire person object
-        this.person = this.metadataService.getPerson();
-
+        let email;
         //add outstanding info
         this.goal.author = this.person.personal_info.name + " " + this.person.personal_info.surname;
         this.goal.author_email = this.person.contact_details.email_address;
         this.goal.status = "In Progress";
-        this.person.goals.push(this.goal);
-        console.log(this.person);
+        // this.person.goals.push(this.goal);
+        console.log(this.goal);
         // this.goalsService.addGoal(this.goal);
+        if(this.hidden){
+            this.email = this.person.contact_details.email_address;
+        }
 
         //add goal to person document
-        this.update('person',{ $set: {'goals' : this.person.goals }}, { 'contact_details.email_address' : this.person.contact_details.email_address },{});
+        this.update('person',{ $push: {'goals' : this.goal }}, { 'contact_details.email_address' :  this.email},{});
         // this.router.navigate(['../']);
     }
 

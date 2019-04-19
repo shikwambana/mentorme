@@ -433,6 +433,12 @@
                         "_value": "['../mentee']",
                         "_type": "kv",
                         "_attrDef": "c"
+                    },
+                    {
+                        "_key": "(click)",
+                        "_value": "selectMentee(mentee)",
+                        "_type": "kv",
+                        "_attrDef": "c"
                     }
                 ],
                 "b5bc06fe-03e8-c821-d1f5-4f1e6e739a33": {
@@ -453,7 +459,7 @@
                         },
                         {
                             "_key": "Title",
-                            "_value": "{{ mentee.name }}",
+                            "_value": "{{ mentee.personal_info.name}} {{ mentee.personal_info.surname}}",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -484,7 +490,7 @@
                         },
                         {
                             "_key": "Sub Title",
-                            "_value": "{{ mentee.LatestGoal }}",
+                            "_value": "{{ mentee.contact_details.email_address }}",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -632,13 +638,13 @@
                             },
                             {
                                 "_key": "fxShow",
-                                "_value": "true",
+                                "_value": "false",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
                             {
                                 "_key": "fxHide",
-                                "_value": "false",
+                                "_value": "true",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             }

@@ -5,8 +5,8 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { metadataService } from '../../services/metadata/metadata.service';
-import { invites } from '../../models/invites.model';
-
+import { mentorService } from '../../services/mentor/mentor.service';
+import { goalsService} from '../../services/goals/goals.service'
 /**
  * Service import Example :
  * import { HeroService } from '../services/hero/hero.service';
@@ -20,7 +20,10 @@ import { invites } from '../../models/invites.model';
 export class menteesComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService, private getData : metadataService) {
+    constructor(private bdms: NDataModelService, 
+        private getData : metadataService, 
+        private mentorService : mentorService,
+        private goalsService : goalsService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -29,8 +32,12 @@ export class menteesComponent extends NBaseComponent implements OnInit {
     potential;
 
     ngOnInit() {
-        this.menteesList = this.getData.getMentees();
+        this.menteesList = this.mentorService.menteeList();
         console.log(this.menteesList)
+    }
+
+    selectMentee(mentee){
+        this.goalsService.setGoal(mentee);
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

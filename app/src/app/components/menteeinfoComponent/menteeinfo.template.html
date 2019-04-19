@@ -5,22 +5,36 @@
     </div>
     <div fxLayout="column wrap" class="headerTitle" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
       <p>Profile of</p>
-      <h1>Nyiko Shikwambana</h1>
+      <h1>{{ mentee.personal_info.name }}</h1>
     </div>
   </div>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-    <mat-tab-group>
-      <mat-tab label="Goals">
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title>Pass School</mat-card-title>
-            <mat-card-subtitle>Status: In Progress</mat-card-subtitle>
-            <img mat-card-avatar="">
-          </mat-card-header>
-        </mat-card>
+    <mat-tab-group componentLabel="Tab Group">
+      <mat-tab label="Goals" componentLabel="Tab">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let goal of mentee.goals">
+          <mat-card>
+            <mat-card-title>{{ goal.title }}</mat-card-title>
+
+            <mat-card-subtitle>Due : {{ goal.due_date }}</mat-card-subtitle>
+
+            <mat-card-content>
+              <p>{{ goal.description }}</p>
+            </mat-card-content>
+
+            <mat-card-actions></mat-card-actions>
+          </mat-card>
+        </div>
       </mat-tab>
-      <mat-tab label="Personal Info"></mat-tab>
-      <mat-tab label="Interaction"></mat-tab>
+      <mat-tab label="Personal Info" componentLabel="Tab">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+          <h2>{{ mentee.personal_info.name }} {{ mentee.personal_info.surname }}</h2>
+          <h3>{{ mentee.contact_details.email_address}}</h3>
+          <p>{{ mentee.contact_details.home_address}}</p>
+        </div>
+      </mat-tab>
+      <mat-tab label="Interaction" componentLabel="Tab">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let activity of mentee.activity_log"></div>
+      </mat-tab>
     </mat-tab-group>
   </div>
 </div>

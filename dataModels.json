@@ -263,6 +263,11 @@
                 "name": "mentee_name",
                 "fieldType": 2,
                 "isArray": false
+            },
+            {
+                "name": "reason",
+                "fieldType": 2,
+                "isArray": false
             }
         ]
     },

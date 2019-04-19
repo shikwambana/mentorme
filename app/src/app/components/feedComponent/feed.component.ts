@@ -4,6 +4,7 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import { mentorService } from '../../services/mentor/mentor.service';
 
 /**
  * Service import Example :
@@ -17,8 +18,8 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class feedComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-
-    constructor(private bdms: NDataModelService) {
+    menteesList;
+    constructor(private bdms: NDataModelService, private mentorService : mentorService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -59,6 +60,8 @@ export class feedComponent extends NBaseComponent implements OnInit {
     
     ngOnInit() {
 
+        this.menteesList = this.mentorService.menteeList();
+        console.log(this.menteesList)
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
