@@ -28,6 +28,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
     // Tukiso member variables
     person: person;
     uid: string;
+    user: { "userKey": string; "firstName": string; "lastName": string; "username": string; "displayName": string; "password": any; "groupList": string[]; };
     constructor(private bdms: NDataModelService, 
         private registerService: registerService, 
         private session: NSessionStorageService,
@@ -47,7 +48,11 @@ export class registerComponent extends NBaseComponent implements OnInit {
     //    }, error => {
     //        console.log(error, 'could not get token');
     //    });        
-        // this.get('invites');
+        if(!sessionStorage.getItem('accessToken')){
+            
+            this.get('invites');
+        }
+        
         this.person = new person();
         this.uid = uid();
     }
@@ -65,8 +70,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
         this.openDialog();
         this.person.personal_info.userKey = this.uid;
         this.person.personal_info.date_of_joining = new Date();
-        console.log(this.person.personal_info)
-        let user = {
+         this.user = {
             "userKey": this.person.personal_info.userKey,
             "firstName": this.person.personal_info.name,
             "lastName": this.person.personal_info.surname,
@@ -80,21 +84,50 @@ export class registerComponent extends NBaseComponent implements OnInit {
 
         this.checkMentor(this.person.contact_details.email_address);
 
-        if(this.registerService.register(user, this.person)){
-            this.dialog.closeAll();
-        }
     }
 
-    checkMentor(user) {
+    checkMentor(user: string) {
+        //check if there is a mentor assigned to person
+        //add mentor to object
 
+        console.log('checking for mentors...')
         this.mentor = this.possibleMentees.find(val => val.email_address == user);
+
+        //if mentor is there, contstruct object and push
         if (this.mentor) {
-            delete this.mentor._id;
             console.log(this.mentor);
 
-            this.person.mentoring.mentors.push(this.mentor);
+            //mentor info
+            let mentorInfo = {
+                'full_name' : this.mentor.mentorName,
+                'email_address' : this.mentor.mentor,
+                'start_date' : new Date(),
+                'end_date' : new Date()
+            }
+
+            //mentee info
+            let menteeInfo = {
+                'full_name' : this.person.personal_info.name + " " + this.person.personal_info.surname,
+                'email_address' : this.person.contact_details.email_address,
+                'start_date' : new Date(),
+                'end_date' : new Date()
+            }
+
+            //add mentee to mentor's person document
+            this.update('person',{ $set: {'mentoring.mentees' : [menteeInfo] }},{'contact_details.email_address' : this.mentor.mentor},{})
+
+            //add mentor to mentee's person document
+            this.person.mentoring.mentors.push(mentorInfo);
+
+            if(this.registerService.register(this.user, this.person)){
+                this.dialog.closeAll();
+            }
+
         } else {
-            this.person.personal_info.userKey = uid(7);
+
+            if(this.registerService.register(this.user, this.person)){
+                this.dialog.closeAll();
+            }
         }
     }
 
@@ -104,7 +137,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
             result => {
                 // On Success code here
                 this.possibleMentees = result;
-                // console.log(this.possibleMentees);
+                console.log('got mentors', result);
             },
             error => {
                 // Handle errors here
@@ -153,8 +186,10 @@ export class registerComponent extends NBaseComponent implements OnInit {
         this.mm.update(dataModelName, updateObject,
             result => {
                 //  On Success code here
+                console.log('result',result)
             }, error => {
                 // Handle errors here
+                console.log(error)
             })
     }
 

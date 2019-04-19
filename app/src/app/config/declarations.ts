@@ -12,6 +12,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-mentorService
+import { mentorService } from '../services/mentor/mentor.service';
 //CORE_REFERENCE_IMPORT-goalinfoComponent
 import { goalinfoComponent } from '../components/goalinfoComponent/goalinfo.component';
 //CORE_REFERENCE_IMPORT-addpersonalgoalComponent
@@ -159,6 +161,8 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-mentorService
+mentorService,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-commonService
 commonService,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-tokenService

@@ -16,15 +16,15 @@ export class registerService {
     token;
     // registerUrl;
     // emailRegister;
-    myheaders;
+    myheaders: HttpHeaders;
 
     url = "http://localhost:3000/bhive-art/mentorme/auth/mentorme/register";
     urlBmodeller = 'http://127.0.0.1:24483/api';
-    
-    
 
-    constructor(private http: HttpClient, 
-        private tokenService : tokenService,
+
+
+    constructor(private http: HttpClient,
+        private tokenService: tokenService,
         private snackBarService: NSnackbarService,
         private commService: commonService,
         private router: Router) {
@@ -38,7 +38,7 @@ export class registerService {
 
     getToken() {
 
-        return new Promise((resolve, reject) => { 
+        return new Promise((resolve, reject) => {
 
             // let myheaders = new Headers();
             this.myheaders.append('Content-Type', "application/json");
@@ -55,20 +55,20 @@ export class registerService {
             }
 
             return this.http
-            .post('http://localhost:3000/bhive-art/mentorme/auth/mentorme', body, this.myheaders)
-            .subscribe(res => {
-                console.log("Got the token from register services", res);
-                this.accessToken = res;
-                console.log('got token?', this.accessToken.accessToken);
-                this.token = this.accessToken.accessToken;
-                console.log('token', this.token);
-                return resolve(res); 
-            }, err => {
-                console.log(" Token generation failed", err);
-            });
-                                   
-            }
-            
+                .post('http://localhost:3000/bhive-art/mentorme/auth/mentorme', body, this.myheaders)
+                .subscribe(res => {
+                    console.log("Got the token from register services", res);
+                    this.accessToken = res;
+                    console.log('got token?', this.accessToken.accessToken);
+                    this.token = this.accessToken.accessToken;
+                    console.log('token', this.token);
+                    return resolve(res);
+                }, err => {
+                    console.log(" Token generation failed", err);
+                });
+
+        }
+
         );
 
     }
@@ -77,16 +77,18 @@ export class registerService {
 
         this.token = this.tokenService.getToken();
 
-       let headers = new HttpHeaders({
+        let headers = new HttpHeaders({
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + this.token });
-       let options = { headers: headers };
-        
-         let data = {
-            'user' : user,
-            'person' :person,
-            'token' : this.token
+            'Authorization': 'Bearer ' + this.token
+        });
+        let options = { headers: headers };
+
+        let data = {
+            'user': user,
+            'person': person,
+            'token': this.token
         }
+
         return this.http.post(this.urlBmodeller + '/register', data, options).subscribe(res => {
             this.commService.alertsnackbar('Successfully registered', 'close');
             this.router.navigate(['login']);
@@ -100,7 +102,7 @@ export class registerService {
         })
     }
 
-   
+
 
 }
 

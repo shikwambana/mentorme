@@ -30,7 +30,7 @@ export class menteesComponent extends NBaseComponent implements OnInit {
 
     ngOnInit() {
         this.menteesList = this.getData.getMentees();
-        this.get('invites');
+        console.log(this.menteesList)
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

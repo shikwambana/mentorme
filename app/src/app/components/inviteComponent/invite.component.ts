@@ -5,14 +5,14 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { inviteService } from '../../services/invite/invite.service';
-import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 import uid from 'tiny-uid';
 import { invites } from '../../models/invites.model';
 import { metadataService } from '../../services/metadata/metadata.service';
 import { MatDialog } from '@angular/material';
 import { loaderComponent } from '../loaderComponent/loader.component';
-
+import { commonService } from '../../services/common/common.service';
 /**
  * Service import Example :
  * import { HeroService } from '../services/hero/hero.service';
@@ -40,7 +40,9 @@ export class inviteComponent extends NBaseComponent implements OnInit {
     constructor(private bdms: NDataModelService,
         private inviteService: inviteService,
         private dialog: MatDialog,
-        private metadataService: metadataService) {
+        private metadataService: metadataService,
+        private comm: commonService,
+        private router : Router) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -60,14 +62,19 @@ export class inviteComponent extends NBaseComponent implements OnInit {
 
     invite() {
 
+        this.openDialog();
+
         if (this.inviteService.checkInvite(this.details)) {
-
-
+            //inform user that person is already in the system, 
+            //ask if they would like to add them to their mentee list
+        this.dialog.closeAll();
 
         } else {
-
+            //invite person to app via email
+            //add details in invite collection
             this.userObj = this.metadataService.getUserObj()
 
+            // contstruct object to add to invites collection
             this.invites = {
                 'full_name': this.details.name,
                 'email_address': this.details.email,
@@ -76,9 +83,15 @@ export class inviteComponent extends NBaseComponent implements OnInit {
                 'mentorName': this.userObj.firstName + ' ' + this.userObj.lastName
             }
 
-            this.inviteService.inviteUser(this.invites);
-            // this.put('invites', this.invites);
+            if(this.inviteService.inviteUser(this.invites)){
+            this.put('invites', this.invites);
+            
+            }else{
+                this.dialog.closeAll();
+                this.comm.alertsnackbar('Failed to invite','Close');
+            };
         }
+
 
     }
 
@@ -109,10 +122,16 @@ export class inviteComponent extends NBaseComponent implements OnInit {
         this.mm.put(dataModelName, dataModelObject,
             result => {
                 // On Success code here
-                console.log(result);
+                console.log('added to collection',result);
+                this.dialog.closeAll();
+                this.comm.alertsnackbar('Invited','Close');
+
+                this.router.navigate(['../']);
             }, error => {
                 // Handle errors here
                 console.log(error);
+                this.dialog.closeAll();
+                this.comm.alertsnackbar('Failed to invite','Close');
 
             })
     }

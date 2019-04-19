@@ -18,7 +18,7 @@ export class tokenService {
     }
 
     generateToken(){
-        if(!this.token){
+        if(!sessionStorage.getItem('accessToken')){
             this.http.post(this.bModellerURL, {'hi' : 'ola'} ).subscribe(result => {
                 this.token = result;
                 this.session.setValue('accessToken',this.token.accessToken);
@@ -28,13 +28,17 @@ export class tokenService {
                  console.log('failed to get token', error)
              });
         }else{
+            this.token = sessionStorage.getItem('accessToken');
             console.log('already have token');
-            this.session.setValue('accessToken',this.token.accessToken);
         }
        
     }
 
     getToken(){
-        return this.token.accessToken;
+
+        if(!this.token){
+            this.token = sessionStorage.getItem('accessToken');
+        }
+        return this.token;
     }
 }
