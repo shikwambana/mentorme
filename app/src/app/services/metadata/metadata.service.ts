@@ -3,6 +3,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { goalsService } from '../goals/goals.service'
 import { mentorService } from '../mentor/mentor.service'
+import { tokenService } from '../../services/token/token.service';
+import { commonService } from "../../services/common/common.service";
+import { NSystemService } from 'neutrinos-seed-services';
+import { person } from '../../models/person.model';
+
 @Injectable()
 export class metadataService {
 
@@ -11,11 +16,20 @@ export class metadataService {
     user;
     person: any;
     myheaders: HttpHeaders;
+    token: any;
+    urlBmodeller: any;
+    appProperties: any;
+    systemService = NSystemService.getInstance();
+
 
     constructor(private http: HttpClient,
         private goalsService: goalsService,
-        private mentorService: mentorService) {
+        private mentorService: mentorService,
+        private tokenService: tokenService,
+        private commService: commonService, ) {
+        this.appProperties = this.systemService.getVal('properties');
         this.myheaders = new HttpHeaders();
+        this.urlBmodeller = this.appProperties.modellerUrl;
 
     }
     //categories for goals
@@ -28,43 +42,7 @@ export class metadataService {
     ];
 
     //list of mentees
-    mentees = [
-        {
-            'name': 'Lesego Matsobane',
-            'LatestGoal': 'Get 5 mentees',
-            'latestComment': 'I got 3 mentors so far',
-            'date_of_joining': '22 April 2017',
-            'phone_number': '076327812'
-        },
-        {
-            'name': 'Jacket Nyambo',
-            'LatestGoal': 'Do devotion everyday this week',
-            'latestComment': 'I forgot to do it today',
-            'date_of_joining': '18 January 2016',
-            'phone_number': '076327812'
-        },
-        {
-            'name': 'Andrea Nyambo',
-            'LatestGoal': 'Stay confident throughout the day',
-            'latestComment': 'I made post it notes to remind me',
-            'date_of_joining': '2 March 2018',
-            'phone_number': '076327812'
-        },
-        {
-            'name': 'Sipho Dibakoane',
-            'LatestGoal': 'Stay focused on one task',
-            'latestComment': 'I am working on an assignment',
-            'date_of_joining': '2 March 2018',
-            'phone_number': '076327812'
-        },
-        {
-            'name': 'Vuyo Shabangu',
-            'LatestGoal': 'Start outreaching',
-            'latestComment': 'I start on friday',
-            'date_of_joining': '2 March 2018',
-            'phone_number': '076327812'
-        }];
-
+    mentees;
     //menu for mentor, displayed at the bottom nav bar
     menu = [
         {
@@ -83,6 +61,47 @@ export class metadataService {
             'url': 'mentees'
         }
     ]
+
+    //get person data from database
+    getData() {
+
+        this.token = this.tokenService.getToken();
+        let user = this.getUserObj();
+        
+        console.table(user)
+        let response;
+
+        let headers = new HttpHeaders({
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + this.token
+        });
+        let options = { headers: headers };
+
+        let data = {
+            'user': user,
+            'token': this.token
+        }
+
+        return this.http.post(this.urlBmodeller + '/getData', data, options).subscribe(res => {
+            response = res;
+            console.log(res)
+
+            this.storePersonLocally(res[0])
+            this.commService.alertsnackbar('Got your data', 'close');
+            // this.router.navigate(['login']);
+
+
+        }, err => {
+            console.log(err, " Registration Failed");
+            response = err;
+            this.commService.alertsnackbar('Registration Failed', 'close');
+
+
+        })
+
+
+    }
+
 
     //return goal categories
     getCategory() {
@@ -147,5 +166,6 @@ export class metadataService {
     getGoals() {
         return this.person.goals;
     }
+
 
 }

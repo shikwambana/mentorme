@@ -5,11 +5,11 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { goalsService } from '../../services/goals/goals.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { metadataService } from '../../services/metadata/metadata.service'
 import { loaderComponent } from '../loaderComponent/loader.component';
 import { MatDialog } from '@angular/material';
-
+import { goalresolveService } from '../../services/goalresolve/goalresolve.service'
 /**
  * Service import Example :
  * import { HeroService } from '../services/hero/hero.service';
@@ -27,7 +27,9 @@ export class goalsComponent extends NBaseComponent implements OnInit {
         public goalsService : goalsService, 
         private router : Router, 
         private metadataService : metadataService, 
-        private dialog: MatDialog) {
+        private dialog: MatDialog,
+        private resolveGoal : goalresolveService,
+        private activatedRoute : ActivatedRoute) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -36,14 +38,9 @@ export class goalsComponent extends NBaseComponent implements OnInit {
 
     ngOnInit() {
         if(!this.goals){
-            // this.openDialog();
+            this.activatedRoute.data.subscribe(data => console.log('goal resolve',data))
             this.goals = this.goalsService.getGoals()
-            // .subscribe(result =>{
-            //     this.goals = result;
-            // }
-
-            // );
-
+            
         }
         // console.log('goals :',this.goals);
     }

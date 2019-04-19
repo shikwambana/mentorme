@@ -245,11 +245,6 @@
                 "isArray": false
             },
             {
-                "name": "mood",
-                "fieldType": 2,
-                "isArray": false
-            },
-            {
                 "name": "notes",
                 "fieldType": 2,
                 "isArray": false
@@ -260,12 +255,22 @@
                 "isArray": false
             },
             {
-                "name": "mentee_name",
+                "name": "mentee_email",
                 "fieldType": 2,
                 "isArray": false
             },
             {
                 "name": "reason",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "mentee_name",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "mentor_email",
                 "fieldType": 2,
                 "isArray": false
             }

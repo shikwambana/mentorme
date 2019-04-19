@@ -19,7 +19,10 @@
       </mat-form-field>
     </div>
     <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-      <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false"><button mat-raised-button (click)="invite()" [disableRipple]="true">Invite</button><button mat-raised-button [routerLink]="[&apos;../home/feed&apos;]">Cancel</button></div>
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+        <button mat-raised-button (click)="invite()" [disableRipple]="true">Invite</button>
+        <button mat-raised-button [routerLink]="[&apos;../home/feed&apos;]">Cancel</button>
+      </div>
     </div>
   </div>
 </div>

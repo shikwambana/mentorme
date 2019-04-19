@@ -12,6 +12,10 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-goalresolveService
+import { goalresolveService } from '../services/goalresolve/goalresolve.service';
+//CORE_REFERENCE_IMPORT-dataresolverService
+import { dataresolverService } from '../services/dataResolver/dataresolver.service';
 //CORE_REFERENCE_IMPORT-mentorService
 import { mentorService } from '../services/mentor/mentor.service';
 //CORE_REFERENCE_IMPORT-goalinfoComponent
@@ -161,6 +165,10 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-goalresolveService
+goalresolveService,
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-dataresolverService
+dataresolverService,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-mentorService
 mentorService,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-commonService
@@ -185,7 +193,7 @@ metadataService,
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: homeComponent,
+export const appRoutes = [{path: 'home', component: homeComponent, resolve: { person : dataresolverService },
 children: [{path: 'load', component: splashComponent},{path: 'feed', component: feedComponent},{path: 'log', component: logactivityComponent},{path: 'mentees', component: menteesComponent,
 children: []},{path: 'mentee', component: menteeinfoComponent},{path: 'addgoal', component: addgoalComponent},{path: 'broadcast', component: groupmessageComponent},{path: '', component: goalsComponent},{path: 'goal', component: goalinfoComponent},{path: 'invite', component: inviteComponent},{path: 'profile', component: profileComponent},{path: 'personalgoal', component: addpersonalgoalComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full', canActivate: [NAuthGuardService]},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: 'user', component: userComponent,
 children: [{path: 'register', component: registerComponent},{path: 'changepwd', component: changepwdComponent}]},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]

@@ -11,7 +11,7 @@
     <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
       <mat-form-field>
         <mat-select placeholder="Select mentee" required>
-          <mat-option *ngFor="let name of mentee" [value]="name.name">{{ name.name }}</mat-option>
+          <mat-option *ngFor="let mentee of mentees" [value]="mentee.email_address" [(ngModel)]="log.mentee_email" name="fullname">{{ mentee.full_name }}</mat-option>
         </mat-select>
 
       </mat-form-field>
@@ -22,17 +22,16 @@
 
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Location" required>
+        <input matInput placeholder="Location" [(ngModel)]="log.location" name="location" required>
 
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Reason for visit" required>
-
+        <input matInput placeholder="Reason for visit" [(ngModel)]="log.reason" name="reason" required>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Additional Notes" required>
-
-      </mat-form-field><button mat-raised-button>Save</button>
+        <input matInput placeholder="Additional Notes" [(ngModel)]="log.notes"  name="notes" required>
+      </mat-form-field>
+      <button mat-raised-button (click)="logActivity()" >Save</button>
     </div>
   </form>
 </div>

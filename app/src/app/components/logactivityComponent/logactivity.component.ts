@@ -5,7 +5,7 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { metadataService } from '../../services/metadata/metadata.service';
-
+import { activity_log } from '../../models/activity_log.model';
 /**
  * Service import Example :
  * import { HeroService } from '../services/hero/hero.service';
@@ -18,40 +18,26 @@ import { metadataService } from '../../services/metadata/metadata.service';
 
 export class logactivityComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-
+    person: any;
+    log = new activity_log();
     constructor(private bdms: NDataModelService, private metadataService : metadataService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
     metadata;
     today: any = { 'today' : new Date()} ;
-    mentee = [
-        {
-            'name' : 'Lesego Matsobane',
-            'email' : 'name@email.com'
-        },
-         {
-            'name' : 'Jacket Nyambo',
-            'email' : 'name@email.com'
-        },
-         {
-            'name' : 'Jacket Nyambo',
-            'email' : 'name@email.com'
-        },
-         {
-            'name' : 'Sipho Dibakoane',
-            'email' : 'name@email.com'
-        },
-         {
-            'name' : 'Vuyo Shabangu',
-            'email' : 'name@email.com'
-        }
-    ]
+    mentees;
 
     ngOnInit() {
        this.metadata = this.metadataService.getCategory();
+       this.person = this.metadataService.getPerson();
+        this.mentees = this.person.mentoring.mentees; 
+        console.log(this.mentees);
     }
 
+    logActivity(){
+        console.log(this.log)
+    }
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {

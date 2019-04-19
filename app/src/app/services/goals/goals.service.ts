@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 
 import { NSystemService, NSessionStorageService } from 'neutrinos-seed-services';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class goalsService {

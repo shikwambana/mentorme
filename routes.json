@@ -5,7 +5,7 @@
             "component": "homeComponent",
             "pathMatch": "",
             "redirectTo": "",
-            "resolve": "",
+            "resolve": "{ person : dataResolverService }",
             "data": "",
             "canActivate": "",
             "children": [

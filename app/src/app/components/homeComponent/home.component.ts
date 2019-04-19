@@ -1,6 +1,6 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
 import { Component, OnInit } from '@angular/core'
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { ModelMethods } from '../../lib/model.methods';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
@@ -16,18 +16,23 @@ export class homeComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     user;
     menu;
-    constructor(private bdms: NDataModelService, private logoutService: NLogoutService, private router: Router, private metadata : metadataService) {
+    constructor(private bdms: NDataModelService, 
+        private logoutService: NLogoutService, 
+        private router: Router, 
+        private metadata : metadataService,
+        private activatedRoute : ActivatedRoute) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
+        this.activatedRoute.data.subscribe(data => {
+            this.metadata.storePersonLocally(data[0]); 
+            console.log('home resolve',data)});
         this.metadata.getMenu().subscribe(result => {
             this.menu = result;
             this.menu = this.menu.navbar.mentor;
         });
-       this.user = this.metadata.getUserObj();
-       this.get('person', { 'contact_details.email_address' : this.user.username });
     }
 
     logoutUser() {
@@ -39,7 +44,7 @@ export class homeComponent extends NBaseComponent implements OnInit {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
-                this.metadata.storePersonLocally(result[0]);
+                this.metadata.storePersonLocally(result[0]); 
             },
             error => {
                 // Handle errors here
