@@ -20,12 +20,12 @@ export class logactivityComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     person: any;
     log = new activity_log();
+
     constructor(private bdms: NDataModelService, private metadataService : metadataService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
     metadata;
-    today: any = { 'today' : new Date()} ;
     mentees;
 
     ngOnInit() {
@@ -33,11 +33,19 @@ export class logactivityComponent extends NBaseComponent implements OnInit {
        this.person = this.metadataService.getPerson();
         this.mentees = this.person.mentoring.mentees; 
         console.log(this.mentees);
+        this.log.date = new Date();
     }
 
     logActivity(){
-        console.log(this.log)
+
+        this.log.mentor_name = this.person.personal_info.name + ' ' + this.person.personal_info.surname;
+        this.log.mentor_email = this.person.contact_details.email_address;
+
+        console.log('still works',this.log)
+
+        this.update('person',{ $push: {'activity_log' : this.log }}, { 'contact_details.email_address' :  this.log.mentee_email},{});
     }
+
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {
@@ -85,8 +93,10 @@ export class logactivityComponent extends NBaseComponent implements OnInit {
         this.mm.update(dataModelName, updateObject,
             result => {
                 //  On Success code here
+                console.table(result);
             }, error => {
                 // Handle errors here
+                console.table(error)
             })
     }
 

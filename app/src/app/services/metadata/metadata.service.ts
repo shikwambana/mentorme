@@ -94,7 +94,7 @@ export class metadataService {
         }, err => {
             console.log(err, " Registration Failed");
             response = err;
-            this.commService.alertsnackbar('Registration Failed', 'close');
+            this.commService.alertsnackbar('Could not get data', 'close');
 
 
         })

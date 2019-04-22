@@ -485,7 +485,7 @@
                         },
                         {
                             "_key": "[(ngModel)]",
-                            "_value": "",
+                            "_value": "log.mentee_name",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -515,19 +515,19 @@
                         },
                         {
                             "_key": "*ngFor",
-                            "_value": "let name of mentee",
+                            "_value": "let name of mentees",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
                             "_key": "[value]",
-                            "_value": "name.name",
+                            "_value": "name.email_address",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
                             "_key": "optiondata",
-                            "_value": "{{ name.name }}",
+                            "_value": "{{ name.full_name}}",
                             "_type": "a",
                             "_attrDef": "p"
                         },
@@ -549,6 +549,12 @@
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "name",
+                            "_value": "mentee",
+                            "_type": "kv",
+                            "_attrDef": "c"
                         }
                     ]
                 },
@@ -662,13 +668,13 @@
                         },
                         {
                             "_key": "[(ngModel)]",
-                            "_value": "today.today",
+                            "_value": "log.date",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
                             "_key": "name",
-                            "_value": "today",
+                            "_value": "date",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -743,7 +749,7 @@
                         },
                         {
                             "_key": "[(ngModel)]",
-                            "_value": "",
+                            "_value": "log.location",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -755,7 +761,7 @@
                         },
                         {
                             "_key": "name",
-                            "_value": "",
+                            "_value": "location",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -836,7 +842,7 @@
                         },
                         {
                             "_key": "[(ngModel)]",
-                            "_value": "",
+                            "_value": "log.reason",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -848,7 +854,7 @@
                         },
                         {
                             "_key": "name",
-                            "_value": "",
+                            "_value": "reason",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -929,7 +935,7 @@
                         },
                         {
                             "_key": "[(ngModel)]",
-                            "_value": "",
+                            "_value": "log.notes",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -941,7 +947,7 @@
                         },
                         {
                             "_key": "name",
-                            "_value": "",
+                            "_value": "notes",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -1015,7 +1021,7 @@
                         },
                         {
                             "_key": "(click)",
-                            "_value": "",
+                            "_value": "logActivity()",
                             "_type": "kv",
                             "_attrDef": "p"
                         },

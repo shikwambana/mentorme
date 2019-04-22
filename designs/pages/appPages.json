@@ -49,11 +49,6 @@
         "componentName": "inviteComponent",
         "isEntry": false
     },
-    "268eda5e-a47f-6fc9-0189-b9fef71d5ca4": {
-        "appPageName": "addgoal",
-        "componentName": "addgoalComponent",
-        "isEntry": false
-    },
     "f241c17d-b223-1213-b6a5-7b5e00c1191f": {
         "appPageName": "groupmessage",
         "componentName": "groupmessageComponent",

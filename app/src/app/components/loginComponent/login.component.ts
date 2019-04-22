@@ -36,7 +36,7 @@ export class loginComponent extends NBaseComponent implements OnInit, OnDestroy 
 
   openDialog() {
     const dialogRef = this.dialog.open(loaderComponent, {
-      data: { message: 'Authenticating' },
+      data: { message: 'Logging in'  },
       width: '250px',
       disableClose: true
     });

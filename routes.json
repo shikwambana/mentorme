@@ -5,7 +5,7 @@
             "component": "homeComponent",
             "pathMatch": "",
             "redirectTo": "",
-            "resolve": "{ person : dataResolverService }",
+            "resolve": "{ person : dataresolverService }",
             "data": "",
             "canActivate": "",
             "children": [
@@ -29,10 +29,6 @@
                 {
                     "path": "mentee",
                     "component": "menteeinfoComponent"
-                },
-                {
-                    "path": "addgoal",
-                    "component": "addgoalComponent"
                 },
                 {
                     "component": "groupmessageComponent",

@@ -58,7 +58,7 @@ export class goalsComponent extends NBaseComponent implements OnInit {
 
     openDialog() {
         const dialogRef = this.dialog.open(loaderComponent, {
-          data: { message: 'Authenticating' },
+          data: { message: 'Getting Goals' },
           width: '250px',
           disableClose: true
         });
