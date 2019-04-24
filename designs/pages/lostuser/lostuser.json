@@ -1,0 +1,13 @@
+{
+    "appPageId": "1131d15c-501d-9dd3-de53-1d509a1be3a0",
+    "appPageName": "lostuser",
+    "componentName": "lostuserComponent",
+    "selectorName": "bh-lostuser",
+    "htmlFileName": "lostuser.template.html",
+    "tsFileName": "lostuser.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

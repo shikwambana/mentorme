@@ -455,7 +455,7 @@
                     },
                     {
                         "_key": "name",
-                        "_value": "",
+                        "_value": "name",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -467,7 +467,12 @@
                     },
                     {
                         "_key": "matError",
-                        "_value": [],
+                        "_value": [
+                            {
+                                "input1": "!person.personal_info.name",
+                                "input2": "Enter a valid name"
+                            }
+                        ],
                         "_type": "a",
                         "_attrDef": "p",
                         "_visibility": true
@@ -548,7 +553,7 @@
                     },
                     {
                         "_key": "name",
-                        "_value": "",
+                        "_value": "surname",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -560,7 +565,12 @@
                     },
                     {
                         "_key": "matError",
-                        "_value": [],
+                        "_value": [
+                            {
+                                "input1": "!person.personal_info.surname",
+                                "input2": "Enter a valid surname"
+                            }
+                        ],
                         "_type": "a",
                         "_attrDef": "p",
                         "_visibility": true
@@ -719,7 +729,12 @@
                     },
                     {
                         "_key": "matError",
-                        "_value": [],
+                        "_value": [
+                            {
+                                "input1": "!person.personal_info.date_of_birth",
+                                "input2": "Enter a valid Date of Birth"
+                            }
+                        ],
                         "_type": "a",
                         "_attrDef": "p",
                         "_visibility": true
@@ -794,19 +809,24 @@
                     },
                     {
                         "_key": "name",
-                        "_value": "",
+                        "_value": "email",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
                         "_key": "type",
-                        "_value": "",
+                        "_value": "email",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
                         "_key": "matError",
-                        "_value": [],
+                        "_value": [
+                            {
+                                "input1": "!person.contact_details.email_address",
+                                "input2": "Enter an email address"
+                            }
+                        ],
                         "_type": "a",
                         "_attrDef": "p",
                         "_visibility": true
@@ -887,7 +907,7 @@
                     },
                     {
                         "_key": "name",
-                        "_value": "",
+                        "_value": "number",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -899,7 +919,12 @@
                     },
                     {
                         "_key": "matError",
-                        "_value": [],
+                        "_value": [
+                            {
+                                "input1": "!person.contact_details.phone_number",
+                                "input2": "Enter your phone number"
+                            }
+                        ],
                         "_type": "a",
                         "_attrDef": "p",
                         "_visibility": true
@@ -980,7 +1005,7 @@
                     },
                     {
                         "_key": "name",
-                        "_value": "",
+                        "_value": "address",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -992,7 +1017,12 @@
                     },
                     {
                         "_key": "matError",
-                        "_value": [],
+                        "_value": [
+                            {
+                                "input1": "!person.contact_details.home_address",
+                                "input2": "Enter your residential address"
+                            }
+                        ],
                         "_type": "a",
                         "_attrDef": "p",
                         "_visibility": true
@@ -1073,19 +1103,24 @@
                     },
                     {
                         "_key": "name",
-                        "_value": "",
+                        "_value": "pwd",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
                         "_key": "type",
-                        "_value": "",
+                        "_value": "password",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
                         "_key": "matError",
-                        "_value": [],
+                        "_value": [
+                            {
+                                "input1": "!pwd",
+                                "input2": "Enter a password"
+                            }
+                        ],
                         "_type": "a",
                         "_attrDef": "p",
                         "_visibility": true
@@ -1166,19 +1201,24 @@
                     },
                     {
                         "_key": "name",
-                        "_value": "",
+                        "_value": "pwd",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
                         "_key": "type",
-                        "_value": "",
+                        "_value": "password",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
                         "_key": "matError",
-                        "_value": [],
+                        "_value": [
+                            {
+                                "input1": "pwd != pwd2",
+                                "input2": "Passwords do not match"
+                            }
+                        ],
                         "_type": "a",
                         "_attrDef": "p",
                         "_visibility": true

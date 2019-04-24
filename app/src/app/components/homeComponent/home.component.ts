@@ -24,11 +24,15 @@ export class homeComponent extends NBaseComponent implements OnInit {
         super();
         this.mm = new ModelMethods(bdms);
     }
+    mentor: boolean;
 
     ngOnInit() {
+
         this.activatedRoute.data.subscribe(data => {
-            this.metadata.storePersonLocally(data[0]); 
-            console.log('home resolve',data)});
+            console.log(data);
+            // this.metadata.storePersonLocally(data[0]); 
+        })
+       
         this.metadata.getMenu().subscribe(result => {
             this.menu = result;
             this.menu = this.menu.navbar.mentor;

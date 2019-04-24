@@ -23,7 +23,7 @@
             },
             {
                 "_key": "fxFlex",
-                "_value": "20",
+                "_value": "100",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -76,7 +76,7 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": "zoomIn",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -485,7 +485,7 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": "fadeInDown",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -905,7 +905,7 @@
                     },
                     {
                         "_key": "class",
-                        "_value": "",
+                        "_value": "fadeInDown",
                         "_type": "kv",
                         "_attrDef": "p"
                     },

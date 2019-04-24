@@ -5,9 +5,9 @@
             "component": "homeComponent",
             "pathMatch": "",
             "redirectTo": "",
-            "resolve": "{ person : dataresolverService }",
+            "resolve": "",
             "data": "",
-            "canActivate": "",
+            "canActivate": "NAuthGuardService",
             "children": [
                 {
                     "path": "load",
@@ -36,7 +36,9 @@
                 },
                 {
                     "path": "''",
-                    "component": "goalsComponent"
+                    "component": "goalsComponent",
+                    "redirectTo": "",
+                    "resolve": "{ person : dataresolverService }"
                 },
                 {
                     "path": "goal",
@@ -44,7 +46,8 @@
                 },
                 {
                     "path": "invite",
-                    "component": "inviteComponent"
+                    "component": "inviteComponent",
+                    "resolve": "{ invites : inviteresolverService }"
                 },
                 {
                     "component": "profileComponent",
@@ -69,7 +72,7 @@
             "path": "unauthorized",
             "redirectTo": "/login",
             "pathMatch": "full",
-            "canActivate": "NAuthGuardService"
+            "canActivate": ""
         },
         {
             "path": "welcome",

@@ -67,37 +67,34 @@ export class metadataService {
 
         this.token = this.tokenService.getToken();
         let user = this.getUserObj();
-        
-        console.table(user)
-        let response;
 
         let headers = new HttpHeaders({
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + this.token
         });
-        let options = { headers: headers };
+        let options = { headers: headers};
 
         let data = {
             'user': user,
             'token': this.token
         }
 
-        return this.http.post(this.urlBmodeller + '/getData', data, options).subscribe(res => {
-            response = res;
-            console.log(res)
-
-            this.storePersonLocally(res[0])
-            this.commService.alertsnackbar('Got your data', 'close');
+         return this.http.post(this.urlBmodeller + '/getData', data, options).subscribe(res => {
+            console.log(res[0]);
+                
+            this.storePersonLocally(res[0]);
+            // this.commService.alertsnackbar('Got your data', 'close');
             // this.router.navigate(['login']);
 
 
-        }, err => {
-            console.log(err, " Registration Failed");
-            response = err;
+        },
+        err => {
+            console.log(err, " Did not get data Failed");
             this.commService.alertsnackbar('Could not get data', 'close');
 
 
-        })
+        }
+        )
 
 
     }
@@ -110,13 +107,20 @@ export class metadataService {
 
     //return mentees array from person object
     getMentees() {
-        console.log('getting local mentees');
-
         return this.mentorService.menteeList();
     }
 
     //get menu from b modeller
     getMenu() {
+        
+
+        // if(this.person.mentoring.mentees.length > 0){
+        //     console.log('mentor')
+        // }   
+        // if(!this.person.mentoring.mentees){
+        //     console.log('mentee')
+        // }
+
         return this.http.get(this.url + '/menu', {
             responseType: 'json'
         });
@@ -132,11 +136,9 @@ export class metadataService {
     //after getting the person document, store it in a local variable 
     //this.person is where the current users info will all be found
     storePersonLocally(person_document) {
-        console.log('storing person object', person_document)
         this.person = person_document;
 
         if (this.person.mentoring.mentees) {
-            console.log('let me start getting mentees', this.person.mentoring.mentees)
             let mentees = [];
 
             for (let i = 0; i < this.person.mentoring.mentees.length; i++) {

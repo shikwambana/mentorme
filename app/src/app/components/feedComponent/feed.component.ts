@@ -5,6 +5,8 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { mentorService } from '../../services/mentor/mentor.service';
+import { goalsService } from '../../services/goals/goals.service';
+import { Router } from '@angular/router';
 
 /**
  * Service import Example :
@@ -19,49 +21,21 @@ import { mentorService } from '../../services/mentor/mentor.service';
 export class feedComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     menteesList;
-    constructor(private bdms: NDataModelService, private mentorService : mentorService) {
+    constructor(private bdms: NDataModelService, private mentorService : mentorService, public goalsService : goalsService, private router : Router) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
-    card = [
-        {
-            'name' : 'Lesego Matsobane',
-            'category' : 'social',
-            'date' : '22 March 2019',
-            'content' : 'Added three new mentors'
-        },
-         {
-            'name' : 'Jacket Nyambo',
-            'category' : 'spiritual',
-            'date' : '15 March 2019',
-            'content' : 'Did devotion 5 days in a row'
-        },
-         {
-            'name' : 'Jacket Nyambo',
-            'category' : 'spiritual',
-            'date' : '13 March 2019',
-            'content' : 'Did devotion 5 days in a row'
-        },
-         {
-            'name' : 'Sipho Dibakoane',
-            'category' : 'emotional',
-            'date' : '10 March 2019',
-            'content' : 'Brought 4 people to church'
-        },
-         {
-            'name' : 'Vuyo Shabangu',
-            'category' : 'mental',
-            'date' : '5 March 2019',
-            'content' : 'Passed all his modules during engineering week'
-        }
-        
-    ]
     
     ngOnInit() {
 
         this.menteesList = this.mentorService.menteeList();
-        console.log(this.menteesList)
+    }
+
+    selectedGoal(goal){
+        // console.log(goal);
+        this.goalsService.setGoal(goal);        
+        this.router.navigate['/goal'];        
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

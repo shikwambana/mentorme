@@ -11,6 +11,15 @@
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
     <mat-tab-group componentLabel="Tab Group">
       <mat-tab label="Goals" componentLabel="Tab">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngIf="!mentee.goals">
+          <div fxLayout="column wrap" class="fadeInDown" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngIf="!goals">
+            <div fxLayout="column wrap" style="    width: 100%;" fxLayoutAlign="center center" fxShow="true" fxHide="false"><img imgSrc="/Web/no_goal.png" componentLabel="Image" width="350px"></div>
+            <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+              <h2>No Goals Yet</h2>
+              <p style="text-align: center;">It looks like you have not added any goals yet; Go to the goals page to add your first goal</p>
+            </div>
+          </div>
+        </div>
         <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let goal of mentee.goals">
           <mat-card>
             <mat-card-title>{{ goal.title }}</mat-card-title>
@@ -33,7 +42,28 @@
         </div>
       </mat-tab>
       <mat-tab label="Interaction" componentLabel="Tab">
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let activity of mentee.activity_log"></div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngIf="mentee.goals">
+          <div fxLayout="column wrap" class="fadeInDown" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngIf="!goals">
+            <div fxLayout="column wrap" style="    width: 100%;" fxLayoutAlign="center center" fxShow="true" fxHide="false"><img imgSrc="/Web/no_goal.png" componentLabel="Image" width="350px"></div>
+            <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+              <h2>No Activity Yet</h2>
+              <p style="text-align: center;">Go hang out with your mentor, set a few goals or share life stories. Just make sure he adds the activity to your profile</p>
+            </div>
+          </div>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let activity of mentee.activity_log">
+          <mat-card>
+            <mat-card-title>{{ activity.reason }}</mat-card-title>
+
+            <mat-card-subtitle>{{ activity.date | date }}</mat-card-subtitle>
+
+            <mat-card-content>
+              <p>Notes: {{ activity.notes}}</p>
+            </mat-card-content>
+
+            <mat-card-actions></mat-card-actions>
+          </mat-card>
+        </div>
       </mat-tab>
     </mat-tab-group>
   </div>

@@ -11,7 +11,7 @@
     <form componentLabel="Form">
       <div fxLayout="column wrap" class="addGoalWrapper" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
         <mat-slide-toggle [labelPosition]="&apos;before&apos;" name="pGoal" #personal [ngModel]="hidden" (change)="changed()"> Personal Goal</mat-slide-toggle>
-        <mat-form-field *ngIf="!hidden" >
+        <mat-form-field *ngIf="!hidden || !mentees" >
           <mat-select placeholder="Mentee Name" [(ngModel)]="email" required name="mentee">
             <mat-option *ngFor="let mentee of mentees" [value]="mentee.email_address">{{ mentee.full_name }}</mat-option>
           </mat-select>

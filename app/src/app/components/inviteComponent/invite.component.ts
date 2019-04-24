@@ -5,7 +5,7 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { inviteService } from '../../services/invite/invite.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import uid from 'tiny-uid';
 import { invites } from '../../models/invites.model';
@@ -13,6 +13,7 @@ import { metadataService } from '../../services/metadata/metadata.service';
 import { MatDialog } from '@angular/material';
 import { loaderComponent } from '../loaderComponent/loader.component';
 import { commonService } from '../../services/common/common.service';
+
 /**
  * Service import Example :
  * import { HeroService } from '../services/hero/hero.service';
@@ -42,13 +43,18 @@ export class inviteComponent extends NBaseComponent implements OnInit {
         private dialog: MatDialog,
         private metadataService: metadataService,
         private comm: commonService,
-        private router : Router) {
+        private router : Router,
+        private activatedRoute : ActivatedRoute) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-        // this.get('invites');        
+        // this.get('invites');   
+        this.activatedRoute.data.subscribe(res => {
+            console.log(res);
+            // this.metadata.storePersonLocally(data[0]); 
+        })     
     }
 
     openDialog() {

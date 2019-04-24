@@ -405,37 +405,6 @@
                     "_attrDef": "p"
                 }
             ],
-            "9c325b80-ac8a-622f-e921-9da2c2b1984d": {
-                "paletteKey": "HTML",
-                "parentEditorKey": "039c727c-7600-2276-8f4a-36fc91ae8c01",
-                "designerReference": [
-                    {
-                        "_key": "componentLabel",
-                        "_value": "HTML",
-                        "_type": "kv",
-                        "_attrDef": "p",
-                        "_useAsLabel": true
-                    },
-                    {
-                        "_key": "style",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "class",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "html",
-                        "_value": "<countdown units=\"Days | Hours | Minutes | Seconds\"  end=\"{{ goal.end_date }}\"></countdown>",
-                        "_type": "a",
-                        "_attrDef": "p"
-                    }
-                ]
-            },
             "642159fa-3564-1923-86c0-7dfa835d4b21": {
                 "paletteKey": "NG-H2",
                 "parentEditorKey": "039c727c-7600-2276-8f4a-36fc91ae8c01",
@@ -463,6 +432,37 @@
                         "_key": "align",
                         "_value": "",
                         "_type": "kv",
+                        "_attrDef": "p"
+                    }
+                ]
+            },
+            "9c325b80-ac8a-622f-e921-9da2c2b1984d": {
+                "paletteKey": "HTML",
+                "parentEditorKey": "039c727c-7600-2276-8f4a-36fc91ae8c01",
+                "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "HTML",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
+                        "_key": "style",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "html",
+                        "_value": "<countdown units=\"Days | Hours | Minutes | Seconds\"  end=\"{{ goal.end_date }}\"></countdown>",
+                        "_type": "a",
                         "_attrDef": "p"
                     }
                 ]

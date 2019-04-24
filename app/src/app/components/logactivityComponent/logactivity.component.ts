@@ -32,7 +32,6 @@ export class logactivityComponent extends NBaseComponent implements OnInit {
        this.metadata = this.metadataService.getCategory();
        this.person = this.metadataService.getPerson();
         this.mentees = this.person.mentoring.mentees; 
-        console.log(this.mentees);
         this.log.date = new Date();
     }
 

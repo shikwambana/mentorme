@@ -48,11 +48,12 @@ export class registerComponent extends NBaseComponent implements OnInit {
     //    }, error => {
     //        console.log(error, 'could not get token');
     //    });        
-        if(!sessionStorage.getItem('accessToken')){
+        // if(!sessionStorage.getItem('accessToken')){
 
-            this.get('invites');
-        }
-        
+        //     this.get('invites');
+        // }
+        this.get('invites');
+
         this.person = new person();
         this.uid = uid();
     }
@@ -137,7 +138,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
             result => {
                 // On Success code here
                 this.possibleMentees = result;
-                console.log('got mentors', result);
+                console.log('got mentees', result);
             },
             error => {
                 // Handle errors here

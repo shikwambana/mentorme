@@ -819,7 +819,7 @@
             },
             {
                 "_key": "class",
-                "_value": "fabBtn",
+                "_value": "fabBtn ",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -878,7 +878,7 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": "zoomIn",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -945,7 +945,7 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": "zoomIn",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

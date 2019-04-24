@@ -4,41 +4,27 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
-import { goalsService } from '../../services/goals/goals.service';
-import { metadataService } from '../../services/metadata/metadata.service';
-import { Router } from '@angular/router';
 
 /**
  * Service import Example :
- * import { HeroService } from '../services/hero/hero.service';
+ * import { HeroService } from '../../services/hero/hero.service';
  */
 
 @Component({
-    selector: 'bh-goal',
-    templateUrl: './goal.template.html'
+    selector: 'bh-lostuser',
+    templateUrl: './lostuser.template.html'
 })
 
-export class goalComponent extends NBaseComponent implements OnInit {
+export class lostuserComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    category;
-    goal;
-
-    constructor(private bdms: NDataModelService, private goalsService : goalsService,  private router: Router, private metadata : metadataService) {
+    constructor(private bdms: NDataModelService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-        
-        this.category = this.metadata.getCategory();
-        if(!this.goalsService.getSelectedGoal()){
-            this.router.navigate(['../'])
-        }else{
-            this.goal = this.goalsService.getSelectedGoal();
-            console.log(this.goal);
-        }
-        
+
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

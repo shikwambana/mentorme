@@ -1,4 +1,4 @@
-<div fxLayout="column wrap" class="fabBtn" fxFlex="20" fxLayoutAlign="space-around center" fxShow="true" fxHide="false"><button mat-fab [routerLink]="[&apos;personalgoal&apos;]">
+<div fxLayout="column wrap" class="fabBtn" fxFlex="100" fxLayoutAlign="space-around center" fxShow="true" fxHide="false"><button mat-fab class="zoomIn" [routerLink]="[&apos;personalgoal&apos;]">
     <mat-icon>
       <mat-icon>add</mat-icon>
     </mat-icon>
@@ -12,7 +12,7 @@
       <h1>My Goal Stats</h1>
     </div>
   </div>
-  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngIf="!goals">
+  <div fxLayout="column wrap" class="fadeInDown" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngIf="!goals">
     <div fxLayout="column wrap" style="    width: 100%;" fxLayoutAlign="center center" fxShow="true" fxHide="false"><img imgSrc="/Web/no_goal.png" componentLabel="Image"></div>
     <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
       <h2>No Goals Yet</h2>
@@ -20,7 +20,7 @@
     </div>
   </div>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let goal of goals">
-    <mat-card (click)="selectedGoal(goal)" [routerLink]="[&apos;goal&apos;]" *ngIf="goals">
+    <mat-card (click)="selectedGoal(goal)" [routerLink]="[&apos;goal&apos;]" *ngIf="goals" class="fadeInDown">
       <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
         <div fxLayout="column wrap" fxFlex="80" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
           <mat-card-title>{{ goal.title }}</mat-card-title>

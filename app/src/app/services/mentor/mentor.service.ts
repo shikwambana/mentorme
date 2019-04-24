@@ -19,14 +19,12 @@ export class mentorService {
         private tokenService: tokenService,
         private router: Router) {
         this.appProperties = this.systemService.getVal('properties');
-        console.log(this.appProperties);
         this.bModellerURL = this.appProperties.modellerUrl;
         this.myheaders = new HttpHeaders();
     }
 
 
     getMentees(menteeList) {
-        console.log('getting mentees');
 
         this.token = this.tokenService.getToken();
         
@@ -43,7 +41,7 @@ export class mentorService {
         
         return this.http.post(this.bModellerURL + '/getMentees', data , options).subscribe( result => {
             this.mentees = result;
-            console.log('got the mentees',result)
+            // console.log('got the mentees',result)
         }, error => {
             console.log('cant get mentees',error)
         });

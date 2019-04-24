@@ -7,7 +7,6 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { goalsService } from '../../services/goals/goals.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { metadataService } from '../../services/metadata/metadata.service'
-import { loaderComponent } from '../loaderComponent/loader.component';
 import { MatDialog } from '@angular/material';
 import { goalresolveService } from '../../services/goalresolve/goalresolve.service'
 /**
@@ -37,12 +36,7 @@ export class goalsComponent extends NBaseComponent implements OnInit {
     goals;
 
     ngOnInit() {
-        if(!this.goals){
-            this.activatedRoute.data.subscribe(data => console.log('goal resolve',data))
-            this.goals = this.goalsService.getGoals()
-            
-        }
-        // console.log('goals :',this.goals);
+        this.goals = this.goalsService.getGoals()
     }
 
     deleteGaol(goal){
@@ -56,13 +50,6 @@ export class goalsComponent extends NBaseComponent implements OnInit {
         this.router.navigate['/goal'];        
     }
 
-    openDialog() {
-        const dialogRef = this.dialog.open(loaderComponent, {
-          data: { message: 'Getting Goals' },
-          width: '250px',
-          disableClose: true
-        });
-    }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,

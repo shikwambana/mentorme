@@ -8,7 +8,13 @@ $primary : #00b8d4;
 $secondary : #62ebff;
 $dark : #0088a3;
 
+body {
+  background-color: rgba(211, 211, 211, 0.25) !important;
+}
 
+// .add {
+//   display: none !important;
+// }
 .login-card .mat-card-image:first-child {
     margin-top:0 !important
 }
@@ -62,8 +68,8 @@ $dark : #0088a3;
 }
 
 .nav .mat-icon:hover, .nav img:hover {
-    font-size: 38px;
-    color: teal;
+    font-size: 45px;;
+    color: $dark;
 }
 
 .mat-menu-content {
@@ -94,9 +100,13 @@ $dark : #0088a3;
 // mat card design .btm
 
 .mat-card {
-    padding: 30px !important;
-    background-color: rgba(98, 235, 255, 0.16862745098039217);;
+    
     margin: 10px 0;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: 0px 2px 3px 1px rgba(107, 107, 107, 0.92);
+  border-radius: 10px;
 }
 
 .mat-card-footer {
@@ -516,4 +526,78 @@ $dark : #0088a3;
     }
 }
 
-//=========================================
+//===========================================================================================================
+//===========================================================================================================
+//===========================================================================================================
+//===========================================================================================================
+//===========================================================================================================
+//===========================================================================================================
+//===========================================================================================================
+
+//Animations
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown .5s;
+  animation-name: fadeInDown;
+  animation: fadeInDown .5s;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  animation: zoomIn .5s;
+  animation-iteration-count: 1;
+}

@@ -52,7 +52,9 @@
     "rxjs-compat": "6.4.0",
     "signature_pad": "2.3.2",
     "tiny-uid": "^1.0.0",
-    "zone.js": "0.8.29"
+    "zone.js": "0.8.29",
+    "cordova-android": "~7.1.0",
+    "cordova-ios": "~4.5.4"
   },
   "devDependencies": {
     "@angular/cli": "7.3.0",

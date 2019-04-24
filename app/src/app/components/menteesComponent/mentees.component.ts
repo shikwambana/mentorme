@@ -33,7 +33,6 @@ export class menteesComponent extends NBaseComponent implements OnInit {
 
     ngOnInit() {
         this.menteesList = this.mentorService.menteeList();
-        console.log(this.menteesList)
     }
 
     selectMentee(mentee){

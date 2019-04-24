@@ -12,6 +12,10 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-inviteresolverService
+import { inviteresolverService } from '../services/inviteresolver/inviteresolver.service';
+//CORE_REFERENCE_IMPORT-lostuserComponent
+import { lostuserComponent } from '../components/lostuserComponent/lostuser.component';
 //CORE_REFERENCE_IMPORT-goalresolveService
 import { goalresolveService } from '../services/goalresolve/goalresolve.service';
 //CORE_REFERENCE_IMPORT-dataresolverService
@@ -40,8 +44,6 @@ import { inviteService } from '../services/invite/invite.service';
 import { registerService } from '../services/register/register.service';
 //CORE_REFERENCE_IMPORT-registerComponent
 import { registerComponent } from '../components/registerComponent/register.component';
-//CORE_REFERENCE_IMPORT-goalComponent
-import { goalComponent } from '../components/goalComponent/goal.component';
 //CORE_REFERENCE_IMPORT-goalsService
 import { goalsService } from '../services/goals/goals.service';
 //CORE_REFERENCE_IMPORT-goalsComponent
@@ -106,6 +108,8 @@ export const appDeclarations = [
   PageNotFoundComponent,
   NMapComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-lostuserComponent
+lostuserComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-goalinfoComponent
 goalinfoComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-addpersonalgoalComponent
@@ -118,8 +122,6 @@ userComponent,
 changepwdComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-registerComponent
 registerComponent,
-//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-goalComponent
-goalComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-goalsComponent
 goalsComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-groupmessageComponent
@@ -161,6 +163,8 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-inviteresolverService
+inviteresolverService,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-goalresolveService
 goalresolveService,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-dataresolverService
@@ -189,8 +193,8 @@ metadataService,
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: homeComponent, resolve: { person : dataresolverService },
+export const appRoutes = [{path: 'home', component: homeComponent, canActivate: [NAuthGuardService],
 children: [{path: 'load', component: splashComponent},{path: 'feed', component: feedComponent},{path: 'log', component: logactivityComponent},{path: 'mentees', component: menteesComponent,
-children: []},{path: 'mentee', component: menteeinfoComponent},{path: 'broadcast', component: groupmessageComponent},{path: '', component: goalsComponent},{path: 'goal', component: goalinfoComponent},{path: 'invite', component: inviteComponent},{path: 'profile', component: profileComponent},{path: 'personalgoal', component: addpersonalgoalComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full', canActivate: [NAuthGuardService]},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: 'user', component: userComponent,
+children: []},{path: 'mentee', component: menteeinfoComponent},{path: 'broadcast', component: groupmessageComponent},{path: '', component: goalsComponent, resolve: { person : dataresolverService }},{path: 'goal', component: goalinfoComponent},{path: 'invite', component: inviteComponent, resolve: { invites : inviteresolverService }},{path: 'profile', component: profileComponent},{path: 'personalgoal', component: addpersonalgoalComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full'},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: 'user', component: userComponent,
 children: [{path: 'register', component: registerComponent},{path: 'changepwd', component: changepwdComponent}]},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

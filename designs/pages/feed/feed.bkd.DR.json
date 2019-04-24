@@ -430,13 +430,25 @@
                     },
                     {
                         "_key": "class",
-                        "_value": "feed-card",
+                        "_value": "feed-card fadeInDown",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
                         "_key": "*ngFor",
                         "_value": "let goal of card.goals",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "[routerLink]",
+                        "_value": "['../goal']",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "(click)",
+                        "_value": "selectedGoal(goal)",
                         "_type": "kv",
                         "_attrDef": "c"
                     }
@@ -675,7 +687,7 @@
                             },
                             {
                                 "_key": "fxHide",
-                                "_value": "false",
+                                "_value": "true",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             }
@@ -856,7 +868,7 @@
             },
             {
                 "_key": "class",
-                "_value": "fabBtn",
+                "_value": "fabBtn zoomIn",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -921,7 +933,7 @@
                 },
                 {
                     "_key": "fabicon",
-                    "_value": "<mat-icon>add</mat-icon>",
+                    "_value": "<mat-icon>event</mat-icon>",
                     "_type": "a",
                     "_attrDef": "p",
                     "_useAsLabel": true
