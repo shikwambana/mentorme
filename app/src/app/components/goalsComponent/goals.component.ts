@@ -22,32 +22,45 @@ import { goalresolveService } from '../../services/goalresolve/goalresolve.servi
 export class goalsComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService, 
-        public goalsService : goalsService, 
-        private router : Router, 
-        private metadataService : metadataService, 
+    constructor(private bdms: NDataModelService,
+        public goalsService: goalsService,
+        private router: Router,
+        private metadataService: metadataService,
         private dialog: MatDialog,
-        private resolveGoal : goalresolveService,
-        private activatedRoute : ActivatedRoute) {
+        private resolveGoal: goalresolveService,
+        private activatedRoute: ActivatedRoute) {
         super();
         this.mm = new ModelMethods(bdms);
     }
-
+    noGoals = false;
     goals;
 
     ngOnInit() {
-        this.goals = this.goalsService.getGoals()
+        this.goals = this.metadataService.getMetaData('goals')
+        
+        // if(!this.goals) {
+        //     this.metadataService.getData().then((data) => {
+        //         this.goals = data[0].goals;
+        //         if(data[0].gaols >= 0){
+        //             this.noGoals = true; 
+        //         }else{
+        //             this.noGoals = false; 
+        //         }
+        //         console.log(data)
+        //       });
+        // }
+       
     }
 
-    deleteGaol(goal){
+    deleteGaol(goal) {
         console.log('got goal', goal);
         this.goalsService.deleteGoal(goal._id);
     }
 
-    selectedGoal(goal){
+    selectedGoal(goal) {
         // console.log(goal);
-        this.goalsService.setGoal(goal);        
-        this.router.navigate['/goal'];        
+        this.goalsService.setGoal(goal);
+        this.router.navigate['/goal'];
     }
 
 
@@ -103,7 +116,7 @@ export class goalsComponent extends NBaseComponent implements OnInit {
             })
     }
 
-    delete (dataModelName, filter) {
+    delete(dataModelName, filter) {
         this.mm.delete(dataModelName, filter,
             result => {
                 // On Success code here

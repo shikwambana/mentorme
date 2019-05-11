@@ -14,10 +14,10 @@ export class tokenService {
     constructor(private http: HttpClient, private session : NSessionStorageService){
         this.appProperties = this.systemService.getVal('properties');
         this.bModellerURL = this.appProperties.modellerUrl + '/token';
-     
+    
     }
 
-    generateToken(){
+    getNewToken(){
         if(!sessionStorage.getItem('accessToken')){
             this.http.post(this.bModellerURL, {'hi' : 'ola'} ).subscribe(result => {
                 this.token = result;
@@ -32,6 +32,17 @@ export class tokenService {
             console.log('already have token');
         }
        
+    }
+
+    generateToken(){
+        return new Promise((resolve, reject) =>{
+            this.http.post(this.bModellerURL, {'hi' : 'ola'}).toPromise().then(res => {
+                console.log('hahahaha   ',res);
+                resolve(res);
+            }, err => {
+                reject(err);
+            });
+        });
     }
 
     getToken(){

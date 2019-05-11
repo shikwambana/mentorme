@@ -64,7 +64,7 @@
                 "_attrDef": "p"
             }
         ],
-        "ffd4e1bc-46ac-dea7-94f0-c6cb04d32047": {
+        "034600aa-39b8-de78-0da4-7914e8daeae2": {
             "paletteKey": "FlexLayoutRow",
             "parentEditorKey": "eb25d732-f6e3-6cb6-3644-de3efc75d9cb",
             "designerReference": [
@@ -83,7 +83,7 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": "topbar",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -130,9 +130,9 @@
                     "_attrDef": "p"
                 }
             ],
-            "77ee546b-40c9-c109-9265-c1f60b94fcc8": {
+            "b693ff71-6555-276a-948d-52686a9d70b6": {
                 "paletteKey": "FlexLayoutCol",
-                "parentEditorKey": "ffd4e1bc-46ac-dea7-94f0-c6cb04d32047",
+                "parentEditorKey": "034600aa-39b8-de78-0da4-7914e8daeae2",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -196,9 +196,9 @@
                         "_attrDef": "p"
                     }
                 ],
-                "8ba0c463-2c47-6a2f-995c-4971381c18c8": {
+                "9c063b17-7764-f9b6-aa9a-eebf12184df7": {
                     "paletteKey": "NG-icon",
-                    "parentEditorKey": "77ee546b-40c9-c109-9265-c1f60b94fcc8",
+                    "parentEditorKey": "b693ff71-6555-276a-948d-52686a9d70b6",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -234,9 +234,9 @@
                     ]
                 }
             },
-            "04c49ab3-5797-4d8c-c734-bfc14c7f22dc": {
+            "f7d7fc1c-d2fb-7e1a-6f73-390f6dd46be3": {
                 "paletteKey": "FlexLayoutCol",
-                "parentEditorKey": "ffd4e1bc-46ac-dea7-94f0-c6cb04d32047",
+                "parentEditorKey": "034600aa-39b8-de78-0da4-7914e8daeae2",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -300,9 +300,9 @@
                         "_attrDef": "p"
                     }
                 ],
-                "ebe5fd27-ab0c-e864-e72c-4dde1ff4984e": {
+                "91e59633-a2ad-fa5b-dfed-19191b8747ba": {
                     "paletteKey": "NG-H1",
-                    "parentEditorKey": "04c49ab3-5797-4d8c-c734-bfc14c7f22dc",
+                    "parentEditorKey": "f7d7fc1c-d2fb-7e1a-6f73-390f6dd46be3",
                     "designerReference": [
                         {
                             "_key": "style",

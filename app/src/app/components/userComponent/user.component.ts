@@ -33,8 +33,9 @@ export class userComponent extends NBaseComponent implements OnInit {
     }
 
     getToken(){
-        this.tokenService.generateToken();
-       
+        this.tokenService.generateToken().then((d) => {
+            console.log(d);
+        });
     }
 
     fetchToken(){

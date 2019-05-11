@@ -47,7 +47,7 @@
                 {
                     "path": "invite",
                     "component": "inviteComponent",
-                    "resolve": "{ invites : inviteresolverService }"
+                    "resolve": ""
                 },
                 {
                     "component": "profileComponent",

@@ -65,38 +65,34 @@ export class metadataService {
     //get person data from database
     getData() {
 
-        this.token = this.tokenService.getToken();
+        // 
         let user = this.getUserObj();
+        if(user){
+            this.token = sessionStorage.getItem('accessToken');
+        }else{
+            this.token = this.tokenService.getToken();
+        }
 
         let headers = new HttpHeaders({
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + this.token
         });
-        let options = { headers: headers};
+        let options = { headers: headers };
 
         let data = {
             'user': user,
             'token': this.token
         }
 
-         return this.http.post(this.urlBmodeller + '/getData', data, options).subscribe(res => {
-            console.log(res[0]);
-                
-            this.storePersonLocally(res[0]);
-            // this.commService.alertsnackbar('Got your data', 'close');
-            // this.router.navigate(['login']);
-
-
-        },
-        err => {
-            console.log(err, " Did not get data Failed");
-            this.commService.alertsnackbar('Could not get data', 'close');
-
-
-        }
-        )
-
-
+        return new Promise((resolve, reject) => {
+            this.http.post(this.urlBmodeller + '/getData', data, options).toPromise().then(res => {
+                console.log('hahahaha   ', res);
+                this.storePersonLocally(res[0]);
+                resolve(res);
+            }, err => {
+                reject(err);
+            });
+        });
     }
 
 
@@ -112,14 +108,6 @@ export class metadataService {
 
     //get menu from b modeller
     getMenu() {
-        
-
-        // if(this.person.mentoring.mentees.length > 0){
-        //     console.log('mentor')
-        // }   
-        // if(!this.person.mentoring.mentees){
-        //     console.log('mentee')
-        // }
 
         return this.http.get(this.url + '/menu', {
             responseType: 'json'
@@ -166,8 +154,13 @@ export class metadataService {
     }
 
     getGoals() {
+        
         return this.person.goals;
     }
 
+    //get the different data
+    getMetaData(data) {
+        return this.person[data];
+    }
 
 }

@@ -21,7 +21,7 @@ export class goalsService {
     selectedGoal;
 
     goals: Array<object>;
-    
+        
     deleteGoal(id){
 
         console.log('got ID', id)

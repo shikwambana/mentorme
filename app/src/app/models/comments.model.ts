@@ -14,7 +14,4 @@ export class comments {
   @JsonProperty('date', Date, true)
   public date: Date = undefined;
 
-  @JsonProperty('time', String, true)
-  public time: string = undefined;
-
 }

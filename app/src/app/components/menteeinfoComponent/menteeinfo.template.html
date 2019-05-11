@@ -1,10 +1,9 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" class="topbar" fxLayoutAlign="space-between stretch" fxShow="true" fxHide="false">
     <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
       <mat-icon [routerLink]="[&apos;../mentees&apos;]">arrow_back</mat-icon>
     </div>
     <div fxLayout="column wrap" class="headerTitle" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-      <p>Profile of</p>
       <h1>{{ mentee.personal_info.name }}</h1>
     </div>
   </div>

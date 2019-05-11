@@ -1,16 +1,17 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE CLASS NAME*/
 import { Injectable } from '@angular/core';
-import { Resolve } from '@angular/router';
+import { Resolve, ActivatedRouteSnapshot, ActivatedRoute } from '@angular/router';
 import { goalsService } from '../../services/goals/goals.service'
 @Injectable()
 export class goalresolveService implements Resolve<any>{
 
-    constructor(private goalsService : goalsService){
+    constructor(private goalsService : goalsService,private route : ActivatedRoute){
 
     }
-    resolve(route: import("@angular/router").ActivatedRouteSnapshot, 
-    state: import("@angular/router").RouterStateSnapshot) {
+    resolve(route: ActivatedRouteSnapshot) {
         // throw new Error("Method not implemented.");
+        // let goals = 
+        console.log('goal resolver')
         return this.goalsService.getGoals();
     }
 

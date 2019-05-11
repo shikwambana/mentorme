@@ -23,7 +23,7 @@ export class goalinfoComponent extends NBaseComponent implements OnInit {
 
     category;
     goal;
-
+    comment;
     constructor(private bdms: NDataModelService, private goalsService : goalsService,  private router: Router, private metadata : metadataService) {
         super();
         this.mm = new ModelMethods(bdms);
@@ -38,6 +38,10 @@ export class goalinfoComponent extends NBaseComponent implements OnInit {
             console.log(this.goal);
         }
         
+    }
+
+    addComment(){
+
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

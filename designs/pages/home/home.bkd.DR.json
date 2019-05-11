@@ -217,7 +217,7 @@
                 },
                 {
                     "_key": "style",
-                    "_value": "overflow-y: auto !important; margin: 0 15px 80px; ",
+                    "_value": "margin-bottom: 80px;",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

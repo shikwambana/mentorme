@@ -16,11 +16,11 @@ export class homeComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     user;
     menu;
-    constructor(private bdms: NDataModelService, 
-        private logoutService: NLogoutService, 
-        private router: Router, 
-        private metadata : metadataService,
-        private activatedRoute : ActivatedRoute) {
+    constructor(private bdms: NDataModelService,
+        private logoutService: NLogoutService,
+        private router: Router,
+        private metadata: metadataService,
+        private activatedRoute: ActivatedRoute) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -28,11 +28,10 @@ export class homeComponent extends NBaseComponent implements OnInit {
 
     ngOnInit() {
 
-        this.activatedRoute.data.subscribe(data => {
-            console.log(data);
-            // this.metadata.storePersonLocally(data[0]); 
-        })
-       
+        this.metadata.getData().then((data) => {
+          
+        });
+
         this.metadata.getMenu().subscribe(result => {
             this.menu = result;
             this.menu = this.menu.navbar.mentor;
@@ -40,15 +39,15 @@ export class homeComponent extends NBaseComponent implements OnInit {
     }
 
     logoutUser() {
-      this.logoutService.logout();
-      this.router.navigate(['/login']);
+        this.logoutService.logout();
+        this.router.navigate(['/login']);
     }
 
-    get(dataModelName, filter ?, keys ?, sort ?, pagenumber ?, pagesize ?) {
+    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
-                this.metadata.storePersonLocally(result[0]); 
+                this.metadata.storePersonLocally(result[0]);
             },
             error => {
                 // Handle errors here
@@ -97,7 +96,7 @@ export class homeComponent extends NBaseComponent implements OnInit {
             })
     }
 
-    delete (dataModelName, filter) {
+    delete(dataModelName, filter) {
         this.mm.delete(dataModelName, filter,
             result => {
                 // On Success code here

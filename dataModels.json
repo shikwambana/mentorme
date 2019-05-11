@@ -301,11 +301,6 @@
                 "name": "date",
                 "fieldType": 3,
                 "isArray": false
-            },
-            {
-                "name": "time",
-                "fieldType": 2,
-                "isArray": false
             }
         ]
     },

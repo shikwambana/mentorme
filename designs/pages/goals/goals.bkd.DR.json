@@ -23,7 +23,7 @@
             },
             {
                 "_key": "fxFlex",
-                "_value": "100",
+                "_value": "20",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -216,7 +216,7 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": "topbar",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -551,7 +551,7 @@
                     },
                     {
                         "_key": "style",
-                        "_value": "    width: 100%;",
+                        "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -617,7 +617,7 @@
                         },
                         {
                             "_key": "style",
-                            "_value": "",
+                            "_value": "width: 100%;",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -799,7 +799,7 @@
                         },
                         {
                             "_key": "text",
-                            "_value": "It looks like you have not added any goals yet; click the + button to add your first goal",
+                            "_value": "It looks like you have not added any goals yet; <br>Click the + button to add your first goal",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -1019,7 +1019,7 @@
                             },
                             {
                                 "_key": "fxFlex",
-                                "_value": "80",
+                                "_value": "75",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -1148,7 +1148,7 @@
                             },
                             {
                                 "_key": "fxFlex",
-                                "_value": "15",
+                                "_value": "20",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -1397,7 +1397,7 @@
                                 },
                                 {
                                     "_key": "text",
-                                    "_value": "Started: {{ goal.start_date | date }} - Due Date: {{ goal.due_date | date }}",
+                                    "_value": "Started: {{ goal.start_date | date }} - Due Date: {{ goal.end_date | date }}",
                                     "_type": "a",
                                     "_attrDef": "p",
                                     "_useAsLabel": true
