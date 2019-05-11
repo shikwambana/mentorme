@@ -8,9 +8,9 @@
     </div>
   </div>
   <form componentLabel="Form">
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" class="content" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
       <mat-form-field>
-        <mat-select placeholder="Select mentee" [(ngModel)]="log.mentee_email" required name="mentee">
+        <mat-select placeholder="Select mentee" [(ngModel)]="log.mentee_name" required name="mentee">
           <mat-option *ngFor="let name of mentees" [value]="name.email_address">{{ name.full_name}}</mat-option>
         </mat-select>
 

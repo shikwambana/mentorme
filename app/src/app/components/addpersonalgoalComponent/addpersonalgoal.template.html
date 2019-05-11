@@ -1,5 +1,5 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" class="topbar" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
     <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
       <mat-icon [routerLink]="[&apos;../&apos;]">arrow_back</mat-icon>
     </div>
@@ -7,12 +7,12 @@
       <h1>Add Goal</h1>
     </div>
   </div>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="column wrap" class="content" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
     <form componentLabel="Form">
       <div fxLayout="column wrap" class="addGoalWrapper" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-        <mat-slide-toggle [labelPosition]="&apos;before&apos;" name="pGoal" #personal [ngModel]="hidden" (change)="changed()"> Personal Goal</mat-slide-toggle>
-        <mat-form-field *ngIf="!hidden || !mentees" >
-          <mat-select placeholder="Mentee Name" [(ngModel)]="email" required name="mentee">
+        <mat-slide-toggle [labelPosition]="&apos;before&apos;" name="pGoal" #personal [ngModel]="hidden"> Personal Goal</mat-slide-toggle>
+        <mat-form-field>
+          <mat-select placeholder="Mentee Name" [(ngModel)]="goal.author" required *ngIf="!hidden" name="mentee">
             <mat-option *ngFor="let mentee of mentees" [value]="mentee.email_address">{{ mentee.full_name }}</mat-option>
           </mat-select>
 
