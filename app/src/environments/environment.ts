@@ -3,7 +3,7 @@ export const environment = {
     "name": "dev",
     "properties": {
         "production": false,
-        "baseUrl": "http://localhost:3000/bhive-art/",
+        "baseUrl": "http://10.0.0.23:3000/bhive-art/",
         "tenantName": "mentorme",
         "appName": "mentorme",
         "namespace": "com.neutrinos-delivery.mentorme",
@@ -19,7 +19,7 @@ export const environment = {
         "basicAuthUser": "username",
         "basicAuthPassword": "password",
         "useDefaultExceptionUI": true,
-        "registerUrl": "http://localhost:3000/bhive-art/mentorme/auth/mentorme/register",
-        "modellerUrl": "http://localhost:24483/api"
+        "registerUrl": "http://10.0.0.23:3000/bhive-art/mentorme/auth/mentorme/register",
+        "modellerUrl": "http://10.0.0.23:24483/api"
     }
 }

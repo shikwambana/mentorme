@@ -88,5 +88,10 @@
         "appPageName": "lostuser",
         "componentName": "lostuserComponent",
         "isEntry": false
+    },
+    "181d006f-fa88-4d2b-6b20-bb4f871397a2": {
+        "appPageName": "test",
+        "componentName": "testComponent",
+        "isEntry": false
     }
 }

@@ -2,7 +2,7 @@
  "nodes": {
   "node-red": {
    "name": "node-red",
-   "version": "0.18.7",
+   "version": "0.19.5",
    "local": false,
    "nodes": {
     "sentiment": {
@@ -279,6 +279,26 @@
      "module": "node-red",
      "file": "C:\\Program Files\\Neutrinos Studio\\resources\\app.asar.unpacked\\node_modules\\node-red\\nodes\\core\\logic\\17-split.js"
     },
+    "sort": {
+     "name": "sort",
+     "types": [
+      "sort"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "C:\\Program Files\\Neutrinos Studio\\resources\\app.asar.unpacked\\node_modules\\node-red\\nodes\\core\\logic\\18-sort.js"
+    },
+    "batch": {
+     "name": "batch",
+     "types": [
+      "batch"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "C:\\Program Files\\Neutrinos Studio\\resources\\app.asar.unpacked\\node_modules\\node-red\\nodes\\core\\logic\\19-batch.js"
+    },
     "CSV": {
      "name": "CSV",
      "types": [
@@ -349,26 +369,6 @@
      "local": false,
      "module": "node-red",
      "file": "C:\\Program Files\\Neutrinos Studio\\resources\\app.asar.unpacked\\node_modules\\node-red\\nodes\\core\\storage\\50-file.js"
-    },
-    "sort": {
-     "name": "sort",
-     "types": [
-      "sort"
-     ],
-     "enabled": true,
-     "local": false,
-     "module": "node-red",
-     "file": "C:\\Program Files\\Neutrinos Studio\\resources\\app.asar.unpacked\\node_modules\\node-red\\nodes\\core\\logic\\18-sort.js"
-    },
-    "batch": {
-     "name": "batch",
-     "types": [
-      "batch"
-     ],
-     "enabled": true,
-     "local": false,
-     "module": "node-red",
-     "file": "C:\\Program Files\\Neutrinos Studio\\resources\\app.asar.unpacked\\node_modules\\node-red\\nodes\\core\\logic\\19-batch.js"
     }
    }
   },

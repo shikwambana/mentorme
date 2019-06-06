@@ -97,6 +97,10 @@
             ]
         },
         {
+            "path": "test",
+            "component": "testComponent"
+        },
+        {
             "path": "''",
             "component": "",
             "pathMatch": "full",

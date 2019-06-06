@@ -12,6 +12,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-testComponent
+import { testComponent } from '../components/testComponent/test.component';
 //CORE_REFERENCE_IMPORT-inviteresolverService
 import { inviteresolverService } from '../services/inviteresolver/inviteresolver.service';
 //CORE_REFERENCE_IMPORT-lostuserComponent
@@ -108,6 +110,8 @@ export const appDeclarations = [
   PageNotFoundComponent,
   NMapComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-testComponent
+testComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-lostuserComponent
 lostuserComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-goalinfoComponent
@@ -195,6 +199,6 @@ metadataService,
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [{path: 'home', component: homeComponent, canActivate: [NAuthGuardService],
 children: [{path: 'load', component: splashComponent},{path: 'feed', component: feedComponent},{path: 'log', component: logactivityComponent},{path: 'mentees', component: menteesComponent,
-children: []},{path: 'mentee', component: menteeinfoComponent},{path: 'broadcast', component: groupmessageComponent},{path: '', component: goalsComponent},{path: 'goal', component: goalinfoComponent},{path: 'invite', component: inviteComponent},{path: 'profile', component: profileComponent},{path: 'personalgoal', component: addpersonalgoalComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full'},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: 'user', component: userComponent,
-children: [{path: 'register', component: registerComponent},{path: 'changepwd', component: changepwdComponent}]},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: []},{path: 'mentee', component: menteeinfoComponent},{path: 'broadcast', component: groupmessageComponent},{path: '', component: goalsComponent, resolve: { person : dataresolverService }},{path: 'goal', component: goalinfoComponent},{path: 'invite', component: inviteComponent},{path: 'profile', component: profileComponent},{path: 'personalgoal', component: addpersonalgoalComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full'},{path: 'welcome', component: splashComponent},{path: 'invite', component: inviteComponent},{path: 'user', component: userComponent,
+children: [{path: 'register', component: registerComponent},{path: 'changepwd', component: changepwdComponent}]},{path: 'test', component: testComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END
