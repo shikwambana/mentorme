@@ -52,13 +52,13 @@
                 "_attrDef": "p"
             },
             {
-                "_key": "fxShow",
+                "_key": "[fxShow]",
                 "_value": "true",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
-                "_key": "fxHide",
+                "_key": "[fxHide]",
                 "_value": "false",
                 "_type": "kv",
                 "_attrDef": "p"
@@ -66,6 +66,7 @@
         ],
         "0d583022-ffcf-3cb3-506f-9631a9fb2f60": {
             "paletteKey": "FlexLayoutRow",
+            "parentEditorKey": "a865e55a-cb5b-e3c2-b7dc-e238244b4280",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -117,13 +118,13 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "fxShow",
+                    "_key": "[fxShow]",
                     "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "fxHide",
+                    "_key": "[fxHide]",
                     "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
@@ -131,6 +132,7 @@
             ],
             "f8b67463-f31a-9eeb-a7f7-ea59d6c83010": {
                 "paletteKey": "NG-image",
+                "parentEditorKey": "0d583022-ffcf-3cb3-506f-9631a9fb2f60",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -180,11 +182,33 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[src]",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "width",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "srcset",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "sizes",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
                     }
-                ],
-                "parentEditorKey": "0d583022-ffcf-3cb3-506f-9631a9fb2f60"
-            },
-            "parentEditorKey": "a865e55a-cb5b-e3c2-b7dc-e238244b4280"
+                ]
+            }
         }
     }
 }

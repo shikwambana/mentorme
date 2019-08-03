@@ -1,24 +1,32 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" fxShow="true" fxHide="false">
-    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
       <mat-icon [routerLink]="[&apos;../mentees&apos;]">arrow_back</mat-icon>
     </div>
-    <div fxLayout="column wrap" class="headerTitle" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" class="headerTitle" fxFlex="85" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
       <p>Send your mentees a </p>
       <h1>Group Message</h1>
     </div>
   </div>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
     <form>
-      <div fxLayout="column wrap" class="formBox" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-        <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-          <div fxLayout="row wrap" class="nameBubble" fxLayoutAlign="center center" fxShow="true" fxHide="false"><span>Andrea Nyambo</span>
+      <div fxLayout="column wrap" class="formBox" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="row wrap" class="nameBubble" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><span>Andrea Nyambo</span>
             <mat-icon>clear</mat-icon>
           </div>
         </div>
-        <mat-form-field><input matInput="" placeholder="Recipients" required></mat-form-field>
-        <mat-form-field><input matInput="" placeholder="Subject" required></mat-form-field>
-        <mat-form-field><textarea matInput="" placeholder="Message" required></textarea></mat-form-field><button mat-raised-button="">
+        <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+          <input matInput placeholder="Recipients" required>
+
+        </mat-form-field>
+        <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+          <input matInput placeholder="Subject" required>
+
+        </mat-form-field>
+        <mat-form-field>
+          <textarea matInput placeholder="Message" required></textarea>
+        </mat-form-field><button mat-raised-button>
           <mat-icon>send</mat-icon>
         </button>
       </div>

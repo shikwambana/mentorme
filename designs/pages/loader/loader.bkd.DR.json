@@ -52,13 +52,13 @@
                 "_attrDef": "p"
             },
             {
-                "_key": "fxShow",
+                "_key": "[fxShow]",
                 "_value": "true",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
-                "_key": "fxHide",
+                "_key": "[fxHide]",
                 "_value": "false",
                 "_type": "kv",
                 "_attrDef": "p"

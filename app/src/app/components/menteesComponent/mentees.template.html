@@ -1,13 +1,13 @@
-<div fxLayout="column wrap" class="outerCont" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <div fxLayout="row wrap" class="topbar" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+<div fxLayout="column wrap" class="outerCont" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" class="topbar" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
       <mat-icon>bubble_chart</mat-icon>
     </div>
-    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
       <h1>My Mentees</h1>
     </div>
   </div>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let mentee of menteesList">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let mentee of menteesList">
     <mat-card [routerLink]="[&apos;../mentee&apos;]" (click)="selectMentee(mentee)">
       <mat-card-title>{{ mentee.personal_info.name}} {{ mentee.personal_info.surname}}</mat-card-title>
       <mat-card-subtitle>{{ mentee.contact_details.email_address }}</mat-card-subtitle>
@@ -15,7 +15,7 @@
         <p>{{ mentee.latestComment }}</p>
       </mat-card-content>
       <mat-card-footer>
-        <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="false" fxHide="true">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="false" [fxHide]="true">
           <mat-card-actions><button mat-raised-button>
               <mat-icon>call</mat-icon>
             </button><button mat-raised-button>
@@ -26,7 +26,7 @@
     </mat-card>
   </div>
 </div>
-<div fxLayout="column wrap" class="fabBtn " fxFlex="20" fxLayoutAlign="space-evenly end" fxShow="true" fxHide="false"><button mat-fab class="zoomIn" [routerLink]="[&apos;../invite&apos;]">
+<div fxLayout="column wrap" class="fabBtn " fxFlex="20" fxLayoutAlign="space-evenly end" [fxShow]="true" [fxHide]="false"><button mat-fab class="zoomIn" [routerLink]="[&apos;../invite&apos;]">
     <mat-icon>
       <mat-icon>person_add</mat-icon>
     </mat-icon>

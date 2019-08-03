@@ -52,13 +52,13 @@
                 "_attrDef": "p"
             },
             {
-                "_key": "fxShow",
+                "_key": "[fxShow]",
                 "_value": "true",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
-                "_key": "fxHide",
+                "_key": "[fxHide]",
                 "_value": "false",
                 "_type": "kv",
                 "_attrDef": "p"
@@ -202,6 +202,12 @@
                     "_type": "a",
                     "_attrDef": "p",
                     "_visibility": true
+                },
+                {
+                    "_key": "required",
+                    "_value": "required",
+                    "_type": "a",
+                    "_attrDef": "p"
                 }
             ]
         }

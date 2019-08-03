@@ -20,7 +20,8 @@ function bootstrapNow() {
       // hide splash screen
       window['navigator']['splashscreen'].hide();
     }
-    if (environment.properties.isNotificationEnabled) {
+    let pushType = environment.properties.pushType ? environment.properties.pushType : 'FCM';
+    if (environment.properties.isNotificationEnabled && pushType.toUpperCase() === 'FCM') {
       firebaseInitForServiceWorker();
     }
     initChartJS();

@@ -1,13 +1,13 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" min-height="100%" *ngIf="menu">
-  <div fxLayout="column wrap" class="fabBtn fabMenu" fxFlex="20" fxLayoutAlign="center center" fxShow="true" fxHide="false"><button mat-button (click)="logoutUser()">
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" min-height="100%" *ngIf="menu">
+  <div fxLayout="column wrap" class="fabBtn fabMenu" fxFlex="20" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-button (click)="logoutUser()">
       <mat-icon>power_settings_new</mat-icon>
     </button></div>
-  <div fxLayout="column " style="margin-bottom: 80px;" fxLayoutAlign="center stretch" fxShow="true" fxHide="false" min-height="90%">
+  <div fxLayout="column " style="margin-bottom: 80px;" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false" min-height="90%">
     <router-outlet componentLabel="Router Outlet"></router-outlet>
   </div>
   <mat-toolbar class="nav btm">
-    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly stretch" fxShow="true" fxHide="false" *ngFor="let menu of menu">
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false" *ngFor="let menu of menu">
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
         <mat-icon [routerLink]="menu.url">{{ menu.icon }}</mat-icon>
       </div>
     </div>

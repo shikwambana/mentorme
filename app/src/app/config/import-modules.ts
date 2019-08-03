@@ -1,3 +1,4 @@
+import { DependenciesModule } from './dependencies.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,6 +33,7 @@ import {
 *imports for @NgModule
 */
 export const appImportModules: any = [
+                        DependenciesModule,
   BrowserModule,
   FormsModule,
   ReactiveFormsModule,

@@ -1,43 +1,43 @@
-<div fxLayout="column wrap" class="fabBtn" fxFlex="20" fxLayoutAlign="space-around center" fxShow="true" fxHide="false"><button mat-fab class="zoomIn" [routerLink]="[&apos;personalgoal&apos;]">
+<div fxLayout="column wrap" class="fabBtn" fxFlex="20" fxLayoutAlign="space-around center" [fxShow]="true" [fxHide]="false"><button mat-fab class="zoomIn" [routerLink]="[&apos;personalgoal&apos;]">
     <mat-icon>
       <mat-icon>add</mat-icon>
     </mat-icon>
   </button></div>
-<div fxLayout="column wrap" class="outerCont" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <div fxLayout="row wrap" class="topbar" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+<div fxLayout="column wrap" class="outerCont" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" class="topbar" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
       <mat-icon>bubble_chart</mat-icon>
     </div>
-    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
       <h1>My Goal Stats</h1>
     </div>
   </div>
-  <div fxLayout="column wrap" class="fadeInDown" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngIf="!goals">
-    <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false"><img imgSrc="/Web/no_goal.png" style="width: 100%;" componentLabel="Image"></div>
-    <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+  <div fxLayout="column wrap" class="fadeInDown" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngIf="!goals">
+    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><img imgSrc="/Web/no_goal.png" style="width: 100%;" componentLabel="Image"></div>
+    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
       <h2>No Goals Yet</h2>
       <p style="text-align: center;">It looks like you have not added any goals yet; <br>Click the + button to add your first goal</p>
     </div>
   </div>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" *ngFor="let goal of goals">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let goal of goals">
     <mat-card (click)="selectedGoal(goal)" [routerLink]="[&apos;goal&apos;]" *ngIf="goals" class="fadeInDown">
-      <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-        <div fxLayout="column wrap" fxFlex="75" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" fxFlex="75" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
           <mat-card-title>{{ goal.title }}</mat-card-title>
           <mat-card-subtitle>Status : {{ goal.status }}</mat-card-subtitle>
         </div>
-        <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start end" fxShow="true" fxHide="false">
+        <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start end" [fxShow]="true" [fxHide]="false">
           <countdown units="Days | Hours" end="{{goal.end_date}}"></countdown><button mat-button fxHide="true" (click)="deleteGaol(goal)" [disabled]="false">Delete</button>
         </div>
       </div>
       <mat-card-content>
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
           <p>Started: {{ goal.start_date | date }} - Due Date: {{ goal.end_date | date }}</p>
           <h3>{{ goal.description }}</h3>
         </div>
       </mat-card-content>
       <mat-card-footer fxHide="true">
-        <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
           <mat-card-actions><button mat-raised-button>
               <mat-icon>comment</mat-icon>
             </button><button mat-raised-button>

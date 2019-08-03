@@ -1,6 +1,6 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
   <mat-form-field>
-    <input matInput placeholder="Date Picker" [matDatepicker]="picker">
+    <input matInput placeholder="Date Picker" [matDatepicker]="picker" required>
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
 

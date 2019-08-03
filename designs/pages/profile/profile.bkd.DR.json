@@ -52,13 +52,13 @@
                 "_attrDef": "p"
             },
             {
-                "_key": "fxShow",
+                "_key": "[fxShow]",
                 "_value": "true",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
-                "_key": "fxHide",
+                "_key": "[fxHide]",
                 "_value": "false",
                 "_type": "kv",
                 "_attrDef": "p"
@@ -66,6 +66,7 @@
         ],
         "5d5b0db7-7331-f16d-d4cc-6d526f325100": {
             "paletteKey": "FlexLayoutRow",
+            "parentEditorKey": "bac41960-3355-0abe-ef6c-572b8ae2a35d",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -117,13 +118,13 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "fxShow",
+                    "_key": "[fxShow]",
                     "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "fxHide",
+                    "_key": "[fxHide]",
                     "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
@@ -131,6 +132,7 @@
             ],
             "6d55eaa5-f4b1-ea7c-8fab-928c532a1045": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "5d5b0db7-7331-f16d-d4cc-6d526f325100",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -182,22 +184,22 @@
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "fxShow",
+                        "_key": "[fxShow]",
                         "_value": "true",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "fxHide",
+                        "_key": "[fxHide]",
                         "_value": "false",
                         "_type": "kv",
                         "_attrDef": "p"
                     }
-                ],
-                "parentEditorKey": "5d5b0db7-7331-f16d-d4cc-6d526f325100"
+                ]
             },
             "4615b9db-a113-61b7-e352-d3f3045539da": {
                 "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "5d5b0db7-7331-f16d-d4cc-6d526f325100",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -249,24 +251,23 @@
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "fxShow",
+                        "_key": "[fxShow]",
                         "_value": "true",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "fxHide",
+                        "_key": "[fxHide]",
                         "_value": "false",
                         "_type": "kv",
                         "_attrDef": "p"
                     }
-                ],
-                "parentEditorKey": "5d5b0db7-7331-f16d-d4cc-6d526f325100"
-            },
-            "parentEditorKey": "bac41960-3355-0abe-ef6c-572b8ae2a35d"
+                ]
+            }
         },
         "01cd728d-06c4-0665-951b-b0cc2994ecce": {
             "paletteKey": "FlexLayoutCol",
+            "parentEditorKey": "bac41960-3355-0abe-ef6c-572b8ae2a35d",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -318,19 +319,18 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "fxShow",
+                    "_key": "[fxShow]",
                     "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "fxHide",
+                    "_key": "[fxHide]",
                     "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
                 }
-            ],
-            "parentEditorKey": "bac41960-3355-0abe-ef6c-572b8ae2a35d"
+            ]
         }
     }
 }
