@@ -1,46 +1,69 @@
-<div fxLayout="column wrap" style="margin: 0 20px;" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" class="topbar" fxFlex="100" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
       <mat-icon [routerLink]="[&apos;../../login&apos;]">arrow_back</mat-icon>
     </div>
-    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-      <h2>Lets get you Registered</h2>
+    <div fxLayout="column wrap" fxFlex="80" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
+      <h2>Register</h2>
     </div>
   </div>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-    <mat-form-field>
+  <div fxLayout="column wrap" style="margin: 0 20px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
+    <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
       <input matInput [(ngModel)]="person.personal_info.name" name="name" placeholder="First Name" required>
       <mat-error *ngIf="!person.personal_info.name">Enter a valid name</mat-error>
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
       <input matInput [(ngModel)]="person.personal_info.surname" name="surname" placeholder="Last Name" required>
       <mat-error *ngIf="!person.personal_info.surname">Enter a valid surname</mat-error>
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Date of Birth" [matDatepicker]="picker4" [(ngModel)]="person.personal_info.date_of_birth" name="dob">
+      <input matInput placeholder="Date of Birth" [matDatepicker]="picker4" [(ngModel)]="person.personal_info.date_of_birth" name="dob" required>
       <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
-      <mat-datepicker #picker4 opened disabled [disabled]="false" startView="month"></mat-datepicker>
+      <mat-datepicker #picker4 [disabled]="false" startView="month"></mat-datepicker>
       <mat-error *ngIf="!person.personal_info.date_of_birth">Enter a valid Date of Birth</mat-error>
     </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="person.contact_details.email_address" name="email" type="email" placeholder="Email Address" required>
+    <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+      <input matInput [(ngModel)]="person.contact_details.email_address" name="email" type="email" placeholder="Email Address" required (blur)="checkEmail(email.value)" #email>
       <mat-error *ngIf="!person.contact_details.email_address">Enter an email address</mat-error>
     </mat-form-field>
-    <mat-form-field>
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div>
+        <div style="display: flex;" class="zoomIn emailText" *ngIf="emailCheck">
+          <p style="width: 160px;margin: 0;">Checking if email exists</p>
+          <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="zoomIn emailText" *ngIf="canRegister">
+          <p>You are good to go</p>
+          <p>
+            <mat-icon style="color: green">check</mat-icon>
+          </p>
+        </div>
+        <div class="zoomIn emailText" *ngIf="goLogin">
+          <p>Email Already Exists <span mat-button class="loginLink" (click)="login()">log in</span></p>
+        </div>
+      </div>
+    </div>
+    <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
       <input matInput [(ngModel)]="person.contact_details.phone_number" name="number" placeholder="Phone Number" required>
       <mat-error *ngIf="!person.contact_details.phone_number">Enter your phone number</mat-error>
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
       <input matInput [(ngModel)]="person.contact_details.home_address" name="address" placeholder="Resident Address" required>
       <mat-error *ngIf="!person.contact_details.home_address">Enter your residential address</mat-error>
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
       <input matInput [(ngModel)]="pwd" name="pwd" type="password" placeholder="Password" required>
       <mat-error *ngIf="!pwd">Enter a password</mat-error>
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
       <input matInput [(ngModel)]="pwd2" name="pwd" type="password" placeholder="Password Confirmation" required>
       <mat-error *ngIf="pwd != pwd2">Passwords do not match</mat-error>
-    </mat-form-field><button mat-raised-button (click)="register()">Register Me</button>
+    </mat-form-field>
+    <div fxLayout="column wrap" fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false"><button mat-raised-button class="primary-btn " (click)="register()">Register Me</button></div>
   </div>
 </div>

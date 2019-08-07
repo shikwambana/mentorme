@@ -1,9 +1,5 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <mat-toolbar>
-    <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="center stretch" fxShow="true" fxHide="false"><img imgSrc="/Web/mentor_me_logo.png" style="width: 60px;"></div>
-    <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="center end" fxShow="true" fxHide="false"><button mat-button="" (click)="logoutUser()">Login</button></div>
-  </mat-toolbar>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
     <router-outlet></router-outlet>
   </div>
 </div>

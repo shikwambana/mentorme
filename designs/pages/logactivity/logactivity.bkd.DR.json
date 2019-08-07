@@ -55,16 +55,28 @@
                 "_key": "fxShow",
                 "_value": "true",
                 "_type": "kv",
-                "_attrDef": "p"
+                "_attrDef": "c"
             },
             {
                 "_key": "fxHide",
                 "_value": "false",
                 "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "_key": "[fxShow]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxHide]",
+                "_value": "false",
+                "_type": "kv",
                 "_attrDef": "p"
             }
         ],
-        "cea1efcb-30ff-d095-8826-a67a5798d4d3": {
+        "09043a64-3215-d7c7-bc3b-8fce5c46f5f2": {
             "paletteKey": "FlexLayoutRow",
             "parentEditorKey": "053bdf5c-7c76-bf31-9d2c-cbae97313559",
             "designerReference": [
@@ -83,7 +95,7 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": "topbar",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -107,7 +119,7 @@
                 },
                 {
                     "_key": "layoutAlign",
-                    "_value": "center",
+                    "_value": "start",
                     "_type": "a",
                     "_attrDef": "p"
                 },
@@ -121,18 +133,30 @@
                     "_key": "fxShow",
                     "_value": "true",
                     "_type": "kv",
-                    "_attrDef": "p"
+                    "_attrDef": "c"
                 },
                 {
                     "_key": "fxHide",
                     "_value": "false",
                     "_type": "kv",
+                    "_attrDef": "c"
+                },
+                {
+                    "_key": "[fxShow]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxHide]",
+                    "_value": "false",
+                    "_type": "kv",
                     "_attrDef": "p"
                 }
             ],
-            "71a97150-9133-db5b-4ee4-1949f7b0883d": {
+            "28dcd040-9102-7590-4a10-ef3fabb9faad": {
                 "paletteKey": "FlexLayoutCol",
-                "parentEditorKey": "cea1efcb-30ff-d095-8826-a67a5798d4d3",
+                "parentEditorKey": "09043a64-3215-d7c7-bc3b-8fce5c46f5f2",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -149,7 +173,7 @@
                     },
                     {
                         "_key": "class",
-                        "_value": "back_wrapper",
+                        "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -187,18 +211,30 @@
                         "_key": "fxShow",
                         "_value": "true",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "c"
                     },
                     {
                         "_key": "fxHide",
                         "_value": "false",
                         "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "[fxShow]",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[fxHide]",
+                        "_value": "false",
+                        "_type": "kv",
                         "_attrDef": "p"
                     }
                 ],
-                "a523c30f-74e3-fd60-7c17-763b784bcd63": {
+                "857c1278-78b3-a494-4d92-a614b3d0dd95": {
                     "paletteKey": "NG-icon",
-                    "parentEditorKey": "71a97150-9133-db5b-4ee4-1949f7b0883d",
+                    "parentEditorKey": "28dcd040-9102-7590-4a10-ef3fabb9faad",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -240,9 +276,9 @@
                     ]
                 }
             },
-            "035aedc8-427a-af4d-6a91-408469e78ad5": {
+            "dff53c5c-9b36-5fcb-8bc9-014277d88f9c": {
                 "paletteKey": "FlexLayoutCol",
-                "parentEditorKey": "cea1efcb-30ff-d095-8826-a67a5798d4d3",
+                "parentEditorKey": "09043a64-3215-d7c7-bc3b-8fce5c46f5f2",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -297,18 +333,30 @@
                         "_key": "fxShow",
                         "_value": "true",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "c"
                     },
                     {
                         "_key": "fxHide",
                         "_value": "false",
                         "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "[fxShow]",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[fxHide]",
+                        "_value": "false",
+                        "_type": "kv",
                         "_attrDef": "p"
                     }
                 ],
-                "d25e285a-ad4e-e5ad-c282-b44327be796c": {
+                "4ff7492f-00c5-ab95-c14c-cc8093b895e8": {
                     "paletteKey": "NG-H1",
-                    "parentEditorKey": "035aedc8-427a-af4d-6a91-408469e78ad5",
+                    "parentEditorKey": "dff53c5c-9b36-5fcb-8bc9-014277d88f9c",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -324,7 +372,7 @@
                         },
                         {
                             "_key": "H1 Text",
-                            "_value": "Log Activity",
+                            "_value": "Interaction",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -450,10 +498,22 @@
                         "_key": "fxShow",
                         "_value": "true",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "c"
                     },
                     {
                         "_key": "fxHide",
+                        "_value": "false",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "[fxShow]",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[fxHide]",
                         "_value": "false",
                         "_type": "kv",
                         "_attrDef": "p"
@@ -708,6 +768,12 @@
                             "_value": "",
                             "_type": "vk",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "required",
+                            "_value": "required",
+                            "_type": "a",
+                            "_attrDef": "p"
                         }
                     ]
                 },
@@ -801,6 +867,82 @@
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[appearance]",
+                            "_value": "'legacy'",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[floatLabel]",
+                            "_value": "'auto'",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "inputHint",
+                            "_value": [],
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Label",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Suffix Icon",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "(suffixIconClick)",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Prefix Icon",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "(prefixIconClick)",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Prefix",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Suffix",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
                         }
                     ]
                 },
@@ -894,6 +1036,82 @@
                             "_type": "a",
                             "_attrDef": "p",
                             "_visibility": true
+                        },
+                        {
+                            "_key": "[appearance]",
+                            "_value": "'legacy'",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[floatLabel]",
+                            "_value": "'auto'",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "inputHint",
+                            "_value": [],
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Label",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Suffix Icon",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "(suffixIconClick)",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Prefix Icon",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "(prefixIconClick)",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Prefix",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Suffix",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
                         }
                     ]
                 },
@@ -987,13 +1205,96 @@
                             "_type": "a",
                             "_attrDef": "p",
                             "_visibility": true
+                        },
+                        {
+                            "_key": "[appearance]",
+                            "_value": "'legacy'",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[floatLabel]",
+                            "_value": "'auto'",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "inputHint",
+                            "_value": [],
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Label",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Suffix Icon",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "(suffixIconClick)",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Prefix Icon",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "(prefixIconClick)",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Prefix",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
+                        },
+                        {
+                            "_key": "Suffix",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false,
+                            "_isVisibleForParent": true
                         }
                     ]
                 },
-                "21e6b4c3-e84a-e38c-1d6d-72eb4267d5e8": {
-                    "paletteKey": "NG-RaisedButton",
+                "699f01dc-6e84-c6d6-8d70-60f8ec8df57f": {
+                    "paletteKey": "FlexLayoutCol",
                     "parentEditorKey": "6c16d023-7a6f-fc09-0030-f330e16dd0cc",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Column",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -1007,49 +1308,109 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "buttonname",
-                            "_value": "Save",
+                            "_key": "fxFlex",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "fxLayoutGap",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "wrap",
+                            "_value": "wrap",
                             "_type": "a",
-                            "_attrDef": "p",
-                            "_useAsLabel": true
+                            "_attrDef": "p"
                         },
                         {
-                            "_key": "color",
-                            "_value": "",
+                            "_key": "layoutAlign",
+                            "_value": "center",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "pLayoutAlign",
+                            "_value": "start",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[fxShow]",
+                            "_value": "true",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "(click)",
-                            "_value": "logActivity()",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disabled]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disableRipple]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "type",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "routerLink",
-                            "_value": "",
+                            "_key": "[fxHide]",
+                            "_value": "false",
                             "_type": "kv",
                             "_attrDef": "p"
                         }
-                    ]
+                    ],
+                    "21e6b4c3-e84a-e38c-1d6d-72eb4267d5e8": {
+                        "paletteKey": "NG-RaisedButton",
+                        "parentEditorKey": "699f01dc-6e84-c6d6-8d70-60f8ec8df57f",
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "primary-btn",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "buttonname",
+                                "_value": "Save",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "color",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(click)",
+                                "_value": "logActivity()",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disabled]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disableRipple]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "type",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
+                        ]
+                    }
                 }
             }
         }

@@ -43,6 +43,7 @@ export class loginComponent extends NBaseComponent implements OnInit, OnDestroy 
   }
 
   ngOnInit() {
+      this.dialog.closeAll();
     this.checkPlatform();
     this.httpSubscribe = this.httpLoaderService._isHTTPRequestInProgress$.subscribe(value => {
       if (value === true) {
@@ -54,6 +55,8 @@ export class loginComponent extends NBaseComponent implements OnInit, OnDestroy 
   }
 
   authenticate() {
+        this.router.navigate(['home']);
+      
     this.loginService.login(this.user.username, this.user.password, this.user.remember).subscribe((response) => {
       if (this.loginService.isLoggedIn()) {
         this.alertService.openSnackBar('User authenticated');

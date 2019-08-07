@@ -5,9 +5,9 @@
             "component": "homeComponent",
             "pathMatch": "",
             "redirectTo": "",
-            "resolve": "",
+            "resolve": "{ data : dataresolverService }",
             "data": "",
-            "canActivate": "NAuthGuardService",
+            "canActivate": "",
             "children": [
                 {
                     "path": "load",
@@ -35,7 +35,7 @@
                     "path": "broadcast"
                 },
                 {
-                    "path": "''",
+                    "path": "goals",
                     "component": "goalsComponent",
                     "redirectTo": "",
                     "resolve": "{ person : dataresolverService }"
@@ -56,6 +56,10 @@
                 {
                     "path": "personalgoal",
                     "component": "addpersonalgoalComponent"
+                },
+                {
+                    "component": "containerComponent",
+                    "path": "''"
                 }
             ]
         },
@@ -92,7 +96,8 @@
                 },
                 {
                     "path": "changepwd",
-                    "component": "changepwdComponent"
+                    "component": "changepwdComponent",
+                    "canActivate": "NAuthGuardService"
                 }
             ]
         },
@@ -104,7 +109,7 @@
             "path": "''",
             "component": "",
             "pathMatch": "full",
-            "redirectTo": "/home",
+            "redirectTo": "/login",
             "resolve": "",
             "data": "",
             "canActivate": "",

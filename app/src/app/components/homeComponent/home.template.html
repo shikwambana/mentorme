@@ -1,15 +1,34 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" min-height="100%" *ngIf="menu">
-  <div fxLayout="column wrap" class="fabBtn fabMenu" fxFlex="20" fxLayoutAlign="center center" fxShow="true" fxHide="false"><button mat-button (click)="logoutUser()">
-      <mat-icon>power_settings_new</mat-icon>
-    </button></div>
-  <div fxLayout="column " style="margin-bottom: 80px;" fxLayoutAlign="center stretch" fxShow="true" fxHide="false" min-height="90%">
-    <router-outlet componentLabel="Router Outlet"></router-outlet>
-  </div>
-  <mat-toolbar class="nav btm">
-    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly stretch" fxShow="true" fxHide="false" *ngFor="let menu of menu">
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-        <mat-icon [routerLink]="menu.url">{{ menu.icon }}</mat-icon>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" min-height="100%" *ngIf="menu" #body [ngClass]="showMenu ? &apos;blur&apos; : &apos;show&apos;">
+  <mat-toolbar class="topbar">
+    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxFlex="60" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+        <div> MentorMe</div>
       </div>
+      <div fxLayout="column wrap" fxFlex="40" fxLayoutAlign="center end" [fxShow]="true" [fxHide]="false"><button mat-button (click)="logoutUser()">
+          <mat-icon>power_settings_new</mat-icon>
+        </button></div>
     </div>
   </mat-toolbar>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <router-outlet></router-outlet>
+  </div>
+  <div fxLayout="column wrap" class="fabBtn" fxFlex="60" fxLayoutAlign="space-around end" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" fxLayoutAlign="start end" [fxShow]="true" [fxHide]="false" *ngIf="showMenu">
+      <div fxLayout="row wrap" class="flipInX" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false" *ngFor="let nav of navigation">
+        <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+          <div style="color: white;"> {{nav.text}}</div>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-fab (click)="    goto(nav)">
+            <mat-icon>
+              <mat-icon>{{nav.icon}}</mat-icon>
+            </mat-icon>
+          </button></div>
+      </div>
+    </div>
+    <div fxLayout="column wrap" fxLayoutAlign="start end" [fxShow]="true" [fxHide]="false" #toggleButton><button mat-fab (click)="openMenu()">
+        <mat-icon>
+          <mat-icon>{{actionBtn}}</mat-icon>
+        </mat-icon>
+      </button></div>
+  </div>
 </div>

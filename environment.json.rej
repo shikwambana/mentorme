@@ -1,0 +1,10 @@
+diff a/environment.json b/environment.json	(rejected hunks)
+@@ -4,7 +4,7 @@
+         "name": "dev",
+         "properties": {
+             "production": false,
+-            "baseUrl": "http://localhost:3000/bhive-art/",
++            "baseUrl": "http://10.0.0.23:3000/bhive-art/",
+             "tenantName": "mentorme",
+             "appName": "mentorme",
+             "namespace": "com.neutrinos-delivery.mentorme",

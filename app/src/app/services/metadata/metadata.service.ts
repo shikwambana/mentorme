@@ -14,12 +14,95 @@ export class metadataService {
     url = 'http://localhost:24483/api/';
 
     user;
-    person: any;
+    // person: any;
     myheaders: HttpHeaders;
     token: any;
     urlBmodeller: any;
     appProperties: any;
     systemService = NSystemService.getInstance();
+    person =    {
+        "_id": "5d45fe11b3a6e5437c0cccb9",
+        "personal_info": {
+            "name": "lol",
+            "surname": "haha",
+            "date_of_birth": "2019-08-05T22:00:00.000Z",
+            "date_of_joining": "2019-08-03T21:35:07.903Z",
+            "userKey": "jvzbr59"
+        },
+        "contact_details": {
+            "email_address": "alphie@unswerve.tech"
+        },
+        "mentoring": {
+            "mentors": [],
+            "mentees": [
+                {
+                    "full_name": "JT Mahlangu",
+                    "email_address": "alphabase27@gmail.com",
+                    "start_date": "2019-08-05T07:29:16.937Z",
+                    "end_date": "2019-08-05T07:29:16.937Z"
+                },
+                {
+                    "full_name": "Hope is Alive",
+                    "email_address": "alphabase27@gmail.com",
+                    "start_date": "2019-08-05T07:35:23.224Z",
+                    "end_date": "2019-08-05T07:35:23.224Z"
+                }
+            ],
+            "potential": []
+        },
+        "goals": [
+            {
+                "author": "lol haha",
+                "author_email": "alphie@unswerve.tech",
+                "title": "finish the app",
+                "category": "Psychologial",
+                "description": "no description needed",
+                "start_date": "2019-08-06T22:00:00.000Z",
+                "comments": [],
+                "status": "In Progress",
+                "note": "not at all",
+                "end_date": "2019-08-07T22:00:00.000Z"
+            },
+            {
+                "author": "lol haha",
+                "author_email": "alphie@unswerve.tech",
+                "title": "Meet Tshifhiwa",
+                "category": "Psychologial",
+                "description": "no description needed",
+                "start_date": "2019-08-17T22:00:00.000Z",
+                "comments": [],
+                "status": "In Progress",
+                "note": "not at all",
+                "end_date": "2019-08-07T22:00:00.000Z"
+            },
+            {
+                "author": "sing",
+                "author_email": "alphie@unswerve.tech",
+                "title": "finish the app",
+                "category": "Psychologial",
+                "description": "no description needed",
+                "start_date": "2019-08-16T22:00:00.000Z",
+                "comments": [],
+                "status": "In Progress",
+                "note": "not at all",
+                "end_date": "2019-08-07T22:00:00.000Z"
+            },
+            {
+                "author": "lol haha",
+                "author_email": "alphie@unswerve.tech",
+                "title": "laugh",
+                "category": "Psychologial",
+                "description": "no description needed",
+                "start_date": "2019-08-06T22:00:00.000Z",
+                "comments": [],
+                "status": "In Progress",
+                "note": "not at all",
+                "end_date": "2019-08-07T22:00:00.000Z"
+            }
+            
+        ],
+        "activity_log": []
+    }
 
 
     constructor(private http: HttpClient,
@@ -62,10 +145,11 @@ export class metadataService {
         }
     ]
 
+
     //get person data from database
     getData() {
 
-        // 
+        return this.person;
         let user = this.getUserObj();
         if(user){
             this.token = sessionStorage.getItem('accessToken');
@@ -154,8 +238,7 @@ export class metadataService {
     }
 
     getGoals() {
-        
-        return this.person.goals;
+         return this.person.goals;
     }
 
     //get the different data

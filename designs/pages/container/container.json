@@ -1,0 +1,13 @@
+{
+    "appPageId": "e4d777e3-ae20-06ec-43ab-e0c326d49d61",
+    "appPageName": "container",
+    "componentName": "containerComponent",
+    "selectorName": "bh-container",
+    "htmlFileName": "container.template.html",
+    "tsFileName": "container.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

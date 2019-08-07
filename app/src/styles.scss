@@ -3,10 +3,15 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "nDefaults.scss";
 
+//old colors
 // $primary : #cceafa;
-$primary : #00b8d4;
-$secondary : #62ebff;
-$dark : #0088a3;
+// $primary : #00b8d4;
+// $secondary : #62ebff;
+// $dark : #0088a3;
+
+$primary : #00ACC1;
+$secondary : #29B6F6;
+$dark : #2980B9;
 
 body {
   background-color: rgba(211, 211, 211, 0.25) !important;
@@ -21,7 +26,7 @@ body {
 
 .primary-btn {
     background-color: $primary;
-    color: black;
+    color: white;
 }
 
 // splash page animation
@@ -93,7 +98,7 @@ body {
 }
 
 .mat-card button {
-    background-color: $dark;
+    background-color: $primary;
     color: white;
 }
 
@@ -106,10 +111,9 @@ body {
 }
 
 .mat-card {
-    background-color: $secondary;
-    // #00ced16e;
-    margin: 10px 10px;
-    border-radius: 0px;
+    // border-radius: 30px !important;
+    padding: 20px !important;
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35) !important;
 }
 
 // .mat-card:not([class*=mat-elevation-z]) {
@@ -130,8 +134,8 @@ body {
     position: fixed;
     z-index: 2;
     right: 0;
-    padding: 15px;
-    bottom: 70px;
+    margin: 15px;
+    bottom: 15px;
 }
 
 .fabMenu {
@@ -180,10 +184,6 @@ body {
     position: relative;
   }
 
-  .mat-form-field-wrapper {
-    margin-top: 25px;
-  }
-
 .registerFormContainer  .ng-valid[required], .registerFormContainer .ng-valid.required  {
     border-left: 5px solid #42A948; /* green */
     padding-left: 3px;
@@ -203,7 +203,7 @@ body {
   height: 80px;
 }
 //===================================================--=
-//second loader 
+//loader for http requests 
 
 .la-ball-atom,
 .la-ball-atom > div {
@@ -354,6 +354,67 @@ body {
     margin-top: -15px;
     margin-left: -15px;
 }
+
+//====================================================
+//loader to check if email exists
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 20px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: $primary;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+
+
 /*
  * Animations
  */
@@ -528,4 +589,97 @@ body {
   animation-name: zoomIn;
   animation: zoomIn .5s;
   animation-iteration-count: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp .5s;
+}
+
+//======
+
+@keyframes flipInX {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg) scale3d(1.2, 1.2, 1.2);
+    transform: perspective(400px) rotateX(90deg) scale3d(1.2, 1.2, 1.2); }
+  50% {
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -webkit-transform: perspective(400px) rotateX(-20deg) scale3d(1, 1, 1);
+    transform: perspective(400px) rotateX(-20deg) scale3d(1, 1, 1); }
+  to {
+    -webkit-transform: perspective(400px) rotateX(0deg) scale3d(1, 1, 1);
+    transform: perspective(400px) rotateX(0deg) scale3d(1, 1, 1); } }
+
+    .flipInX {
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+//=====================================
+.emailText, .emailText p, .emailText .mat-icon {
+    display: flex;
+    margin: 0;
+    font-size: 12px;    
+}
+
+.txt p {
+    margin: 0 !important;
+    color: $secondary;
+} 
+
+.bg {
+    background-image: url("/assets/Web/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginLink {
+    color: $primary;
+    margin: 0 10px;
+}
+
+.blur {
+transition: 1s;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.show {
+    background-color: none;
+}
+
+.goalCard {
+    background: #00ACC1;
+    color: white;
+    width: 88%;
+}
+
+.goalDates p, .goalDates h3 {
+        margin: 0 !important;
+        text-align: center;
 }

@@ -55,10 +55,22 @@
                 "_key": "fxShow",
                 "_value": "true",
                 "_type": "kv",
-                "_attrDef": "p"
+                "_attrDef": "c"
             },
             {
                 "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "_key": "[fxShow]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxHide]",
                 "_value": "false",
                 "_type": "kv",
                 "_attrDef": "p"
@@ -121,11 +133,23 @@
                     "_key": "fxShow",
                     "_value": "true",
                     "_type": "kv",
-                    "_attrDef": "p"
+                    "_attrDef": "c"
                 },
                 {
                     "_key": "fxHide",
                     "_value": "false",
+                    "_type": "kv",
+                    "_attrDef": "c"
+                },
+                {
+                    "_key": "[fxShow]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxHide]",
+                    "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 }
@@ -187,10 +211,22 @@
                         "_key": "fxShow",
                         "_value": "true",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "c"
                     },
                     {
                         "_key": "fxHide",
+                        "_value": "false",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "[fxShow]",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[fxHide]",
                         "_value": "false",
                         "_type": "kv",
                         "_attrDef": "p"
@@ -291,10 +327,22 @@
                         "_key": "fxShow",
                         "_value": "true",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "c"
                     },
                     {
                         "_key": "fxHide",
+                        "_value": "false",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "[fxShow]",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[fxHide]",
                         "_value": "false",
                         "_type": "kv",
                         "_attrDef": "p"
@@ -390,19 +438,31 @@
                     "_key": "fxShow",
                     "_value": "true",
                     "_type": "kv",
-                    "_attrDef": "p"
+                    "_attrDef": "c"
                 },
                 {
                     "_key": "fxHide",
                     "_value": "false",
                     "_type": "kv",
-                    "_attrDef": "p"
+                    "_attrDef": "c"
                 },
                 {
                     "_key": "*ngFor",
                     "_value": "let mentee of menteesList",
                     "_type": "kv",
                     "_attrDef": "c"
+                },
+                {
+                    "_key": "[fxShow]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxHide]",
+                    "_value": "false",
+                    "_type": "kv",
+                    "_attrDef": "p"
                 }
             ],
             "de1fd211-6088-cb55-19ff-e63106dda869": {
@@ -640,11 +700,23 @@
                                 "_key": "fxShow",
                                 "_value": "false",
                                 "_type": "kv",
-                                "_attrDef": "p"
+                                "_attrDef": "c"
                             },
                             {
                                 "_key": "fxHide",
                                 "_value": "true",
+                                "_type": "kv",
+                                "_attrDef": "c"
+                            },
+                            {
+                                "_key": "[fxShow]",
+                                "_value": "true",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[fxHide]",
+                                "_value": "false",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             }
@@ -857,10 +929,22 @@
                 "_key": "fxShow",
                 "_value": "true",
                 "_type": "kv",
-                "_attrDef": "p"
+                "_attrDef": "c"
             },
             {
                 "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "_key": "[fxShow]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxHide]",
                 "_value": "false",
                 "_type": "kv",
                 "_attrDef": "p"

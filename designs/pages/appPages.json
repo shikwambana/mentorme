@@ -93,5 +93,10 @@
         "appPageName": "test",
         "componentName": "testComponent",
         "isEntry": false
+    },
+    "e4d777e3-ae20-06ec-43ab-e0c326d49d61": {
+        "appPageName": "container",
+        "componentName": "containerComponent",
+        "isEntry": false
     }
 }

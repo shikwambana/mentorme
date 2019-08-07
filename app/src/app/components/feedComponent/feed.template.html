@@ -1,13 +1,13 @@
-<div fxLayout="column wrap" class="outerCont" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <div fxLayout="row wrap" class="topbar" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
-    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+<div fxLayout="column wrap" class="outerCont" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" class="topbar" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="true" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
       <mat-icon>bubble_chart</mat-icon>
     </div>
-    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" fxShow="true" fxHide="false">
+    <div fxLayout="column wrap" fxFlex="85" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
       <h1>My Mentees&apos; Goals</h1>
     </div>
   </div>
-  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start none" fxShow="true" fxHide="false" *ngFor="let card of menteesList" fxFlex.gt-sm="40">
+  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false" *ngFor="let card of menteesList" fxFlex.gt-sm="40">
     <mat-card *ngFor="let goal of card.goals" [routerLink]="[&apos;../goal&apos;]" (click)="selectedGoal(goal)" class="feed-card fadeInDown">
       <mat-card-title>{{ goal.title }}</mat-card-title>
       <mat-card-subtitle>Date: {{ card.date}} | Category: {{ card.category }}</mat-card-subtitle>
@@ -16,7 +16,7 @@
         <p>{{ card.personal_info.name }}</p>
       </mat-card-content>
       <mat-card-footer>
-        <div fxLayout="row wrap" fxLayoutAlign="start start" fxShow="true" fxHide="true">
+        <div fxLayout="row wrap" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="true">
           <mat-card-actions><button mat-raised-button>
               <mat-icon>comment</mat-icon>
             </button><button mat-raised-button [routerLink]="[&apos;../mentee&apos;]">
@@ -27,7 +27,7 @@
     </mat-card>
   </div>
 </div>
-<div fxLayout="column wrap" class="fabBtn zoomIn" fxFlex="20" fxLayoutAlign="space-around center" fxShow="true" fxHide="false"><button mat-fab [routerLink]="[&apos;../log&apos;]">
+<div fxLayout="column wrap" class="fabBtn zoomIn" fxFlex="20" fxLayoutAlign="space-around center" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false"><button mat-fab [routerLink]="[&apos;../log&apos;]">
     <mat-icon>
       <mat-icon>event</mat-icon>
     </mat-icon>

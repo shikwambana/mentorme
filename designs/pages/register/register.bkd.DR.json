@@ -11,7 +11,7 @@
             },
             {
                 "_key": "style",
-                "_value": "margin: 0 20px;",
+                "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -55,10 +55,22 @@
                 "_key": "fxShow",
                 "_value": "true",
                 "_type": "kv",
-                "_attrDef": "p"
+                "_attrDef": "c"
             },
             {
                 "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "_key": "[fxShow]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxHide]",
                 "_value": "false",
                 "_type": "kv",
                 "_attrDef": "p"
@@ -83,7 +95,7 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": "topbar",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -121,10 +133,22 @@
                     "_key": "fxShow",
                     "_value": "true",
                     "_type": "kv",
-                    "_attrDef": "p"
+                    "_attrDef": "c"
                 },
                 {
                     "_key": "fxHide",
+                    "_value": "false",
+                    "_type": "kv",
+                    "_attrDef": "c"
+                },
+                {
+                    "_key": "[fxShow]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxHide]",
                     "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
@@ -155,7 +179,7 @@
                     },
                     {
                         "_key": "fxFlex",
-                        "_value": "10",
+                        "_value": "20",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -187,10 +211,22 @@
                         "_key": "fxShow",
                         "_value": "true",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "c"
                     },
                     {
                         "_key": "fxHide",
+                        "_value": "false",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "[fxShow]",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[fxHide]",
                         "_value": "false",
                         "_type": "kv",
                         "_attrDef": "p"
@@ -265,7 +301,7 @@
                     },
                     {
                         "_key": "fxFlex",
-                        "_value": "85",
+                        "_value": "80",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -297,10 +333,22 @@
                         "_key": "fxShow",
                         "_value": "true",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "c"
                     },
                     {
                         "_key": "fxHide",
+                        "_value": "false",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "[fxShow]",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[fxHide]",
                         "_value": "false",
                         "_type": "kv",
                         "_attrDef": "p"
@@ -324,7 +372,7 @@
                         },
                         {
                             "_key": "H2 Text",
-                            "_value": "Lets get you Registered",
+                            "_value": "Register",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -352,7 +400,7 @@
                 },
                 {
                     "_key": "style",
-                    "_value": "",
+                    "_value": "margin: 0 20px;",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -396,10 +444,22 @@
                     "_key": "fxShow",
                     "_value": "true",
                     "_type": "kv",
-                    "_attrDef": "p"
+                    "_attrDef": "c"
                 },
                 {
                     "_key": "fxHide",
+                    "_value": "false",
+                    "_type": "kv",
+                    "_attrDef": "c"
+                },
+                {
+                    "_key": "[fxShow]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxHide]",
                     "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
@@ -500,6 +560,82 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[appearance]",
+                        "_value": "'legacy'",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[floatLabel]",
+                        "_value": "'auto'",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "inputHint",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Label",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(suffixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(prefixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
                     }
                 ]
             },
@@ -598,6 +734,82 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[appearance]",
+                        "_value": "'legacy'",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[floatLabel]",
+                        "_value": "'auto'",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "inputHint",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Label",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(suffixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(prefixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
                     }
                 ]
             },
@@ -756,6 +968,12 @@
                         "_value": "",
                         "_type": "vk",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "required",
+                        "_value": "required",
+                        "_type": "a",
+                        "_attrDef": "p"
                     }
                 ]
             },
@@ -854,8 +1072,214 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[appearance]",
+                        "_value": "'legacy'",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[floatLabel]",
+                        "_value": "'auto'",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "inputHint",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Label",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(suffixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(prefixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(blur)",
+                        "_value": "checkEmail(email.value)",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "#email",
+                        "_value": "#email",
+                        "_type": "a",
+                        "_attrDef": "c"
                     }
                 ]
+            },
+            "08f5e33b-5c11-3301-dc50-f03596058f72": {
+                "paletteKey": "FlexLayoutCol",
+                "parentEditorKey": "074c00c3-0d96-5211-bdef-6db227881110",
+                "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
+                        "_key": "style",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxFlex",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxLayoutGap",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "wrap",
+                        "_value": "wrap",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "layoutAlign",
+                        "_value": "start",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "pLayoutAlign",
+                        "_value": "stretch",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[fxShow]",
+                        "_value": "true",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[fxHide]",
+                        "_value": "false",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    }
+                ],
+                "347d4d29-3ff7-4bf0-23da-039fb382d581": {
+                    "paletteKey": "Html5",
+                    "parentEditorKey": "08f5e33b-5c11-3301-dc50-f03596058f72",
+                    "isAdvancedComponent": true,
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "htmlElement",
+                            "_value": "div",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        }
+                    ],
+                    "fff0203f-9349-3529-eefc-92cceadf7815": {
+                        "paletteKey": "html-editor",
+                        "parentEditorKey": "347d4d29-3ff7-4bf0-23da-039fb382d581",
+                        "isAdvancedChildComponent": true,
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "html",
+                                "_value": "<div style=\"display: flex;\" class=\"zoomIn emailText\" *ngIf=\"emailCheck\"><p style=\"width: 160px;margin: 0;\">Checking if email exists</p><div class=\"lds-ellipsis\"><div></div><div></div><div></div><div></div></div></div>\r\n<div class=\"zoomIn emailText\" *ngIf=\"canRegister\"><p>You are good to go<p><mat-icon style=\"color: green\">check</mat-icon></div>\r\n<div class=\"zoomIn emailText\" *ngIf=\"goLogin\"><p>Email Already Exists  <span mat-button class=\"loginLink\" (click)=\"login()\">log in</span></div>",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            }
+                        ]
+                    }
+                }
             },
             "948e04e7-9a73-a24c-938e-4315cbb68047": {
                 "paletteKey": "NG-Input",
@@ -952,6 +1376,82 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[appearance]",
+                        "_value": "'legacy'",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[floatLabel]",
+                        "_value": "'auto'",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "inputHint",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Label",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(suffixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(prefixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
                     }
                 ]
             },
@@ -1050,6 +1550,82 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[appearance]",
+                        "_value": "'legacy'",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[floatLabel]",
+                        "_value": "'auto'",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "inputHint",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Label",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(suffixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(prefixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
                     }
                 ]
             },
@@ -1148,6 +1724,82 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[appearance]",
+                        "_value": "'legacy'",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[floatLabel]",
+                        "_value": "'auto'",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "inputHint",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Label",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(suffixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(prefixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
                     }
                 ]
             },
@@ -1246,13 +1898,96 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[appearance]",
+                        "_value": "'legacy'",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[floatLabel]",
+                        "_value": "'auto'",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "inputHint",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Label",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(suffixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "(prefixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Prefix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
+                    },
+                    {
+                        "_key": "Suffix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": false,
+                        "_isVisibleForParent": true
                     }
                 ]
             },
-            "3ace3cfe-3a4c-b61f-1df8-3a4804676c7e": {
-                "paletteKey": "NG-RaisedButton",
+            "778a0b64-84d5-8216-19b9-9e9b8d34692f": {
+                "paletteKey": "FlexLayoutCol",
                 "parentEditorKey": "074c00c3-0d96-5211-bdef-6db227881110",
                 "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Column",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
                     {
                         "_key": "style",
                         "_value": "",
@@ -1266,49 +2001,109 @@
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "buttonname",
-                        "_value": "Register Me",
+                        "_key": "fxFlex",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxLayoutGap",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "wrap",
+                        "_value": "wrap",
                         "_type": "a",
-                        "_attrDef": "p",
-                        "_useAsLabel": true
+                        "_attrDef": "p"
                     },
                     {
-                        "_key": "color",
-                        "_value": "",
+                        "_key": "layoutAlign",
+                        "_value": "center",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "pLayoutAlign",
+                        "_value": "start",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[fxShow]",
+                        "_value": "true",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "(click)",
-                        "_value": "register()",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[disabled]",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "[disableRipple]",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "type",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "routerLink",
-                        "_value": "",
+                        "_key": "[fxHide]",
+                        "_value": "false",
                         "_type": "kv",
                         "_attrDef": "p"
                     }
-                ]
+                ],
+                "3ace3cfe-3a4c-b61f-1df8-3a4804676c7e": {
+                    "paletteKey": "NG-RaisedButton",
+                    "parentEditorKey": "778a0b64-84d5-8216-19b9-9e9b8d34692f",
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "primary-btn ",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "buttonname",
+                            "_value": "Register Me",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
+                            "_key": "color",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "(click)",
+                            "_value": "register()",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[disabled]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[disableRipple]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "type",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "routerLink",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ]
+                }
             }
         }
     }

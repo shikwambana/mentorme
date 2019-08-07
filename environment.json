@@ -4,7 +4,7 @@
         "name": "dev",
         "properties": {
             "production": false,
-            "baseUrl": "http://10.0.0.23:3000/bhive-art/",
+            "baseUrl": "http://localhost:3000/bhive-art/",
             "tenantName": "mentorme",
             "appName": "mentorme",
             "namespace": "com.neutrinos-delivery.mentorme",
@@ -20,8 +20,8 @@
             "basicAuthUser": "username",
             "basicAuthPassword": "password",
             "useDefaultExceptionUI": true,
-            "registerUrl": "http://10.0.0.23:3000/bhive-art/mentorme/auth/mentorme/register",
-            "modellerUrl": "http://10.0.0.23:24483/api"
+            "registerUrl": "http://localhost:3000/bhive-art/mentorme/auth/mentorme/register",
+            "modellerUrl": "http://localhost:1880/api"
         }
     },
     "prod": {
@@ -29,7 +29,7 @@
         "name": "prod",
         "properties": {
             "production": true,
-            "baseUrl": "http://10.0.0.23:3000/bhive-art/",
+            "baseUrl": "http://localhost:3000/bhive-art/",
             "tenantName": "mentorme",
             "appName": "mentorme",
             "namespace": "com.neutrinos-delivery.mentorme",

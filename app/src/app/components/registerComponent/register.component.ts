@@ -11,6 +11,8 @@ import uid from 'tiny-uid';
 import { FormBuilder } from '@angular/forms';
 import { loaderComponent } from '../loaderComponent/loader.component';
 import { MatDialog } from '@angular/material';
+import { tokenService } from '../../services/token/token.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -25,111 +27,99 @@ export class registerComponent extends NBaseComponent implements OnInit {
     mentor;
     pwd;
     pwd2;
+    emailCheck = false;
+    alreadyRegistered = false;
+    goLogin = false;
+    canRegister = false;
     // Tukiso member variables
     person: person;
     uid: string;
     user: { "userKey": string; "firstName": string; "lastName": string; "username": string; "displayName": string; "password": any; "groupList": string[]; };
-    constructor(private bdms: NDataModelService, 
-        private registerService: registerService, 
+    constructor(private bdms: NDataModelService,
+        private registerService: registerService,
         private session: NSessionStorageService,
         private commService: commonService,
         private fb: FormBuilder,
-        private dialog: MatDialog) {
+        private dialog: MatDialog,
+        private tokenService: tokenService,
+        private router: Router) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-        
-        //Get token
-    //    this.registerService.getToken().then(result => {
-    //      this.accessToken = result;  
-    //      console.log('it works ',this.accessToken);
-    //    }, error => {
-    //        console.log(error, 'could not get token');
-    //    });        
-        // if(!sessionStorage.getItem('accessToken')){
-
-        //     this.get('invites');
-        // }
-        this.get('invites');
+        // this.get('invites');
 
         this.person = new person();
         this.uid = uid();
     }
 
+    login() {
+        this.router.navigate(['/login']);
+    }
+
     openDialog() {
-    const dialogRef = this.dialog.open(loaderComponent, {
-      data: { message: 'Registering' },
-      width: '250px',
-      disableClose: true
-    });
-  }
+        const dialogRef = this.dialog.open(loaderComponent, {
+            data: { message: 'Registering' },
+            width: '250px',
+            disableClose: true
+        });
+    }
+
+    checkEmail(email) {
+        var emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        this.goLogin = false;
+        this.canRegister = false;
+        if (emailPattern.test(email)) {
+            this.emailCheck = true
+            this.registerService.checkEmail(email).then(res => {
+                console.log('got a response', res)
+                this.emailCheck = false;
+                if (res == true) {
+                    this.goLogin = true;
+                } else {
+                    this.canRegister = true;
+                }
+
+            });
+
+        }else{
+            console.log('not a valid email')
+        }
+
+    }
 
     register() {
 
         this.openDialog();
-        this.person.personal_info.userKey = this.uid;
-        this.person.personal_info.date_of_joining = new Date();
-         this.user = {
-            "userKey": this.person.personal_info.userKey,
-            "firstName": this.person.personal_info.name,
-            "lastName": this.person.personal_info.surname,
-            "username": this.person.contact_details.email_address,
-            "displayName": this.person.personal_info.name + " " + this.person.personal_info.surname,
-            "password": this.pwd,
-            "groupList": [
-                'mentee'
-            ]
-        }
+        this.tokenService.getNewToken().then(res => {
 
-        this.checkMentor(this.person.contact_details.email_address);
+            this.person.personal_info.userKey = this.uid;
+            this.person.personal_info.date_of_joining = new Date();
+            this.user = {
+                "userKey": this.person.personal_info.userKey,
+                "firstName": this.person.personal_info.name,
+                "lastName": this.person.personal_info.surname,
+                "username": this.person.contact_details.email_address,
+                "displayName": this.person.personal_info.name + " " + this.person.personal_info.surname,
+                "password": this.pwd,
+                "groupList": [
+                    'mentee'
+                ]
+            }
+
+            // this.registerService.register(this.user, this.person)
+            this.checkMentor(this.person.contact_details.email_address);
+        })
 
     }
 
     checkMentor(user: string) {
         //check if there is a mentor assigned to person
-        //add mentor to object
+        // add mentor to object
+        this.get('invites', { "email_address": user });
 
-        console.log('checking for mentors...')
-        this.mentor = this.possibleMentees.find(val => val.email_address == user);
 
-        //if mentor is there, contstruct object and push
-        if (this.mentor) {
-            console.log(this.mentor);
-
-            //mentor info
-            let mentorInfo = {
-                'full_name' : this.mentor.mentorName,
-                'email_address' : this.mentor.mentor,
-                'start_date' : new Date(),
-                'end_date' : new Date()
-            }
-
-            //mentee info
-            let menteeInfo = {
-                'full_name' : this.person.personal_info.name + " " + this.person.personal_info.surname,
-                'email_address' : this.person.contact_details.email_address,
-                'start_date' : new Date(),
-                'end_date' : new Date()
-            }
-
-            //add mentee to mentor's person document
-            this.update('person',{ $push: {'mentoring.mentees' : menteeInfo }},{'contact_details.email_address' : this.mentor.mentor},{})
-
-            //add mentor to mentee's person document
-            this.person.mentoring.mentors.push(mentorInfo);
-
-            if(this.registerService.register(this.user, this.person)){
-                this.dialog.closeAll();
-            }
-
-        } else {
-
-            if(this.registerService.register(this.user, this.person)){
-                this.dialog.closeAll();
-            }
-        }
     }
 
 
@@ -138,7 +128,46 @@ export class registerComponent extends NBaseComponent implements OnInit {
             result => {
                 // On Success code here
                 this.possibleMentees = result;
-                console.log('got mentees', result);
+                console.log('got mentors', result);
+
+                console.log('checking for mentors...')
+                // this.mentor = this.possibleMentees.find(val => val.email_address == user);
+                //if mentors are there, contstruct object and push
+
+                if (this.possibleMentees) {
+
+                    this.possibleMentees.forEach(mentor => {
+                        console.log(mentor);
+
+                        //mentor info
+                        let mentorInfo = {
+                            'full_name': mentor.mentorName,
+                            'email_address': mentor.mentor,
+                            'start_date': new Date(),
+                            'end_date': new Date()
+                        }
+
+                        //mentee info
+                        let menteeInfo = {
+                            'full_name': this.person.personal_info.name + " " + this.person.personal_info.surname,
+                            'email_address': this.person.contact_details.email_address,
+                            'start_date': new Date(),
+                            'end_date': new Date()
+                        }
+
+                        //add mentee to mentor's person document
+                        this.update('person', { $push: { 'mentoring.mentees': menteeInfo } }, { 'contact_details.email_address': mentor.mentor }, {})
+                        this.deleteById('invites', mentor._id);
+                        //add mentor to mentee's person document
+                        this.person.mentoring.mentors.push(mentorInfo);
+                        console.log(this.person.mentoring.mentors);
+
+                    });
+
+                }
+
+
+                return result;
             },
             error => {
                 // Handle errors here
@@ -187,7 +216,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
         this.mm.update(dataModelName, updateObject,
             result => {
                 //  On Success code here
-                console.log('result',result)
+                console.log('result', result)
             }, error => {
                 // Handle errors here
                 console.log(error)

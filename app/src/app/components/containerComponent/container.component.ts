@@ -2,43 +2,29 @@
 import { Component, OnInit } from '@angular/core'
 import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
-import { NDataModelService, NLogoutService } from 'neutrinos-seed-services';
+import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
-import { Router } from '@angular/router';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { tokenService } from '../../services/token/token.service';
+
 /**
  * Service import Example :
- * import { HeroService } from '../services/hero/hero.service';
+ * import { HeroService } from '../../services/hero/hero.service';
  */
 
 @Component({
-    selector: 'bh-user',
-    templateUrl: './user.template.html'
+    selector: 'bh-container',
+    templateUrl: './container.template.html'
 })
 
-export class userComponent extends NBaseComponent implements OnInit {
+export class containerComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService, 
-    private logoutService: NLogoutService, 
-    private router: Router, 
-    private tokenService : tokenService) {
+    constructor(private bdms: NDataModelService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-        // this.getToken();
-    }
 
-    getToken(){
-      
-    }
-
-     logoutUser() {
-      this.logoutService.logout();
-      this.router.navigate(['/login']);
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

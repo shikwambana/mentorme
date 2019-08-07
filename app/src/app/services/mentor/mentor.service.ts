@@ -40,7 +40,7 @@ export class mentorService {
         }
         
         return this.http.post(this.bModellerURL + '/getMentees', data , options).subscribe( result => {
-            this.mentees = result;
+            // this.mentees = result;
             // console.log('got the mentees',result)
         }, error => {
             console.log('cant get mentees',error)

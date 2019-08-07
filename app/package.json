@@ -39,6 +39,9 @@
     "@swimlane/ngx-charts": "10.0.0",
     "android-versions": "1.4.0",
     "chart.js": "2.7.3",
+    "cordova-android": "~7.1.0",
+    "cordova-android-support-gradle-release": "^3.0.1",
+    "cordova-ios": "~4.5.4",
     "core-js": "2.6.3",
     "d3": "5.8.0",
     "firebase": "5.8.2",
@@ -52,9 +55,7 @@
     "rxjs-compat": "6.4.0",
     "signature_pad": "2.3.2",
     "tiny-uid": "^1.0.0",
-    "zone.js": "0.8.29",
-    "cordova-android": "~7.1.0",
-    "cordova-ios": "~4.5.4"
+    "zone.js": "0.8.29"
   },
   "devDependencies": {
     "@angular/cli": "7.3.0",
@@ -83,6 +84,11 @@
     "platforms": [
       "android",
       "ios"
-    ]
+    ],
+    "plugins": {
+      "cordova-android-support-gradle-release": {
+        "ANDROID_SUPPORT_VERSION": "27.+"
+      }
+    }
   }
 }
