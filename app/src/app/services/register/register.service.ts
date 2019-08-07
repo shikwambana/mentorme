@@ -112,16 +112,6 @@ export class registerService {
 
             this.token = res;
 
-            let checkMentorInfo = {
-                'user': user,
-                'token': this.token.accessToken
-            }
-
-            this.checkMentor(checkMentorInfo).then(res => {
-                console.log(res)
-
-            })
-
             let headers = new HttpHeaders({
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + this.token

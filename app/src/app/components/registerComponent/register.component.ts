@@ -31,7 +31,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
     alreadyRegistered = false;
     goLogin = false;
     canRegister = false;
-    // Tukiso member variables
+    token;
     person: person;
     uid: string;
     user: { "userKey": string; "firstName": string; "lastName": string; "username": string; "displayName": string; "password": any; "groupList": string[]; };
@@ -83,7 +83,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
 
             });
 
-        }else{
+        } else {
             console.log('not a valid email')
         }
 
@@ -93,7 +93,6 @@ export class registerComponent extends NBaseComponent implements OnInit {
 
         this.openDialog();
         this.tokenService.getNewToken().then(res => {
-
             this.person.personal_info.userKey = this.uid;
             this.person.personal_info.date_of_joining = new Date();
             this.user = {
@@ -108,8 +107,11 @@ export class registerComponent extends NBaseComponent implements OnInit {
                 ]
             }
 
-            // this.registerService.register(this.user, this.person)
-            this.checkMentor(this.person.contact_details.email_address);
+            this.checkMentor(this.person.contact_details.email_address).then(res => {
+                // this.registerService.register(this.user, this.person)
+            }
+
+            );
         })
 
     }
@@ -117,7 +119,9 @@ export class registerComponent extends NBaseComponent implements OnInit {
     checkMentor(user: string) {
         //check if there is a mentor assigned to person
         // add mentor to object
-        this.get('invites', { "email_address": user });
+        return new Promise((resolve) => {
+            return resolve(this.get('invites', { "email_address": user }))
+        })
 
 
     }
@@ -156,7 +160,13 @@ export class registerComponent extends NBaseComponent implements OnInit {
                         }
 
                         //add mentee to mentor's person document
-                        this.update('person', { $push: { 'mentoring.mentees': menteeInfo } }, { 'contact_details.email_address': mentor.mentor }, {})
+                        this.update(
+                            'person',
+                            { $push: { 'mentoring.mentees': menteeInfo } },
+                            { 'contact_details.email_address': mentor.mentor },
+                            {});
+
+                        console.log("deleting mentor", mentor._id)
                         this.deleteById('invites', mentor._id);
                         //add mentor to mentee's person document
                         this.person.mentoring.mentors.push(mentorInfo);
@@ -166,6 +176,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
 
                 }
 
+                this.registerService.register(this.user, this.person)
 
                 return result;
             },
@@ -235,9 +246,11 @@ export class registerComponent extends NBaseComponent implements OnInit {
     deleteById(dataModelName, dataModelId) {
         this.mm.deleteById(dataModelName, dataModelId,
             result => {
+                console.log("deleted mentor", result)
                 // On Success code here
             }, error => {
                 // Handle errors here
+                console.log("failed to delete", error)
             })
     }
 
@@ -245,6 +258,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
         this.mm.updateById(dataModelName, dataModelId, dataModelObj,
             result => {
                 // On Success code here
+
             }, error => {
                 // Handle errors here
             })

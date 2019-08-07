@@ -21,24 +21,21 @@ export class tokenService {
     getNewToken() {
         return new Promise((resolve, reject) => {
 
-            if (!this.token) {
-                this.http.post(this.bModellerURL, {}).subscribe(result => {
-                    this.token = result;
-                    this.session.setValue('accessToken', this.token.accessToken);
-                    console.log('got token from token service', this.token);
-                    return resolve(this.token.accessToken);
+            this.http.post(this.bModellerURL, {}).subscribe(result => {
+                this.token = result;
+                this.session.setValue('accessToken', this.token.accessToken);
+                this.session.setValue("refreshToken", this.token.refreshToken);
 
-                },
-                    error => {
-                        console.log('failed to get token', error)
-                        return reject(error)
-                    });
+                console.log('got token from token service', this.token);
+                return resolve(this.token.accessToken);
 
-            } else {
-                // this.token = sessionStorage.getItem('accessToken');
-                console.log('already have token');
-                return resolve(this.token.accessToken) ;
-            }
+            },
+                error => {
+                    console.log('failed to get token', error)
+                    return reject(error)
+                });
+
+            
 
         })
     }
