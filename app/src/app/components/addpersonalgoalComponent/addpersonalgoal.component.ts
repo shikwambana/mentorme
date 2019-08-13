@@ -24,13 +24,13 @@ export class addpersonalgoalComponent extends NBaseComponent implements OnInit {
     categories: { 'name': string; }[];
     person: any;
     mentees;
-    hidden: boolean = false;
+    hidden: boolean = true;
     checked: boolean = false;
     email: any;
-    constructor(private bdms: NDataModelService, 
-        private metadataService : metadataService,
-        private router: Router, 
-        private goalsService : goalsService) {
+    constructor(private bdms: NDataModelService,
+        private metadataService: metadataService,
+        private router: Router,
+        private goalsService: goalsService) {
         super();
         this.mm = new ModelMethods(bdms);
         this.goal = new goals();
@@ -40,25 +40,20 @@ export class addpersonalgoalComponent extends NBaseComponent implements OnInit {
     ngOnInit() {
         this.categories = this.metadataService.getCategory();
         this.person = this.metadataService.getPerson();
-        this.mentees = this.person.mentoring.mentees;        
+        this.mentees = this.person.mentoring.mentees;
     }
 
-    changed(){
-        if(!this.hidden){
-            this.hidden = true;
-        }else{
-            this.hidden = false;
-        }
-      }
+    changed() {
+        this.hidden = !this.hidden;
+        console.log(this.hidden)
+    }
 
-     dis(){
-         console.log(this.email);
-         console.table(this.goal)
-     }
-      
-    addGoal(){
+    setPerson(person) {
+        console.log(person,this.goal.author)
+    }
+
+    addGoal() {
         //get entire person object
-        let email;
         //add outstanding info
         this.goal.author = this.person.personal_info.name + " " + this.person.personal_info.surname;
         this.goal.author_email = this.person.contact_details.email_address;
@@ -66,12 +61,14 @@ export class addpersonalgoalComponent extends NBaseComponent implements OnInit {
         // this.person.goals.push(this.goal);
         console.log(this.goal);
         // this.goalsService.addGoal(this.goal);
-        if(this.hidden){
+        if (this.hidden) {
             this.email = this.person.contact_details.email_address;
+        } else {
+            // this.email = 
         }
 
         //add goal to person document
-        this.update('person',{ $push: {'goals' : this.goal }}, { 'contact_details.email_address' :  this.email},{});
+        this.update('person', { $push: { 'goals': this.goal } }, { 'contact_details.email_address': this.email }, {});
         // this.router.navigate(['../']);
     }
 
@@ -130,7 +127,7 @@ export class addpersonalgoalComponent extends NBaseComponent implements OnInit {
             })
     }
 
-    delete (dataModelName, filter) {
+    delete(dataModelName, filter) {
         this.mm.delete(dataModelName, filter,
             result => {
                 // On Success code here

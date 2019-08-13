@@ -402,5 +402,67 @@
                 "isArray": false
             }
         ]
+    },
+    "d3a45f1e-2bff-24b0-5b21-0f66ec7709b5": {
+        "dataModelId": "d3a45f1e-2bff-24b0-5b21-0f66ec7709b5",
+        "name": "resource",
+        "description": "resource for projects",
+        "dataSource": "mentorme",
+        "fields": [
+            {
+                "name": "name",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "department",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "startDate",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "endDate",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "status",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "projectName",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "skills",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "designation",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "lastName",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            }
+        ]
     }
 }

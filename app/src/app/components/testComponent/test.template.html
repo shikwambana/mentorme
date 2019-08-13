@@ -1,8 +1,1 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <mat-form-field>
-    <input matInput placeholder="Date Picker" [matDatepicker]="picker">
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-
-  </mat-form-field>
-</div>
+<div> <input #file type="file" (change)="changeListener($event.target.files)"></div>

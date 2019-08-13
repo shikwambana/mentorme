@@ -8,51 +8,51 @@
     </div>
   </div>
   <div fxLayout="column wrap" class="content" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
-    <form componentLabel="Form">
-      <div fxLayout="column wrap" class="addGoalWrapper" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
-        <mat-slide-toggle [labelPosition]="&apos;before&apos;" name="pGoal" #personal [ngModel]="hidden"> Personal Goal</mat-slide-toggle>
+    <div fxLayout="column wrap" class="addGoalWrapper" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
+      <mat-slide-toggle [labelPosition]="&apos;before&apos;" name="pGoal" #personal *ngIf="mentees" (change)="changed()" checked="true"> Personal Goal</mat-slide-toggle>
+      <div fxLayout="column wrap" class="fadeInDown" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngIf="!hidden &amp;&amp; mentees">
         <mat-form-field>
-          <mat-select placeholder="Mentee Name" [(ngModel)]="goal.author" required *ngIf="!hidden" name="mentee">
+          <mat-select placeholder="Mentee Name" [(ngModel)]="goal.author" required (selectionChange)="setPerson(mentee)" name="mentee">
             <mat-option *ngFor="let mentee of mentees" [value]="mentee.email_address">{{ mentee.full_name }}</mat-option>
           </mat-select>
 
         </mat-form-field>
-        <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-          <input matInput [(ngModel)]="goal.title" name="title" placeholder="What is the Goal?" required #title="ngModel">
-
-        </mat-form-field>
-        <mat-form-field>
-          <mat-select placeholder="What category is it in?" [(ngModel)]="goal.category" required #category="ngModel" name="category">
-            <mat-option *ngFor="let cat of categories" [value]="cat.name">{{cat.name}}</mat-option>
-          </mat-select>
-
-        </mat-form-field>
-        <mat-form-field>
-          <textarea matInput [(ngModel)]="goal.description" #description="ngModel" name="description" placeholder="A short description of what it is about" required></textarea>
-        </mat-form-field>
-        <div fxLayout="row wrap" fxFlex="90" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
-          <div fxLayout="column wrap" fxFlex="40" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
-            <mat-form-field>
-              <input matInput placeholder="Start Date" [matDatepicker]="picker" value="goal.start_date" [(ngModel)]="goal.start_date" name="startDate" required>
-              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-              <mat-datepicker #picker #startDate id="startDate" [disabled]="false" startView="month"></mat-datepicker>
-
-            </mat-form-field>
-          </div>
-          <div fxLayout="column wrap" fxFlex="40" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
-            <mat-form-field>
-              <input matInput placeholder="End Date" [matDatepicker]="picker2" value="goal.end_date" [(ngModel)]="goal.end_date" name="endDate" required>
-              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-              <mat-datepicker #picker2 #endDate id="endDate" [disabled]="false"></mat-datepicker>
-
-            </mat-form-field>
-          </div>
-        </div>
-        <mat-form-field>
-          <textarea matInput [(ngModel)]="goal.note" #note="ngModel" name="note" placeholder="Anything else to keep in mind?" required></textarea>
-        </mat-form-field>
-        <div fxLayout="column wrap" fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false"><button mat-raised-button class="primary-btn" (click)="addGoal()">Add Goal</button></div>
       </div>
-    </form>
+      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+        <input matInput [(ngModel)]="goal.title" name="title" placeholder="What is the Goal?" required #title="ngModel">
+
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="What category is it in?" [(ngModel)]="goal.category" required #category="ngModel" name="category">
+          <mat-option *ngFor="let cat of categories" [value]="cat.name">{{cat.name}}</mat-option>
+        </mat-select>
+
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput [(ngModel)]="goal.description" #description="ngModel" name="description" placeholder="A short description of what it is about" required></textarea>
+      </mat-form-field>
+      <div fxLayout="row wrap" fxFlex="90" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
+        <div fxLayout="column wrap" fxFlex="40" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
+          <mat-form-field>
+            <input matInput placeholder="Start Date" [matDatepicker]="picker" value="goal.start_date" [(ngModel)]="goal.start_date" name="startDate" required>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker #startDate id="startDate" [disabled]="false" startView="month"></mat-datepicker>
+
+          </mat-form-field>
+        </div>
+        <div fxLayout="column wrap" fxFlex="40" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow="true" fxHide="false">
+          <mat-form-field>
+            <input matInput placeholder="End Date" [matDatepicker]="picker2" value="goal.end_date" [(ngModel)]="goal.end_date" name="endDate" required>
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2 #endDate id="endDate" [disabled]="false"></mat-datepicker>
+
+          </mat-form-field>
+        </div>
+      </div>
+      <mat-form-field>
+        <textarea matInput [(ngModel)]="goal.note" #note="ngModel" name="note" placeholder="Anything else to keep in mind?" required></textarea>
+      </mat-form-field>
+      <div fxLayout="column wrap" fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false"><button mat-raised-button class="primary-btn" (click)="addGoal()">Add Goal</button></div>
+    </div>
   </div>
 </div>

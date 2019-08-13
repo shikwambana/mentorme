@@ -11,3 +11,4 @@ export { comments } from './comments.model';
 export { person } from './person.model';
 export { invites } from './invites.model';
 export { potential } from './potential.model';
+export { resource } from './resource.model';

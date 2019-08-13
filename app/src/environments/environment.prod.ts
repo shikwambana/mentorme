@@ -3,7 +3,7 @@ export const environment = {
     "name": "prod",
     "properties": {
         "production": true,
-        "baseUrl": "http://localhost:3000/bhive-art/",
+        "baseUrl": "http://10.200.65.69:3000/bhive-art/",
         "tenantName": "mentorme",
         "appName": "mentorme",
         "namespace": "com.neutrinos-delivery.mentorme",

@@ -10,6 +10,7 @@ import { comments } from '../src/app/models/comments.model';
 import { person } from '../src/app/models/person.model';
 import { invites } from '../src/app/models/invites.model';
 import { potential } from '../src/app/models/potential.model';
+import { resource } from '../src/app/models/resource.model';
 //IMPORT NEW DATAMODEL
 
 export class NDataModel {
@@ -25,6 +26,7 @@ comments: comments;
 person: person;
 invites: invites;
 potential: potential;
+resource: resource;
 //DECLARE NEW VARIABLE
 
 constructor() {
@@ -40,6 +42,7 @@ this.comments = new comments();
 this.person = new person();
 this.invites = new invites();
 this.potential = new potential();
+this.resource = new resource();
 //CREATE NEW DM INSTANCE
     }
 }

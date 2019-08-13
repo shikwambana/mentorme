@@ -4,6 +4,7 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import { tokenService } from '../../services/token/token.service';
 
 /**
  * Service import Example :
@@ -18,7 +19,7 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 export class testComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService) {
+    constructor(private bdms: NDataModelService, private tokenService: tokenService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -27,6 +28,50 @@ export class testComponent extends NBaseComponent implements OnInit {
 
     }
 
+    public changeListener(files: FileList) {
+        if (files && files.length > 0) {
+            let file: File = files.item(0);
+            let reader: FileReader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = (e) => {
+                let csv: string = reader.result as string;
+                this.csvJSON(csv);
+            }
+        }
+    }
+
+    // convert csv to json
+    csvJSON(csv) {
+        var lines = csv.split("\n");
+        // console.log('lines',lines)
+        var result = [];
+        var headers = lines[0].split(";");
+        // console.log('headers',headers)
+
+        // loop through all the lines excpet the first 1 (index = 0) 
+        for (var i = 1; i < lines.length-1; i++) {
+            var obj = {};
+            // if(lines[2]){
+            //     lines[2] = lines[2].split(',')
+            //     console.log(lines[2])
+            // }
+            var currentline = lines[i].split(";");
+            // console.log('add currentline', currentline)
+
+            // loop through the skipped line (headers = lines[0])
+            for (var j = 0; j < headers.length-1; j++) {
+                obj[headers[j]] = currentline[j];
+            }
+            result.push(obj);
+            // this.put('resource',obj)
+        }
+            // console.log(result)
+            sessionStorage.setItem('resource',JSON.stringify(result))
+
+        // this.tokenService.getNewToken().then(res => {
+        // })
+
+    }
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {
@@ -51,8 +96,10 @@ export class testComponent extends NBaseComponent implements OnInit {
         this.mm.put(dataModelName, dataModelObject,
             result => {
                 // On Success code here
+                console.log(result)
             }, error => {
                 // Handle errors here
+                console.log(error)                
             })
     }
 

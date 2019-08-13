@@ -107,11 +107,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
                 ]
             }
 
-            this.checkMentor(this.person.contact_details.email_address).then(res => {
-                // this.registerService.register(this.user, this.person)
-            }
-
-            );
+            this.checkMentor(this.person.contact_details.email_address);
         })
 
     }
@@ -119,11 +115,7 @@ export class registerComponent extends NBaseComponent implements OnInit {
     checkMentor(user: string) {
         //check if there is a mentor assigned to person
         // add mentor to object
-        return new Promise((resolve) => {
-            return resolve(this.get('invites', { "email_address": user }))
-        })
-
-
+        this.get('invites', { "email_address": user });
     }
 
 

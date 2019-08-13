@@ -1,14 +1,8 @@
 {
-    "5025bd31-3660-ede8-edd7-108e1527d5f3": {
-        "paletteKey": "FlexLayoutCol",
+    "9b042e09-45f7-be52-c9d5-44ffd8b1d1e8": {
+        "paletteKey": "Html5",
+        "isAdvancedComponent": true,
         "designerReference": [
-            {
-                "_key": "componentLabel",
-                "_value": "Column",
-                "_type": "kv",
-                "_attrDef": "p",
-                "_useAsLabel": true
-            },
             {
                 "_key": "style",
                 "_value": "",
@@ -22,52 +16,17 @@
                 "_attrDef": "p"
             },
             {
-                "_key": "fxFlex",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "fxLayoutGap",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "wrap",
-                "_value": "wrap",
+                "_key": "htmlElement",
+                "_value": "div",
                 "_type": "a",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "layoutAlign",
-                "_value": "start",
-                "_type": "a",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "pLayoutAlign",
-                "_value": "stretch",
-                "_type": "a",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "fxShow",
-                "_value": "true",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "fxHide",
-                "_value": "false",
-                "_type": "kv",
-                "_attrDef": "p"
+                "_attrDef": "p",
+                "_useAsLabel": true
             }
         ],
-        "afe25717-7659-7f99-f6f8-649f442027a1": {
-            "paletteKey": "NG-DatePicker",
-            "parentEditorKey": "5025bd31-3660-ede8-edd7-108e1527d5f3",
-            "isAdvancedComponent": true,
+        "3f6ffbb1-6f50-a13f-9b73-eeb69c40d428": {
+            "paletteKey": "html-editor",
+            "parentEditorKey": "9b042e09-45f7-be52-c9d5-44ffd8b1d1e8",
+            "isAdvancedChildComponent": true,
             "designerReference": [
                 {
                     "_key": "style",
@@ -82,126 +41,10 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "placeholder",
-                    "_value": "Date Picker",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_useAsLabel": true
-                },
-                {
-                    "_key": "value",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[min]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[max]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[startAt]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "startView",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "touchUi",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "id",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "(dateChange)",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "(dateInput)",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[opened]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[disabled]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "(open)",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "(close)",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[matDatepickerFilter]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[(ngModel)]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "name",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "picker",
-                    "_value": "picker",
-                    "_type": "ma",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "ngModel",
-                    "_value": "",
-                    "_type": "vk",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "matError",
-                    "_value": [],
+                    "_key": "html",
+                    "_value": "<input #file type=\"file\" (change)=\"changeListener($event.target.files)\">",
                     "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": true
+                    "_attrDef": "p"
                 }
             ]
         }
